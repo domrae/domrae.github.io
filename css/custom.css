@@ -95,10 +95,16 @@ footer .social-media-list li a {
   .post-item .post-link {
     position: relative;
     z-index: 2;
-    background: -webkit-linear-gradient(transparent 40%, rgba(0, 0, 0, 0.4) 90%);
-    background: -webkit-gradient(linear   ,    , color-stop(90%, rgba(0, 0, 0, 0.4)));
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4) 90%);
-    background: linear-gradient(to   , rgba(0, 0, 0, 0.4) 90%); }
+    background: -webkit-linear-gradient(transparent 30%, rgba(0, 0, 0, 0.6) 80%);
+    background: -webkit-gradient(linear   ,    , color-stop(80%, rgba(0, 0, 0, 0.6)));
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6) 80%);
+    background: linear-gradient(to   , rgba(0, 0, 0, 0.6) 80%); }
+    @media (min-width: 640px) {
+      .post-item .post-link {
+        background: -webkit-linear-gradient(transparent 40%, rgba(0, 0, 0, 0.4) 90%);
+        background: -webkit-gradient(linear   ,    , color-stop(90%, rgba(0, 0, 0, 0.4)));
+        background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4) 90%);
+        background: linear-gradient(to   , rgba(0, 0, 0, 0.4) 90%); } }
     .post-item .post-link.post-wrap {
       display: table;
       width: 100%;
