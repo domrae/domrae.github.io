@@ -1,3 +1,5 @@
+$banner-background-image: "http://im.vsco.co/1/51f48bb095e8247120/56c9e77a40955b61337b8a75/vsco_022216.jpg";
+
 .banner-wrap {
 	// width: 100%;
 	height: 100%;
@@ -12,9 +14,10 @@
 }
 
 .banner-wrap .banner {
-	@include background-image(url("http://im.vsco.co/1/51f48bb095e8247120/56c9e78b40955b61337b8a76/vsco_022216.jpg")); 
+	@include background-image(url($banner-background-image)); 
 	background-size: cover;
-	background-position: center top;
+	background-repeat: no-repeat;
+	background-position: center;
 	display: flex;
 	flex-direction: row;
 	align-items: flex-end;

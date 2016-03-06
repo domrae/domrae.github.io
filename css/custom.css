@@ -101,10 +101,11 @@
       margin-bottom: 6.25rem; } }
 
 .banner-wrap .banner {
-  background-image: url("http://im.vsco.co/1/51f48bb095e8247120/56c9e78b40955b61337b8a76/vsco_022216.jpg");
-  background-image: url("http://im.vsco.co/1/51f48bb095e8247120/56c9e78b40955b61337b8a76/vsco_022216.jpg");
+  background-image: url("http://im.vsco.co/1/51f48bb095e8247120/56c9e77a40955b61337b8a75/vsco_022216.jpg");
+  background-image: url("http://im.vsco.co/1/51f48bb095e8247120/56c9e77a40955b61337b8a75/vsco_022216.jpg");
   background-size: cover;
-  background-position: center top;
+  background-repeat: no-repeat;
+  background-position: center;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
