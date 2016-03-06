@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Day four."
+title:  "Day four"
 date:   2015-04-05 19:57:52 +0800
 thumbnail: "https://c2.staticflickr.com/6/5502/14180645959_2dbfe5f2c3_n.jpg"
 categories: jekyll update

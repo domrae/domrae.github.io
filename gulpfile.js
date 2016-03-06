@@ -4,6 +4,7 @@ var sass = require('gulp-sass');
 var gutil = require('gulp-util');
 var prefix = require('gulp-autoprefixer');
 var cp = require('child_process');
+var plumber = require('gulp-plumber');
 
 var jekyll = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -44,6 +45,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
  */
 gulp.task('sass', function () {
     return gulp.src('_scss/custom.scss')
+        .pipe(plumber())
         .pipe(sass({
             includePaths: ['scss'],
             onError: browserSync.notify
@@ -60,7 +62,7 @@ gulp.task('sass', function () {
  */
 gulp.task('watch', function () {
     gulp.watch('_scss/**/*.scss', ['sass']);
-    gulp.watch(['*.html', '_layouts/*.html', '_posts/*', '_includes/*.html'], ['jekyll-rebuild']);
+    gulp.watch(['*.html', '_layouts/*.html', '_posts/*', '_includes/*.html', 'js/**/.*.js'], ['jekyll-rebuild']);
 });
 
 /**

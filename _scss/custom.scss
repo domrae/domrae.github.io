@@ -4,8 +4,11 @@ $white: #fff;
 $black: #000;
 
 .wrapper {
+	// width: 100%;
 	max-width: none;
+	// padding: 0;
 }
-@import 'partial/banner';
+@import 'partial/homepage';
 @import 'partial/postlist';
+@import 'partial/banner';
 @import 'partial/post';
