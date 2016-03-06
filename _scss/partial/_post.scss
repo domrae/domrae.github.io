@@ -6,15 +6,31 @@ article {
 		text-align: center;
 	}
 
-	h1,
+	h1 {
+		margin-bottom: rem(24);
+	}
+
 	p,
 	figure {
 		margin-bottom: rem(30);
 	}
 
+	// .post-content > *:not(.vert-img) {
+	// 	@media (min-width: 1024px){
+	// 		max-width: 80%;
+	// 		margin: 0 auto;
+	// 		margin-bottom: rem(30);
+	// 	}
+	// }
+
 	p img {
 		width: 100%;
+		opacity: 0;
 		// max-width: none;
+
+		&[data-featherlight]{
+			cursor: pointer;
+		}
 	}
 
 	.vert-img {

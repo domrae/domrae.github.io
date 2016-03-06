@@ -3,10 +3,40 @@
 $white: #fff;
 $black: #000;
 
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+p,
+a,
+span,
+ul,
+ol,
+li,
+h5,
+h6 {
+	font-family: 'Gentium Basic', Garamond, serif;
+}
 .wrapper {
-	// width: 100%;
 	max-width: none;
-	// padding: 0;
+}
+
+footer {
+	.social-media-list {
+		li a {
+			padding: rem(20) 0;
+			display: block;
+
+			&:first-child {
+				padding-top: 0;
+			}
+		}
+	}
 }
 @import 'partial/homepage';
 @import 'partial/postlist';

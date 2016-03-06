@@ -50,7 +50,7 @@ function sbsVertImg(){
 	j = 0;
 
 	if (imgArr.length <= 0) {
-		console.log('no vertical images found');
+		// console.log('no vertical images found');
 		return false;
 	}
 
@@ -63,9 +63,9 @@ function sbsVertImg(){
 	}
 
 	if (j > 0){
-		console.log(j + "pairs of veritcal images found");
+		// console.log(j + "pairs of veritcal images found");
 	} else {
-		console.log("no pairs of vertical images found.");
+		// console.log("no pairs of vertical images found.");
 	}
 }
 
@@ -82,6 +82,10 @@ $(document).ready(function(){
 		initFeatherlight();
 
 		$('article').imagesLoaded(function(){
+			$('article img').delay('500').css({
+				"opacity":"1",
+				"transition":"opacity 0.7s ease-in-out"
+			});
 			vertImgFix();
 			sbsVertImg();
 		})
