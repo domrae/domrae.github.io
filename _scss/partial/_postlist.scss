@@ -121,6 +121,10 @@
 			@include transition(0.4s opacity ease-in-out);
 		}
 
+		.post-link.post-wrap {
+			overflow: hidden;
+		}
+
 		.post-link .text-wrap {
 			@include transform(translateY(-33%));
 			// @include transform(translateY(-90px));

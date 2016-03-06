@@ -129,6 +129,8 @@ footer .social-media-list li a {
     opacity: 0.65;
     -webkit-transition: 0.4s opacity ease-in-out;
     transition: 0.4s opacity ease-in-out; }
+  .post-item:hover .post-link.post-wrap, .post-item:active .post-link.post-wrap {
+    overflow: hidden; }
   .post-item:hover .post-link .text-wrap, .post-item:active .post-link .text-wrap {
     -webkit-transform: translateY(-33%);
     -ms-transform: translateY(-33%);
