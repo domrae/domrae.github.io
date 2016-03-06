@@ -82,10 +82,27 @@ $(document).ready(function(){
 		initFeatherlight();
 
 		$('article').imagesLoaded(function(){
-			$('article img').delay('500').css({
-				"opacity":"1",
-				"transition":"opacity 0.7s ease-in-out"
-			});
+			if ($(window).width() > 768){
+				$('article img').delay('400').css({
+					"opacity":"1",
+					"-moz-transform":"scale(1)",
+					"-webkit-transform":"scale(1)",
+					"transform":"scale(1)",
+					"-moz-transition":"all 0.5s ease-in-out",
+					"-webkit-transition":"all 0.5s ease-in-out",
+					"transition":"all 0.5s ease-in-out"
+				});
+			} else {
+				$('article img').css({
+					"opacity":"1",
+					"-moz-transform":"scale(1)",
+					"-webkit-transform":"scale(1)",
+					"transform":"scale(1)",
+					"-moz-transition":"all 0.2s linear",
+					"-webkit-transition":"all 0.2s linear",
+					"transition":"all 0.2s linear"
+				});
+			}
 			vertImgFix();
 			sbsVertImg();
 		})
