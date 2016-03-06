@@ -16,6 +16,10 @@ h5,
 h6 {
   font-family: 'Gentium Basic', Garamond, serif; }
 
+pre *,
+code * {
+  font-family: monospace; }
+
 .wrapper {
   max-width: none; }
 
