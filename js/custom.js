@@ -32,6 +32,43 @@ function initFeatherlight(){
 
 }
 
+function vertImgFix(){
+	var imgArr = $('article img').get();
+
+	for (i=0; i<imgArr.length; i++){
+		// console.log($(imgArr[i]).width());
+		// console.log($(imgArr[i]).height());
+		if( $(imgArr[i]).width() < $(imgArr[i]).height() ){
+			$(imgArr[i]).parent().addClass('vert-img');
+		}
+	}
+}
+
+function sbsVertImg(){
+	var imgArr = $('article .vert-img').get();
+
+	j = 0;
+
+	if (imgArr.length <= 0) {
+		console.log('no vertical images found');
+		return false;
+	}
+
+	for (i=0; i<imgArr.length; i++){
+		if ( $(imgArr[i]).next().attr('class') == 'vert-img'){
+			$(imgArr[i]).addClass('col-2-img');
+			$(imgArr[i]).next().addClass('col-2-img');
+			j++;
+		}
+	}
+
+	if (j > 0){
+		console.log(j + "pairs of veritcal images found");
+	} else {
+		console.log("no pairs of vertical images found.");
+	}
+}
+
 $(document).ready(function(){
 	$postGrid.imagesLoaded().progress( function() {
 		$postGrid.masonry('layout');
@@ -43,5 +80,10 @@ $(document).ready(function(){
 
 	if ($('article').length > 0) {
 		initFeatherlight();
+
+		$('article').imagesLoaded(function(){
+			vertImgFix();
+			sbsVertImg();
+		})
 	}
 });

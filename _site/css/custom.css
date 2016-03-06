@@ -140,14 +140,35 @@
     .banner-wrap .banner .text h1 {
       margin-bottom: 0.625rem; }
 
-article .post-header {
-  text-align: center; }
-
-article h1,
-article p {
+article {
   max-width: 900px;
-  margin: 0 auto;
-  margin-bottom: 1.875rem; }
-
-article p img {
-  width: 100%; }
+  margin: 0 auto; }
+  article .post-header {
+    text-align: center; }
+  article h1,
+  article p,
+  article figure {
+    margin-bottom: 1.875rem; }
+  article p img {
+    width: 100%; }
+  article .vert-img {
+    text-align: center; }
+    @media (min-width: 640px) {
+      article .vert-img img {
+        width: auto;
+        max-height: 500px; } }
+    @media (min-width: 1024px) {
+      article .vert-img img {
+        max-height: 600px; } }
+    @media (min-width: 640px) {
+      article .vert-img.col-2-img {
+        width: 50%;
+        display: inline-block;
+        float: left; }
+        article .vert-img.col-2-img:first-child {
+          padding-right: 0.46875rem; }
+        article .vert-img.col-2-img:last-child {
+          padding-left: 0.46875rem; }
+        article .vert-img.col-2-img img {
+          max-height: none;
+          width: 100%; } }

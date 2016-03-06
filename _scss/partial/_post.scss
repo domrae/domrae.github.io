@@ -1,18 +1,58 @@
 article {
+	max-width: 900px;
+	margin: 0 auto;
+
 	.post-header, {
 		text-align: center;
 	}
 
 	h1,
-	p {
-		max-width: 900px;
-		margin: 0 auto;
+	p,
+	figure {
 		margin-bottom: rem(30);
 	}
 
 	p img {
 		width: 100%;
 		// max-width: none;
+	}
+
+	.vert-img {
+		text-align: center;
+
+		img {
+
+			@media (min-width: 640px){
+				width: auto;
+				max-height: 500px;
+			}
+
+			@media (min-width: 1024px){
+				max-height: 600px;
+			}
+		}
+
+		&.col-2-img {
+			@media (min-width: 640px){
+				width: 50%;
+				display: inline-block;
+				float: left;
+
+				&:first-child {
+					padding-right: rem(15/2);
+				}
+
+				&:last-child {
+					padding-left: rem(15/2);
+				}
+
+				img {
+					max-height: none;
+					width: 100%;
+
+				}
+			}
+		}
 	}
 
 }
