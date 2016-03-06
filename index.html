@@ -15,13 +15,14 @@ layout: default
       <li class="post-item no-bg">
         <!-- <div class="img"><img src="{{post.thumbnail}}" alt="{{ post.title }}"></dKiv> -->
         {% endif %}
+        <div class="post-fill"></div>
         <a class="post-link post-wrap" href="{{ post.url | prepend: site.baseurl }}">
           <!-- <div class="post-wrap"> -->
             <div class="text-wrap">
               <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-              <h2>
+              <h3>
                 {{ post.title }}
-              </h2>
+              </h3>
             </div>
           <!-- </div> -->
         </a>

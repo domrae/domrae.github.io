@@ -26,9 +26,15 @@
           </li>
           {% endif %}
 
-          {% if site.instagram_username %}
+          {% if site.instagram_username_1 %}
           <li>
-            {% include icon-instagram.html username=site.instagram_username %}
+            {% include icon-instagram.html username=site.instagram_username_1 %}
+          </li>
+          {% endif %}
+
+          {% if site.instagram_username_2 %}
+          <li>
+            {% include icon-instagram.html username=site.instagram_username_2 %}
           </li>
           {% endif %}
         </ul>
@@ -48,4 +54,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.0/imagesloaded.pkgd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.0.0/masonry.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js"></script>
 <script src="{{ "/js/custom.js" | prepend: site.baseurl }}"></script>
+<!-- {% if page.is_post? %} -->
+<!-- {% endif %} -->

@@ -1,0 +1,9 @@
+.home {
+	.page-heading {
+		margin-bottom: rem(70);
+		
+		@media (min-width: 1024px){
+			margin-bottom: rem(100);
+		}
+	}
+}

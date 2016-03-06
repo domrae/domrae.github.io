@@ -1,0 +1,18 @@
+article {
+	.post-header, {
+		text-align: center;
+	}
+
+	h1,
+	p {
+		max-width: 900px;
+		margin: 0 auto;
+		margin-bottom: rem(30);
+	}
+
+	p img {
+		width: 100%;
+		// max-width: none;
+	}
+
+}
