@@ -1,1 +1,33 @@
-Hi Rae
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list post-grid">
+    {% for post in site.posts %}
+      <li class="post-grid-sizer"></li>
+        {% if post.thumbnail %}
+      <li class="post-item" style="background-image: url({{post.thumbnail}});">
+      {% else %}
+      <li class="post-item no-bg">
+        <!-- <div class="img"><img src="{{post.thumbnail}}" alt="{{ post.title }}"></dKiv> -->
+        {% endif %}
+
+        <div class="post-wrap">
+          <div class="text-wrap">
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <h2>
+              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </h2>
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>

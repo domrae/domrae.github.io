@@ -1,0 +1,42 @@
+.banner-wrap {
+	// width: 100%;
+	height: 100%;
+	padding: rem(20);
+	background-color: tint($black, 95%);
+	@media (min-width: 1024px){
+		padding: rem(30);
+	}
+}
+
+.banner-wrap .banner {
+	@include background-image(url("http://im.vsco.co/1/51f48bb095e8247120/56c9e78b40955b61337b8a76/vsco_022216.jpg")); 
+	background-size: cover;
+	background-position: center top;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	justify-content: center;
+	min-height: rem(400);
+
+
+	@media (min-width: 640px){
+		min-height: rem(500);
+	}
+	@media (min-width: 1024px){
+		min-height: rem(600);
+	}
+	@media (min-width: 1200px){
+		min-height: rem(700);
+	}
+
+	.text {
+		color: $white;
+		min-width: 250px;
+		width: 40%;
+		text-align: center;
+
+		h1 {
+			margin-bottom: rem(10);
+		}
+	}
+}

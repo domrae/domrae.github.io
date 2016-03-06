@@ -1,0 +1,94 @@
+.wrapper {
+  max-width: none; }
+
+.banner-wrap {
+  height: 100%;
+  padding: 1.25rem;
+  background-color: #f2f2f2; }
+  @media (min-width: 1024px) {
+    .banner-wrap {
+      padding: 1.875rem; } }
+
+.banner-wrap .banner {
+  background-image: url("http://im.vsco.co/1/51f48bb095e8247120/56c9e78b40955b61337b8a76/vsco_022216.jpg");
+  background-image: url("http://im.vsco.co/1/51f48bb095e8247120/56c9e78b40955b61337b8a76/vsco_022216.jpg");
+  background-size: cover;
+  background-position: center top;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 25rem; }
+  @media (min-width: 640px) {
+    .banner-wrap .banner {
+      min-height: 31.25rem; } }
+  @media (min-width: 1024px) {
+    .banner-wrap .banner {
+      min-height: 37.5rem; } }
+  @media (min-width: 1200px) {
+    .banner-wrap .banner {
+      min-height: 43.75rem; } }
+  .banner-wrap .banner .text {
+    color: #fff;
+    min-width: 250px;
+    width: 40%;
+    text-align: center; }
+    .banner-wrap .banner .text h1 {
+      margin-bottom: 0.625rem; }
+
+.home .page-heading {
+  text-align: center;
+  text-transform: uppercase; }
+
+.post-list > li {
+  margin-bottom: 0; }
+
+.post-grid-sizer,
+.post-item {
+  width: 100%; }
+  @media (min-width: 640px) {
+    .post-grid-sizer,
+    .post-item {
+      width: 50%; } }
+  @media (min-width: 1024px) {
+    .post-grid-sizer,
+    .post-item {
+      width: 33%; } }
+
+.post-item {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 15.625rem; }
+  @media (min-width: 640px) {
+    .post-item {
+      height: 15.625rem; } }
+  @media (min-width: 1200px) {
+    .post-item {
+      height: 18.75rem; } }
+  .post-item.no-bg {
+    background-color: #e6e6e6; }
+  .post-item .post-wrap {
+    display: table;
+    width: 100%;
+    height: 100%; }
+  .post-item .post-wrap .text-wrap {
+    display: table-cell;
+    vertical-align: bottom;
+    text-align: center; }
+  .post-item h2 .post-link {
+    color: #fff;
+    text-transform: uppercase; }
