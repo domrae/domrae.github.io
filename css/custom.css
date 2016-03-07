@@ -251,19 +251,26 @@ article {
     text-align: center; }
     article .post-header .post-meta {
       margin-bottom: 0.9375rem; }
-    article .post-header .post-flourish {
+  article .post-flourish {
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 1.5625rem;
+    height: 1.5625rem;
+    display: block;
+    margin: 0 auto;
+    opacity: 0.7;
+    margin-bottom: 2.5rem; }
+    article .post-flourish.bottom {
+      width: 2.8125rem;
+      height: 2.8125rem; }
+    article .post-flourish.plane-icon {
       background-image: url("../img/plane-up.svg");
-      background-image: url("../img/plane-up.svg");
-      background-blend-mode: overlay;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      width: 1.5625rem;
-      height: 1.5625rem;
-      display: block;
-      margin: 0 auto;
-      opacity: 0.7;
-      margin-bottom: 2.5rem; }
+      background-image: url("../img/plane-up.svg"); }
+    article .post-flourish.japan-icon {
+      background-image: url("../img/map-japan.svg");
+      background-image: url("../img/map-japan.svg"); }
   article h1 {
     margin-bottom: 1.5rem; }
   article p,
