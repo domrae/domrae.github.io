@@ -1,9 +1,31 @@
+$flourish-image: "../img/plane-up.svg";
+
 article {
 	max-width: 900px;
 	margin: 0 auto;
 
 	.post-header, {
+		margin-top: rem(30);
 		text-align: center;
+
+		.post-meta {
+			margin-bottom: rem(15);
+		}
+
+		.post-flourish {
+			@include background-image(url($flourish-image));
+			background-blend-mode: overlay;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			width: rem(25);
+			height: rem(25);
+			display: block;
+			margin: 0 auto;
+			opacity: 0.7;
+			margin-bottom: rem(40);
+		}
+
 	}
 
 	h1 {

@@ -3,18 +3,18 @@ $banner-background-image: "http://im.vsco.co/1/51f48bb095e8247120/56c9e77a40955b
 .banner-wrap {
 	// width: 100%;
 	height: 100%;
-	padding: rem(20) rem(15);
+	// padding: rem(20) rem(15);
 	margin-bottom: rem(70);
 	background-color: tint($black, 95%);
 
 	@media (min-width: 1024px){
-		padding: rem(30) rem(22);
+		// padding: rem(30) rem(22);
 		margin-bottom: rem(100);
 	}
 }
 
 .banner-wrap .banner {
-	@include background-image(linear-gradient(transparent 40%, rgba($black, 0.7) 90%), url($banner-background-image)); 
+	@include background-image(linear-gradient(rgba($black, 0.5) 0%, transparent 20%, transparent 40%, rgba($black, 0.7) 90%), url($banner-background-image)); 
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;

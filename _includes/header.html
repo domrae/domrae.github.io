@@ -1,4 +1,9 @@
-<header class="site-header">
+    {% if page.url == "/" or page.url == "/index.html" %}
+
+<header class="site-header index">
+{% else %}
+<header class="site-header inner">
+{% endif %}
 
   <div class="wrapper">
 

@@ -1,6 +1,35 @@
+.site-header.index {
+	position: absolute;
+	width: 100%;
+	border-bottom: 0px;
+
+	.site-title {
+		color: $white;
+	}
+
+	.site-nav .page-link {
+		@media (min-width: 601px){
+			color: $white;
+		}
+	}
+}
+
+.heading-img {
+	width: rem(35);
+	margin: 0 auto;
+	margin-bottom: 15px;
+
+	img {
+		width: 100%;
+	}
+}
+
 .home {
+
 	.page-heading {
 		margin-bottom: rem(70);
+		font-size: 90%;
+		letter-spacing: rem(5);
 		
 		@media (min-width: 1024px){
 			margin-bottom: rem(100);

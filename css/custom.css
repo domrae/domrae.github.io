@@ -3,7 +3,7 @@ h2,
 h3,
 h4 {
   font-family: 'Open Sans', Helvetica, sans-serif;
-  font-weight: 900;
+  font-weight: 700;
   text-transform: uppercase; }
 
 p,
@@ -29,8 +29,27 @@ footer .social-media-list li a {
   footer .social-media-list li a:first-child {
     padding-top: 0; }
 
+.site-header.index {
+  position: absolute;
+  width: 100%;
+  border-bottom: 0px; }
+  .site-header.index .site-title {
+    color: #fff; }
+  @media (min-width: 601px) {
+    .site-header.index .site-nav .page-link {
+      color: #fff; } }
+
+.heading-img {
+  width: 2.1875rem;
+  margin: 0 auto;
+  margin-bottom: 15px; }
+  .heading-img img {
+    width: 100%; }
+
 .home .page-heading {
-  margin-bottom: 4.375rem; }
+  margin-bottom: 4.375rem;
+  font-size: 90%;
+  letter-spacing: 0.3125rem; }
   @media (min-width: 1024px) {
     .home .page-heading {
       margin-bottom: 6.25rem; } }
@@ -155,19 +174,16 @@ footer .social-media-list li a {
 
 .banner-wrap {
   height: 100%;
-  padding: 1.25rem 0.9375rem;
   margin-bottom: 4.375rem;
   background-color: #f2f2f2; }
   @media (min-width: 1024px) {
     .banner-wrap {
-      padding: 1.875rem 1.375rem;
       margin-bottom: 6.25rem; } }
 
 .banner-wrap .banner {
-  background-image: -webkit-linear-gradient(transparent 40%, rgba(0, 0, 0, 0.7) 90%), url("http://im.vsco.co/1/51f48bb095e8247120/56c9e77a40955b61337b8a75/vsco_022216.jpg");
-  background-image: -webkit-gradient(linear   ,    , color-stop(90%, rgba(0, 0, 0, 0.7))), url("http://im.vsco.co/1/51f48bb095e8247120/56c9e77a40955b61337b8a75/vsco_022216.jpg");
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7) 90%), url("http://im.vsco.co/1/51f48bb095e8247120/56c9e77a40955b61337b8a75/vsco_022216.jpg");
-  background-image: linear-gradient(to   , rgba(0, 0, 0, 0.7) 90%), url("http://im.vsco.co/1/51f48bb095e8247120/56c9e77a40955b61337b8a75/vsco_022216.jpg");
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5) 0%, transparent 20%, transparent 40%, rgba(0, 0, 0, 0.7) 90%), url("http://im.vsco.co/1/51f48bb095e8247120/56c9e77a40955b61337b8a75/vsco_022216.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), color-stop(20%, transparent), color-stop(40%, transparent), color-stop(90%, rgba(0, 0, 0, 0.7))), url("http://im.vsco.co/1/51f48bb095e8247120/56c9e77a40955b61337b8a75/vsco_022216.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0%, transparent 20%, transparent 40%, rgba(0, 0, 0, 0.7) 90%), url("http://im.vsco.co/1/51f48bb095e8247120/56c9e77a40955b61337b8a75/vsco_022216.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -231,7 +247,23 @@ article {
   max-width: 900px;
   margin: 0 auto; }
   article .post-header {
+    margin-top: 1.875rem;
     text-align: center; }
+    article .post-header .post-meta {
+      margin-bottom: 0.9375rem; }
+    article .post-header .post-flourish {
+      background-image: url("../img/plane-up.svg");
+      background-image: url("../img/plane-up.svg");
+      background-blend-mode: overlay;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 1.5625rem;
+      height: 1.5625rem;
+      display: block;
+      margin: 0 auto;
+      opacity: 0.7;
+      margin-bottom: 2.5rem; }
   article h1 {
     margin-bottom: 1.5rem; }
   article p,
