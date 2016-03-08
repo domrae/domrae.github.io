@@ -46,6 +46,9 @@ footer .social-media-list li a {
   display: block; }
   footer .social-media-list li a:first-child {
     padding-top: 0; }
+footer .final-say {
+  font-size: 0.875rem;
+  line-height: 1; }
 
 .site-header {
   position: absolute;

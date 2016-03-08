@@ -59,6 +59,7 @@ footer {
 	.footer-heading {
 		letter-spacing: $title-spacing;
 	}
+
 	.social-media-list {
 		li a {
 			padding: rem(20) 0;
@@ -68,6 +69,11 @@ footer {
 				padding-top: 0;
 			}
 		}
+	}
+
+	.final-say {
+		font-size: rem(14);
+		line-height: 1;
 	}
 }
 
