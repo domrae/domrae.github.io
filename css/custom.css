@@ -245,6 +245,7 @@ footer .social-media-list li a {
       min-height: 25rem; } }
   @media (min-width: 1024px) {
     .banner-wrap .banner {
+      background-size: 100%;
       min-height: 37.5rem; } }
   @media (min-width: 1200px) {
     .banner-wrap .banner {
@@ -260,7 +261,6 @@ footer .social-media-list li a {
         width: 60%; } }
     @media (min-width: 1024px) {
       .banner-wrap .banner .text {
-        background-size: 100%;
         width: 40%;
         margin-bottom: 5rem; } }
     .banner-wrap .banner .text a {
