@@ -220,8 +220,11 @@ footer .social-media-list li a {
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
+  -webkit-flex-direction: row;
   flex-direction: row;
+  -webkit-align-items: flex-end;
   align-items: flex-end;
+  -webkit-justify-content: center;
   justify-content: center;
   min-height: 18.75rem; }
   .banner-wrap .banner:hover, .banner-wrap .banner:active {
