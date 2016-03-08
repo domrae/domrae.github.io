@@ -305,6 +305,7 @@ article {
     margin-top: 1.875rem;
     text-align: center; }
     article .post-header .post-title {
+      letter-spacing: 0.3125rem;
       margin-bottom: 0.625rem; }
     article .post-header .post-meta {
       margin-bottom: 0.9375rem; }

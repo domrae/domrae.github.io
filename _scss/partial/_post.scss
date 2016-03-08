@@ -15,6 +15,7 @@ article {
 		text-align: center;
 
 		.post-title {
+			letter-spacing: $title-spacing;
 			margin-bottom: rem(10);
 		}
 
