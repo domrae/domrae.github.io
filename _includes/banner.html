@@ -1,8 +1,37 @@
-<div class="banner-wrap">
-	<div class="banner bg">
+{% if page.url == "/" or page.url == "/index.html" %}
+<div class="banner-wrap inner">
+	<div class="banner bg index">
+{% else %}
+<div class="banner-wrap inner">
+	<div class="banner bg inner">
+{% endif %}
 		<span class="text">
 			<h3>#{{ site.banner_title}}</h3>
 			<h5>{{ site.banner_subtitle}}</h5>
 		</span>
 	</div>
 </div>
+
+
+
+
+
+<style type="text/css">
+{% if page.url == "/" or page.url == "/index.html" %}
+    {% if site.banner_image %}
+		.banner-wrap .banner {
+			background-image: -moz-linear-gradient(rgba(0,0,0, 0.5) 0%, transparent 20%, transparent 40%, rgba(0,0,0, 0.7) 90%), url("{{ site.banner_image}}");
+			background-image: -webkit-linear-gradient(rgba(0,0,0, 0.5) 0%, transparent 20%, transparent 40%, rgba(0,0,0, 0.7) 90%), url("{{ site.banner_image}}");
+			background-image: linear-gradient(rgba(0,0,0, 0.5) 0%, transparent 20%, transparent 40%, rgba(0,0,0, 0.7) 90%), url("{{ site.banner_image}}");
+		}
+	{% endif %}
+{% else %}
+    {% if page.cover_image %}
+		.banner-wrap .banner {
+			background-image: -moz-linear-gradient(rgba(0,0,0, 0.5) 0%, transparent 20%, rgba(0,0,0, 0.7) 60%), url("{{ page.cover_image }}");
+			background-image: -webkit-linear-gradient(rgba(0,0,0, 0.5) 0%, transparent 20%, rgba(0,0,0, 0.7) 60%), url("{{ page.cover_image }}");
+			background-image: linear-gradient(rgba(0,0,0, 0.5) 0%, transparent 20%, rgba(0,0,0, 0.7) 60%), url("{{ page.cover_image }}");
+		}
+	{% endif %}
+{% endif %}
+</style>

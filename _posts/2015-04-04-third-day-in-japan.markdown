@@ -3,6 +3,7 @@ layout: post
 title:  "Day three"
 date:   2015-04-04 19:57:52 +0800
 thumbnail: "https://c2.staticflickr.com/4/3850/14344188986_706d75bf39_n.jpg"
+cover_image: "https://c2.staticflickr.com/4/3850/14344188986_706d75bf39_n.jpg"
 categories: jekyll update
 ---
 

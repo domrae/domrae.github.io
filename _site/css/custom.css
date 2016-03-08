@@ -47,14 +47,14 @@ footer .social-media-list li a {
   footer .social-media-list li a:first-child {
     padding-top: 0; }
 
-.site-header.index {
+.site-header {
   position: absolute;
   width: 100%;
   border-bottom: 0px; }
-  .site-header.index .site-title {
+  .site-header .site-title {
     color: #fff; }
   @media (min-width: 601px) {
-    .site-header.index .site-nav .page-link {
+    .site-header .site-nav .page-link {
       color: #fff; } }
 
 .heading-img {
@@ -207,6 +207,8 @@ footer .social-media-list li a {
   @media (min-width: 1024px) {
     .banner-wrap {
       margin-bottom: 6.25rem; } }
+  .banner-wrap.inner {
+    margin-bottom: 0; }
 
 .banner-wrap .banner {
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5) 0%, transparent 20%, transparent 40%, rgba(0, 0, 0, 0.7) 90%), url("http://im.vsco.co/1/51f48bb095e8247120/56c9e77a40955b61337b8a75/vsco_022216.jpg");
@@ -268,6 +270,18 @@ footer .social-media-list li a {
     @media (min-width: 1200px) {
       .banner-wrap .banner .text h5 {
         font-size: 1.25rem; } }
+
+.banner-wrap.inner .banner {
+  min-height: 15.625rem; }
+  @media (min-width: 640px) {
+    .banner-wrap.inner .banner {
+      min-height: 18.75rem; } }
+  @media (min-width: 1024px) {
+    .banner-wrap.inner .banner {
+      min-height: 21.875rem; } }
+  @media (min-width: 1200px) {
+    .banner-wrap.inner .banner {
+      min-height: 25rem; } }
 
 article {
   max-width: 900px;

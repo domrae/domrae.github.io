@@ -11,6 +11,10 @@ $banner-background-image: "http://im.vsco.co/1/51f48bb095e8247120/56c9e77a40955b
 		// padding: rem(30) rem(22);
 		margin-bottom: rem(100);
 	}
+
+	&.inner {
+		margin-bottom: 0;
+	}
 }
 
 .banner-wrap .banner {
@@ -40,6 +44,7 @@ $banner-background-image: "http://im.vsco.co/1/51f48bb095e8247120/56c9e77a40955b
 	@media (min-width: 1200px){
 		min-height: rem(700);
 	}
+
 
 	.text {
 		color: $white;
@@ -93,5 +98,21 @@ $banner-background-image: "http://im.vsco.co/1/51f48bb095e8247120/56c9e77a40955b
 				font-size: rem(20);
 			}
 		}
+	}
+}
+
+.banner-wrap.inner .banner {
+	min-height: rem(250);
+
+	@media (min-width: 640px){
+		min-height: rem(300);
+	}
+
+	@media (min-width: 1024px){
+		min-height: rem(350);
+	}
+
+	@media (min-width: 1200px){
+		min-height: rem(400);
 	}
 }
