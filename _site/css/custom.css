@@ -20,9 +20,27 @@ pre *,
 code * {
   font-family: monospace; }
 
+a {
+  -webkit-transition: 0.4s all ease-in-out;
+  -moz-transition: 0.4s all ease-in-out;
+  transition: 0.4s all ease-in-out;
+  color: #1abab5; }
+  a:hover, a:active, a:visited {
+    color: #159591; }
+
+::-moz-selection {
+  background-color: #1abab5;
+  color: #fff; }
+
+::selection {
+  background-color: #1abab5;
+  color: #fff; }
+
 .wrapper {
   max-width: none; }
 
+footer .footer-heading {
+  letter-spacing: 0.3125rem; }
 footer .social-media-list li a {
   padding: 1.25rem 0;
   display: block; }
@@ -85,8 +103,12 @@ footer .social-media-list li a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 18.75rem; }
+  height: 18.75rem;
+  overflow: hidden; }
   .post-item .post-fill {
+    -webkit-transition: 0.4s opacity ease-in-out;
+    -moz-transition: 0.4s opacity ease-in-out;
+    transition: 0.4s opacity ease-in-out;
     width: 100%;
     height: 100%;
     display: block;
@@ -114,16 +136,12 @@ footer .social-media-list li a {
   .post-item .post-link {
     position: relative;
     z-index: 2;
-    background: -webkit-linear-gradient(transparent 30%, rgba(0, 0, 0, 0.6) 80%);
-    background: -webkit-gradient(linear   ,    , color-stop(80%, rgba(0, 0, 0, 0.6)));
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.6) 80%);
-    background: linear-gradient(to   , rgba(0, 0, 0, 0.6) 80%); }
+    background: -webkit-linear-gradient(transparent 10%, rgba(0, 0, 0, 0.6) 50%);
+    background: linear-gradient(to   , rgba(0, 0, 0, 0.6) 50%); }
     @media (min-width: 640px) {
       .post-item .post-link {
-        background: -webkit-linear-gradient(transparent 40%, rgba(0, 0, 0, 0.4) 90%);
-        background: -webkit-gradient(linear   ,    , color-stop(90%, rgba(0, 0, 0, 0.4)));
-        background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4) 90%);
-        background: linear-gradient(to   , rgba(0, 0, 0, 0.4) 90%); } }
+        background: -webkit-linear-gradient(transparent 20%, rgba(0, 0, 0, 0.4) 60%);
+        background: linear-gradient(to   , rgba(0, 0, 0, 0.4) 60%); } }
     .post-item .post-link.post-wrap {
       display: table;
       width: 100%;
@@ -132,45 +150,55 @@ footer .social-media-list li a {
       display: table-cell;
       vertical-align: bottom;
       text-align: center;
-      -webkit-transform: translateY(-20px);
-      -ms-transform: translateY(-20px);
-      transform: translateY(-20px); }
-    .post-item .post-link h3,
+      -webkit-transition: 0.3s all ease-in-out;
+      -moz-transition: 0.3s all ease-in-out;
+      transition: 0.3s all ease-in-out;
+      -webkit-transform: translateY(-33%);
+      -moz-transform: translateY(-33%);
+      -ms-transform: translateY(-33%);
+      -o-transform: translateY(-33%);
+      transform: translateY(-33%); }
+      @media (min-width: 480px) {
+        .post-item .post-link .text-wrap {
+          -webkit-transform: translateY(-30%);
+          -moz-transform: translateY(-30%);
+          -ms-transform: translateY(-30%);
+          -o-transform: translateY(-30%);
+          transform: translateY(-30%); } }
+      @media (min-width: 1366px) {
+        .post-item .post-link .text-wrap {
+          -webkit-transform: translateY(-35%);
+          -moz-transform: translateY(-35%);
+          -ms-transform: translateY(-35%);
+          -o-transform: translateY(-35%);
+          transform: translateY(-35%); } }
+      @media (min-width: 1600px) {
+        .post-item .post-link .text-wrap {
+          -webkit-transform: translateY(-40%);
+          -moz-transform: translateY(-40%);
+          -ms-transform: translateY(-40%);
+          -o-transform: translateY(-40%);
+          transform: translateY(-40%); } }
+    .post-item .post-link h4,
     .post-item .post-link .post-meta {
       display: block;
       color: #fff;
       text-transform: uppercase; }
-    .post-item .post-link h3 {
-      margin-bottom: 0; }
+    .post-item .post-link h4 {
+      margin-bottom: 0;
+      letter-spacing: 0.3125rem; }
   .post-item:hover a, .post-item:active a {
     text-decoration: none; }
   .post-item:hover .post-fill, .post-item:active .post-fill {
-    opacity: 0.65;
-    -webkit-transition: 0.4s opacity ease-in-out;
-    transition: 0.4s opacity ease-in-out; }
+    opacity: 0.65; }
   .post-item:hover .post-link.post-wrap, .post-item:active .post-link.post-wrap {
     overflow: hidden; }
   .post-item:hover .post-link .text-wrap, .post-item:active .post-link .text-wrap {
-    -webkit-transform: translateY(-33%);
-    -ms-transform: translateY(-33%);
-    transform: translateY(-33%);
-    -webkit-transition: 0.25s transform ease-in-out;
-    transition: 0.25s transform ease-in-out; }
-    @media (min-width: 480px) {
-      .post-item:hover .post-link .text-wrap, .post-item:active .post-link .text-wrap {
-        -webkit-transform: translateY(-30%);
-        -ms-transform: translateY(-30%);
-        transform: translateY(-30%); } }
-    @media (min-width: 1366px) {
-      .post-item:hover .post-link .text-wrap, .post-item:active .post-link .text-wrap {
-        -webkit-transform: translateY(-35%);
-        -ms-transform: translateY(-35%);
-        transform: translateY(-35%); } }
-    @media (min-width: 1600px) {
-      .post-item:hover .post-link .text-wrap, .post-item:active .post-link .text-wrap {
-        -webkit-transform: translateY(-40%);
-        -ms-transform: translateY(-40%);
-        transform: translateY(-40%); } }
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+    transform: translateY(-20px); }
 
 .banner-wrap {
   height: 100%;
@@ -182,29 +210,20 @@ footer .social-media-list li a {
 
 .banner-wrap .banner {
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5) 0%, transparent 20%, transparent 40%, rgba(0, 0, 0, 0.7) 90%), url("http://im.vsco.co/1/51f48bb095e8247120/56c9e77a40955b61337b8a75/vsco_022216.jpg");
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), color-stop(20%, transparent), color-stop(40%, transparent), color-stop(90%, rgba(0, 0, 0, 0.7))), url("http://im.vsco.co/1/51f48bb095e8247120/56c9e77a40955b61337b8a75/vsco_022216.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0%, transparent 20%, transparent 40%, rgba(0, 0, 0, 0.7) 90%), url("http://im.vsco.co/1/51f48bb095e8247120/56c9e77a40955b61337b8a75/vsco_022216.jpg");
-  background-size: cover;
+  -webkit-transition: 0.5s background-size ease-in-out;
+  -moz-transition: 0.5s background-size ease-in-out;
+  transition: 0.5s background-size ease-in-out;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
   min-height: 18.75rem; }
+  .banner-wrap .banner:hover, .banner-wrap .banner:active {
+    background-size: 110%; }
   @media (min-width: 640px) {
     .banner-wrap .banner {
       min-height: 25rem; } }
@@ -227,6 +246,11 @@ footer .social-media-list li a {
       .banner-wrap .banner .text {
         width: 40%;
         margin-bottom: 5rem; } }
+    .banner-wrap .banner .text a {
+      color: #fff; }
+      .banner-wrap .banner .text a:hover, .banner-wrap .banner .text a:active {
+        text-decoration: none;
+        color: #1abab5; }
     .banner-wrap .banner .text h1 {
       margin-bottom: 0.625rem;
       font-size: 1.75rem; }
@@ -239,6 +263,8 @@ footer .social-media-list li a {
       @media (min-width: 1200px) {
         .banner-wrap .banner .text h1 {
           font-size: 2.5rem; } }
+    .banner-wrap .banner .text h3 {
+      letter-spacing: 0.3125rem; }
     @media (min-width: 1200px) {
       .banner-wrap .banner .text h5 {
         font-size: 1.25rem; } }
@@ -249,6 +275,8 @@ article {
   article .post-header {
     margin-top: 1.875rem;
     text-align: center; }
+    article .post-header .post-title {
+      margin-bottom: 0.625rem; }
     article .post-header .post-meta {
       margin-bottom: 0.9375rem; }
   article .post-flourish {
@@ -256,21 +284,43 @@ article {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 1.5625rem;
-    height: 1.5625rem;
+    width: 1.875rem;
+    height: 1.875rem;
     display: block;
     margin: 0 auto;
     opacity: 0.7;
-    margin-bottom: 2.5rem; }
-    article .post-flourish.bottom {
+    margin-bottom: 3.75rem; }
+    article .post-flourish.top {
+      margin-top: 1.875rem;
       width: 2.8125rem;
       height: 2.8125rem; }
-    article .post-flourish.plane-icon {
+    article .post-flourish.bottom {
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg); }
+    article .post-flourish.plane-up {
       background-image: url("../img/plane-up.svg");
       background-image: url("../img/plane-up.svg"); }
-    article .post-flourish.japan-icon {
+    article .post-flourish.japan {
       background-image: url("../img/map-japan.svg");
       background-image: url("../img/map-japan.svg"); }
+    article .post-flourish.unagi-nigiri {
+      background-image: url("../img/unagi-nigiri.svg");
+      background-image: url("../img/unagi-nigiri.svg"); }
+    article .post-flourish.udon {
+      background-image: url("../img/udon.svg");
+      background-image: url("../img/udon.svg"); }
+    article .post-flourish.nigiri {
+      background-image: url("../img/nigiri.svg");
+      background-image: url("../img/nigiri.svg"); }
+    article .post-flourish.ikura-gunkan-maki {
+      background-image: url("../img/ikura-gunkan-maki.svg");
+      background-image: url("../img/ikura-gunkan-maki.svg"); }
+    article .post-flourish.okonomiyaki {
+      background-image: url("../img/okonomiyaki.svg");
+      background-image: url("../img/okonomiyaki.svg"); }
   article h1 {
     margin-bottom: 1.5rem; }
   article p,
@@ -280,10 +330,29 @@ article {
     width: 100%;
     opacity: 0;
     -webkit-transform: scale(0);
+    -moz-transform: scale(0);
     -ms-transform: scale(0);
-    transform: scale(0); }
+    -o-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: 0.2s all linear;
+    -moz-transition: 0.2s all linear;
+    transition: 0.2s all linear; }
+    @media (min-width: 768px) {
+      article p img {
+        -webkit-transition: 0.5s all linear;
+        -moz-transition: 0.5s all linear;
+        transition: 0.5s all linear; } }
+    article p img.ready {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+      transform: scale(1); }
     article p img[data-featherlight] {
       cursor: pointer; }
+    article p img:hover[data-featherlight] {
+      opacity: 0.8; }
   article .vert-img {
     text-align: center; }
     @media (min-width: 640px) {

@@ -19,6 +19,7 @@ function kickLinksOut(link){
 	}
 }
 
+
 function initFeatherlight(){
 	var imgArr = $('article img').get();
 	var hrefVal;
@@ -69,9 +70,22 @@ function sbsVertImg(){
 	}
 }
 
+function generateFoodIcon(){
+	var iconArr = ["unagi-nigiri", "udon", "nigiri", "ikura-gunkan-maki", "okonomiyaki"]
+	var i = Math.floor((Math.random() * 5));
+
+	$('.post-flourish.top').addClass(iconArr[i]);
+}
+
 $(document).ready(function(){
 	$postGrid.imagesLoaded().progress( function() {
 		$postGrid.masonry('layout');
+	});
+
+	var linkRef = 'https://www.instagram.com/explore/tags/' + $('.banner .text h3').text().substring(1);
+	$('.banner .text h3').wrap('<a></a>').parent().attr({
+		'target':'_blank',
+		'href':linkRef,
 	});
 
 	var $socialLinks = $('.social-media-list li a');
@@ -80,28 +94,13 @@ $(document).ready(function(){
 
 	if ($('article').length > 0) {
 		initFeatherlight();
+		generateFoodIcon();
 
 		$('article').imagesLoaded(function(){
 			if ($(window).width() > 768){
-				$('article img').delay('400').css({
-					"opacity":"1",
-					"-moz-transform":"scale(1)",
-					"-webkit-transform":"scale(1)",
-					"transform":"scale(1)",
-					"-moz-transition":"all 0.5s ease-in-out",
-					"-webkit-transition":"all 0.5s ease-in-out",
-					"transition":"all 0.5s ease-in-out"
-				});
+				$('article img').delay('400').addClass('ready');
 			} else {
-				$('article img').css({
-					"opacity":"1",
-					"-moz-transform":"scale(1)",
-					"-webkit-transform":"scale(1)",
-					"transform":"scale(1)",
-					"-moz-transition":"all 0.2s linear",
-					"-webkit-transition":"all 0.2s linear",
-					"transition":"all 0.2s linear"
-				});
+				$('article img').addClass('ready');
 			}
 			vertImgFix();
 			sbsVertImg();

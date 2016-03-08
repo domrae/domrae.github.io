@@ -15,7 +15,8 @@ $banner-background-image: "http://im.vsco.co/1/51f48bb095e8247120/56c9e77a40955b
 
 .banner-wrap .banner {
 	@include background-image(linear-gradient(rgba($black, 0.5) 0%, transparent 20%, transparent 40%, rgba($black, 0.7) 90%), url($banner-background-image)); 
-	background-size: cover;
+	@include transition(0.5s background-size ease-in-out);
+	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: center;
 	display: flex;
@@ -23,6 +24,11 @@ $banner-background-image: "http://im.vsco.co/1/51f48bb095e8247120/56c9e77a40955b
 	align-items: flex-end;
 	justify-content: center;
 	min-height: rem(300);
+
+	&:hover,
+	&:active {
+		background-size: 110%;
+	}
 
 
 	@media (min-width: 640px){
@@ -51,6 +57,16 @@ $banner-background-image: "http://im.vsco.co/1/51f48bb095e8247120/56c9e77a40955b
 			margin-bottom: rem(80);
 		}
 
+		a {
+			color: $white;
+
+			&:hover,
+			&:active {
+				text-decoration: none;
+				color: $accent;
+			}
+		}
+
 		h1 {
 			margin-bottom: rem(10);
 			font-size: rem(28);
@@ -66,6 +82,10 @@ $banner-background-image: "http://im.vsco.co/1/51f48bb095e8247120/56c9e77a40955b
 			@media (min-width: 1200px){
 				font-size: rem(40);
 			}
+		}
+
+		h3 {
+			letter-spacing: $title-spacing;
 		}
 
 		h5 {

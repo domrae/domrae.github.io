@@ -2,6 +2,8 @@
 
 $white: #fff;
 $black: #000;
+$accent: tint(#00B2AD, 10%);
+$title-spacing: rem(5);
 
 h1,
 h2,
@@ -27,12 +29,36 @@ pre *,
 code * {
 	font-family: monospace;
 }
+a {
+	@include transition(0.4s all ease-in-out);
+	color: $accent;
+
+
+	&:hover,
+	&:active,
+	&:visited {
+		color: shade($accent, 20%);
+	}
+}
+
+@include selection {
+  // background-color: shade($accent, 5%);
+  background-color: $accent;
+  color: $white;
+}
+
+.site-header {
+	// border-top-color: $accent;
+}
 
 .wrapper {
 	max-width: none;
 }
 
 footer {
+	.footer-heading {
+		letter-spacing: $title-spacing;
+	}
 	.social-media-list {
 		li a {
 			padding: rem(20) 0;
@@ -44,6 +70,7 @@ footer {
 		}
 	}
 }
+
 @import 'partial/homepage';
 @import 'partial/postlist';
 @import 'partial/banner';
