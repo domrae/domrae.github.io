@@ -216,7 +216,7 @@ footer .social-media-list li a {
   -webkit-transition: 0.5s background-size ease-in-out;
   -moz-transition: 0.5s background-size ease-in-out;
   transition: 0.5s background-size ease-in-out;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   display: -ms-flex;
@@ -237,8 +237,9 @@ footer .social-media-list li a {
   align-items: flex-end;
   justify-content: center;
   min-height: 18.75rem; }
-  .banner-wrap .banner:hover, .banner-wrap .banner:active {
-    background-size: 110%; }
+  @media (min-width: 1024px) {
+    .banner-wrap .banner:hover, .banner-wrap .banner:active {
+      background-size: 110%; } }
   @media (min-width: 640px) {
     .banner-wrap .banner {
       min-height: 25rem; } }
@@ -259,6 +260,7 @@ footer .social-media-list li a {
         width: 60%; } }
     @media (min-width: 1024px) {
       .banner-wrap .banner .text {
+        background-size: 100%;
         width: 40%;
         margin-bottom: 5rem; } }
     .banner-wrap .banner .text a {
