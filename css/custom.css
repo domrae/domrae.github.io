@@ -219,12 +219,22 @@ footer .social-media-list li a {
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  display: flex;
+  display: -ms-flex;
+  -ms-flex-direction: row;
+  -ms-align-items: flex-end;
+  -ms-justify-content: center;
+  display: -moz-box;
+  -moz-flex-direction: row;
+  -moz-align-items: flex-end;
+  -moz-justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
   -webkit-flex-direction: row;
-  flex-direction: row;
   -webkit-align-items: flex-end;
-  align-items: flex-end;
   -webkit-justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
   justify-content: center;
   min-height: 18.75rem; }
   .banner-wrap .banner:hover, .banner-wrap .banner:active {

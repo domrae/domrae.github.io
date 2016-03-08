@@ -23,12 +23,22 @@ $banner-background-image: "http://im.vsco.co/1/51f48bb095e8247120/56c9e77a40955b
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: center;
-	display: flex;
+	display: -ms-flex;
+	-ms-flex-direction: row;
+	-ms-align-items: flex-end;
+	-ms-justify-content: center;
+	display: -moz-box;
+	-moz-flex-direction: row;
+	-moz-align-items: flex-end;
+	-moz-justify-content: center;
+	display: -webkit-box;
+	display: -webkit-flex;
 	-webkit-flex-direction: row;
-	flex-direction: row;
 	-webkit-align-items: flex-end;
-	align-items: flex-end;
 	-webkit-justify-content: center;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
 	justify-content: center;
 	min-height: rem(300);
 
