@@ -377,6 +377,8 @@ article {
       opacity: 0.8; }
   article .vert-img {
     text-align: center; }
+    article .vert-img.txt {
+      text-align: left; }
     @media (min-width: 640px) {
       article .vert-img img {
         width: auto;

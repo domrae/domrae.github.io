@@ -103,6 +103,11 @@ article {
 	.vert-img {
 		text-align: center;
 
+		&.txt {
+			text-align: left;
+			// padding-right: rem(10);
+		}
+
 		img {
 
 			@media (min-width: 640px){
