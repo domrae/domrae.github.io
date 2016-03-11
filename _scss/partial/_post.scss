@@ -9,7 +9,9 @@ $flourish-okonomiyaki: "../img/okonomiyaki.svg";
 article {
 	max-width: 900px;
 	margin: 0 auto;
-
+	// (11 Mar 2016)
+	margin-top: 90px;
+	
 	.post-header, {
 		margin-top: rem(30);
 		text-align: center;

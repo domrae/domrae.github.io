@@ -91,7 +91,8 @@
 			display: table-cell;
 			vertical-align: bottom;
 			text-align: center;
-			@include transition(0.3s all ease-in-out);
+			// (11 Mar 2016)
+			// @include transition(0.3s all ease-in-out);
 			@include transform(translateY(-33%));
 			// @include transform(translateY(-90px));
 
@@ -141,7 +142,9 @@
 		}
 
 		.post-fill {
-			opacity: 0.65;
+			// (11 Mar 2016)
+			// opacity: 0.65;
+			opacity: 0.45;
 			// @include transform(scale(1));
 			// @include transition(0.4s transform ease-in-out, 0.4s opacity ease-in-out);
 		}
@@ -151,7 +154,8 @@
 		}
 
 		.post-link .text-wrap {
-			@include transform(translateY(-20px));
+			// (11 Mar 2016)
+			// @include transform(translateY(-20px));
 			// h4 {color: $accent;}
 		}
 	}

@@ -67,6 +67,13 @@ footer .final-say {
   .heading-img img {
     width: 100%; }
 
+.page-heading,
+.heading-img {
+  display: none; }
+
+.page-content {
+  padding-top: 0; }
+
 .home .page-heading {
   margin-bottom: 4.375rem;
   font-size: 90%;
@@ -153,9 +160,6 @@ footer .final-say {
       display: table-cell;
       vertical-align: bottom;
       text-align: center;
-      -webkit-transition: 0.3s all ease-in-out;
-      -moz-transition: 0.3s all ease-in-out;
-      transition: 0.3s all ease-in-out;
       -webkit-transform: translateY(-33%);
       -moz-transform: translateY(-33%);
       -ms-transform: translateY(-33%);
@@ -193,32 +197,19 @@ footer .final-say {
   .post-item:hover a, .post-item:active a {
     text-decoration: none; }
   .post-item:hover .post-fill, .post-item:active .post-fill {
-    opacity: 0.65; }
+    opacity: 0.45; }
   .post-item:hover .post-link.post-wrap, .post-item:active .post-link.post-wrap {
     overflow: hidden; }
-  .post-item:hover .post-link .text-wrap, .post-item:active .post-link .text-wrap {
-    -webkit-transform: translateY(-20px);
-    -moz-transform: translateY(-20px);
-    -ms-transform: translateY(-20px);
-    -o-transform: translateY(-20px);
-    transform: translateY(-20px); }
 
 .banner-wrap {
   height: 100%;
-  margin-bottom: 4.375rem;
   background-color: #f2f2f2; }
-  @media (min-width: 1024px) {
-    .banner-wrap {
-      margin-bottom: 6.25rem; } }
   .banner-wrap.inner {
     margin-bottom: 0; }
 
 .banner-wrap .banner {
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.5) 0%, transparent 20%, transparent 40%, rgba(0, 0, 0, 0.7) 90%), url("http://im.vsco.co/1/51f48bb095e8247120/56c9e77a40955b61337b8a75/vsco_022216.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0%, transparent 20%, transparent 40%, rgba(0, 0, 0, 0.7) 90%), url("http://im.vsco.co/1/51f48bb095e8247120/56c9e77a40955b61337b8a75/vsco_022216.jpg");
-  -webkit-transition: 0.5s background-size ease-in-out;
-  -moz-transition: 0.5s background-size ease-in-out;
-  transition: 0.5s background-size ease-in-out;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -240,9 +231,6 @@ footer .final-say {
   align-items: flex-end;
   justify-content: center;
   min-height: 18.75rem; }
-  @media (min-width: 1024px) {
-    .banner-wrap .banner:hover, .banner-wrap .banner:active {
-      background-size: 110%; } }
   @media (min-width: 640px) {
     .banner-wrap .banner {
       min-height: 25rem; } }
@@ -303,7 +291,8 @@ footer .final-say {
 
 article {
   max-width: 900px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-top: 90px; }
   article .post-header {
     margin-top: 1.875rem;
     text-align: center; }
