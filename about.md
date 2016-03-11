@@ -19,12 +19,11 @@ We first met somewhere in the middle of the Baltic Sea between Stockholm and Tal
 <p></p>
 
 <p> -->
-Both of us crave for days where we can get a chance to just slip into a hammock undisturbed at sunset with an ice cold beer and a slow sway to the tunes of our favourite song.
-<!-- </p> -->
+Both of us crave for days where we can get a chance to just slip into a hammock undisturbed at sunset with an ice cold beer and slowly sway to the tune of our favourite song.
 
-<!-- <hr style="margin: 30px 0;">
+<div class="post-flourish top beach"></div>
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+<!-- This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
 
 You can find the source code for the Jekyll new theme at:
 {% include icon-github.html username="jglovier" %} /

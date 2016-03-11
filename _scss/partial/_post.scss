@@ -5,6 +5,9 @@ $flourish-udon: "../img/udon.svg";
 $flourish-nigiri: "../img/nigiri.svg";
 $flourish-ikura-gunkan-maki: "../img/ikura-gunkan-maki.svg";
 $flourish-okonomiyaki: "../img/okonomiyaki.svg";
+$flourish-beach: "../img/beach.svg";
+$flourish-summer: "../img/summer.svg";
+$flourish-sea: "../img/sea.svg";
 
 article {
 	max-width: 900px;
@@ -57,6 +60,11 @@ article {
 		&.nigiri {@include background-image(url($flourish-nigiri));}
 		&.ikura-gunkan-maki {@include background-image(url($flourish-ikura-gunkan-maki));}
 		&.okonomiyaki {@include background-image(url($flourish-okonomiyaki));}
+
+		&.beach {@include background-image(url($flourish-beach));}
+		&.sea {@include background-image(url($flourish-sea));}
+		&.summer {@include background-image(url($flourish-summer));}
+
 	}
 
 	h1 {

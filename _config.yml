@@ -10,11 +10,10 @@ title: domraeholiday
 # email: dominicgangx@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   One couple's brave attempt at a pretentious travelogue.
-  First stop, Tokyo!
 baseurl: "" # the subpath of your site, e.g. /blog
 banner_title: udomraemen
 banner_subtitle: > 
- 'Tsum'
+ Tokyo!
 banner_image: "http://im.vsco.co/1/51f48bb095e8247120/56c9e77a40955b61337b8a75/vsco_022216.jpg"
 url: "http://domrae.github.io" # the base hostname & protocol for your site
 instagram_username_1: dommmm

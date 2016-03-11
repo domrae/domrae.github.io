@@ -343,6 +343,15 @@ article {
     article .post-flourish.okonomiyaki {
       background-image: url("../img/okonomiyaki.svg");
       background-image: url("../img/okonomiyaki.svg"); }
+    article .post-flourish.beach {
+      background-image: url("../img/beach.svg");
+      background-image: url("../img/beach.svg"); }
+    article .post-flourish.sea {
+      background-image: url("../img/sea.svg");
+      background-image: url("../img/sea.svg"); }
+    article .post-flourish.summer {
+      background-image: url("../img/summer.svg");
+      background-image: url("../img/summer.svg"); }
   article h1 {
     margin-bottom: 1.5rem; }
   article p,
