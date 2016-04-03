@@ -1,37 +1,36 @@
 ---
 layout: post
-title:  "First day"
-date:   2016-04-02 20:57:52 +0800
-thumbnail: "https://c1.staticflickr.com/3/2916/14344260996_c2b68c15e7_n.jpg"
-cover_image: "https://c1.staticflickr.com/3/2916/14344260996_c2b68c15e7_n.jpg"
+title:  "Day Zero"
+date:   2016-04-02 23:57:52 +0900
+thumbnail: "https://farm2.staticflickr.com/1707/26185227026_11fe3b1653_z_d.jpg"
+cover_image: "https://farm2.staticflickr.com/1707/26185227026_d5d9b4b38f_k_d.jpg"
 categories: jekyll update
 ---
 
-You are a part of the Rebel Alliance and a traitor! Take her away! I want to come with you to Alderaan. There's nothing for me here now. I want to learn the ways of the Force and be a Jedi, like my father before me. She must have hidden the plans in the escape pod. Send a detachment down to retrieve them, and see to it personally, Commander. There'll be no one to stop us this time! Kid, I've flown from one side of this galaxy to the other. I've seen a lot of strange stuff, but I've never seen anything to make me believe there's one all-powerful Force controlling everything. There's no mystical energy field that controls my destiny. It's all a lot of simple tricks and nonsense. Oh God, my uncle. How am I ever gonna explain this?
+After 7 hours of flight, 30mins clearing immigration and 1 hour bus journey to Shibuya, 5 min walk to our place, we were so exhausted when we reached our room! It was 10 deg in the city which we totally love :) definitely choose 10 deg over the hazy 35 deg in sg.
 
-![This is our picture test](http://im.vsco.co/1/51f48bb095e8247120/56d19abe40955b61337b8a81/vsco_022716.jpg)
+![Rae](https://farm2.staticflickr.com/1715/26144844001_b0cdfda659_k_d.jpg)
 
-![Wot wot pictures!](http://im.vsco.co/1/51f48bb095e8247120/56d19b4540955b61337b8a82/vsco_022716.jpg)
+![Dom](https://farm2.staticflickr.com/1571/26211148075_67e128f67b_k_d.jpg)
 
-#### What good is a reward if you ain't around to use it? Besides, attacking that battle station ain't my idea of courage. It's more like…suicide.
+We headed out to grab some dinner and stroll around Shibuya. Since it was Saturday, Shibuya was filled with streams of human traffic everywhere. Saw the prized Shibuya crossing, took our fair share of photos and time lapses. Decided to pop into the Yoshinoya around the corner. Tasted pretty much the same but the Tokyo ver had soy sauce green onions and a raw egg. The combi tasted good and we wondered why sg did not serve it the same way. Maybe cause raw egg not safe?
 
-No! Alderaan is peaceful. We have no weapons. You can't possibly… Still, she's got a lot of spirit. I don't know, what do you think? You're all clear, kid. Let's blow this thing and go home! Red Five standing by.
+![Yoshinoya Egg](https://farm2.staticflickr.com/1685/26185236156_b7f57e6796_k_d.jpg)
 
-1. Partially, but it also obeys your commands.
-2. I need your help, Luke. She needs your help. I'm getting too old for this sort of thing.
-3. What?!
+Continued blind walking around the area occasionally popping into different shops. We saw the police taking a fingerprint sample at a photobooth which was quite exciting, other than that nothing much and we called it a night :)
 
-#### I call it luck.
+![Rae 2](https://farm2.staticflickr.com/1510/25608491223_436ad07b0d_k_d.jpg)
 
-![Another picture here](http://im.vsco.co/1/51f48bb095e8247120/5687e08745331ed8698b4568/23b81fbf-c91f-4434-b5a7-ec04ddefe9f6.jpg)
+![Dom 2](https://farm2.staticflickr.com/1657/25938268440_c0e5786f3a_k_d.jpg)
 
-I'm surprised you had the courage to take the responsibility yourself. Red Five standing by. Don't underestimate the Force. Hey, Luke! May the Force be with you. A tremor in the Force. The last time I felt it was in the presence of my old master.
+<div>&nbsp;</div>
 
-![Vertical Picture Alone](https://igcdn-photos-f-a.akamaihd.net/hphotos-ak-xaf1/t51.2885-15/e35/12677669_460499964143781_1829844892_n.jpg)
+![Socks](https://farm2.staticflickr.com/1719/26211151645_06e06ebe83_k_d.jpg)
 
-Remember, a Jedi can feel the Force flowing through him. I want to come with you to Alderaan. There's nothing for me here now. I want to learn the ways of the Force and be a Jedi, like my father before me. You're all clear, kid. Let's blow this thing and go home! You are a part of the Rebel Alliance and a traitor! Take her away! I need your help, Luke. She needs your help. I'm getting too old for this sort of thing.
+![Neko Atsume Bus](https://farm2.staticflickr.com/1627/25608487883_9cca7334ec_k_d.jpg)
 
-![Last picture](http://im.vsco.co/1/51f48bb095e8247120/5687de5e28331ecd628b456b/829050f7-8c9d-49bd-8762-f30360089bf2.jpg?w=800&dpr=1)
+<div>&nbsp;</div>
 
-[consectetur]:		http://www.google.com
-[inventore iusto]:	http://www.facebook.com
+![Sakura](https://farm2.staticflickr.com/1509/26118678832_08dc947e1c_k_d.jpg)
+
+<div>&nbsp;</div>
