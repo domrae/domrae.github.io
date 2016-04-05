@@ -7,11 +7,15 @@ cover_image: "http://im.vsco.co/1/51f48bb095e8247120/570285dc33544eee438b4574/fb
 categories: jekyll update
 ---
 
-Had Sushi for breakfast for the first time in our lives hahah at Tsujiki market. Did not bother to wake up for the tuna auction as I’ve seen a friend’s vid before (a loud man shouting jap continuously)
+Had Sushi for breakfast for the first time in our lives hahah at Tsukiji market. Did not bother to wake up for the tuna auction as I’ve seen a friend’s vid before (a loud man shouting jap continuously)
 
 ![sushi inside](//im.vsco.co/1/51f48bb095e8247120/570285d1ab7653f83c8b456e/0ba0696e-2a8b-4981-9421-03de98685904529309731.jpg)
 
 ![sushi god serving](http://im.vsco.co/1/51f48bb095e8247120/570285c668429707348b4568/ddc9e9ba-0dd9-4abd-b113-95e072d77d11-226461288.jpg)
+
+![every dish except the ebi](http://im.vsco.co/1/5702787f44a4e17354157/5703c5f3230c5f370e476a1b/vsco_040516.jpg)
+
+(every dish except the ebi :/)
 
 ![sushi tgt](http://im.vsco.co/1/5702787f44a4e17354157/5702793726ac58632485ea7a/vsco_040416.jpg)
 
@@ -45,7 +49,7 @@ Went to chase cherry blossoms for the second time at Meguro river. It was a real
 
 ![roast things shop](http://im.vsco.co/1/51f48bb095e8247120/57028616b3b6d9341a8b4567/cf069e7f-d537-4f49-822b-ab6f9dc75e9c1143839928.jpg)
 
-Visited the hipster Shimokitazawa area. Area was so free from tourists unlike Harajuku yesterday. Lotsa vintage shops and occasional cafes. Very quaint area to visit :>
+Visited the hipster Shimokitazawa area. It was so free from tourists unlike Harajuku yesterday. Lotsa vintage shops and occasional cafes. Very quaint area to visit :>
 
 ![hip rae](http://im.vsco.co/1/5702787f44a4e17354157/570284bc26ac58632485ea84/vsco_040516.jpg)
 
@@ -61,7 +65,7 @@ Visited the hipster Shimokitazawa area. Area was so free from tourists unlike Ha
 
 <div>&nbsp;</div>
 
-Since we were in the area, we went to hunt down the cute donuts (which tasted like ham cheng beng) at Sasazura (dom to find out). The sales staff was so passionate and looked so happy hahah. Made eye contact with a baby who was strapped to his mom’s back and he intently stared in our direction. Jap babies are super friendly and happy, I’ll never forget the baby who smiled back so widely immediately after I smiled at her when she was exiting the train on her mom’s back ❤️
+Since we were in the area, we went to hunt down the cute donuts (which tasted like ham cheng beng) at Sasazuka. The sales staff was so passionate and looked so happy hahah. Made eye contact with a baby who was strapped to his mom’s back and he intently stared in our direction. Jap babies are super friendly and happy, I’ll never forget the baby who smiled back so widely immediately after I smiled at her when she was exiting the train on her mom’s back ❤️
 
 ![cute donuts](http://im.vsco.co/1/5702787f44a4e17354157/5702847426ac58632485ea7f/vsco_040516.jpg)
 
