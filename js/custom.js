@@ -45,6 +45,12 @@ function vertImgFix(){
 	}
 }
 
+function imgTitle(){
+	$('article img').each(function(){
+		$(this).attr('title', $(this).attr('alt'));
+	});
+}
+
 function sbsVertImg(){
 	var imgArr = $('article .vert-img').get();
 
@@ -104,6 +110,7 @@ $(document).ready(function(){
 			}
 			vertImgFix();
 			sbsVertImg();
+			imgTitle();
 		})
 	}
 });
