@@ -2,8 +2,8 @@
 layout: post
 title:  "Day five"
 date:   2016-04-07 19:57:52 +0800
-thumbnail: "https://c1.staticflickr.com/3/2900/14180648479_fe86cf3157_n.jpg"
-cover_image: "https://c1.staticflickr.com/3/2900/14180648479_fe86cf3157_n.jpg"
+thumbnail: "https://farm2.staticflickr.com/1556/26039054030_db05728896_z_d.jpg"
+cover_image: "https://farm2.staticflickr.com/1556/26039054030_a6e6b939fa_k_d.jpg"
 categories: jekyll update
 ---
 
