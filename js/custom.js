@@ -19,7 +19,6 @@ function kickLinksOut(link){
 	}
 }
 
-
 function initFeatherlight(){
 	var imgArr = $('article img').get();
 	var hrefVal;
@@ -83,6 +82,12 @@ function generateFoodIcon(){
 	$('.post-flourish.top').addClass(iconArr[i]);
 }
 
+function articleLinks(){
+	$('article a').each(function(){
+		$(this).attr('target','_blank');
+	});
+}
+
 $(document).ready(function(){
 	$postGrid.imagesLoaded().progress( function() {
 		$postGrid.masonry('layout');
@@ -98,9 +103,11 @@ $(document).ready(function(){
 
 	kickLinksOut($socialLinks);
 
+
 	if ($('article').length > 0) {
 		initFeatherlight();
 		generateFoodIcon();
+		articleLinks();
 
 		$('article').imagesLoaded(function(){
 			if ($(window).width() > 768){
