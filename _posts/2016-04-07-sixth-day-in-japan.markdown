@@ -21,9 +21,13 @@ Started the day with ramen lunch at [Fu-Unji]. It was a different type of soup w
 
 After that we spent the day combing thru Ikebukuro. I made a new pair of specs at owndays as it was < $100sgd haha have been wanting a new pair for quite long. Dom made lens for his extra pair of specs (Y).
 
+Occasionally trying out the soups at vending machines.
+
 ![vending machine corn soup! mos-burger-ish standard](https://farm2.staticflickr.com/1528/26245685201_0c06577e50_k_d.jpg)
 
 ![serious bichon frise](https://farm2.staticflickr.com/1518/25707065004_23b6a1ebaf_k_d.jpg)
+
+Kinda interesting flavours - Strawberry & Maple, Chili & Passionfruit!
 
 ![special kitkat flavours at the kitkat chocolatory](https://farm2.staticflickr.com/1642/25709184823_cb6bdfe855_k_d.jpg)
 
