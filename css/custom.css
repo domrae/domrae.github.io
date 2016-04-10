@@ -407,3 +407,5 @@ article {
         article .vert-img.col-2-img img {
           max-height: none;
           width: 100%; } }
+  article .empty-fill {
+    clear: both; }

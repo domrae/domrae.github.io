@@ -6,7 +6,6 @@ var $postGrid = $('.post-grid').masonry({
 });
 
 function kickLinksOut(link){
-
 	if (!(link.is('a'))){
 		console.log(link + "is not a link.");
 		return false;
@@ -118,6 +117,14 @@ $(document).ready(function(){
 			vertImgFix();
 			sbsVertImg();
 			imgTitle();
+
+			$('article .vert-img.col-2-img').each(function(){
+				if (!$(this).prev().is('p')){
+					console.log('yeah its not p')
+					$(this).before('<div class="empty-fill"></div>');
+				}
+			});
+			
 		})
 	}
 });
