@@ -49,10 +49,6 @@ Equipment - bed able to fit up to 3 pax comfortably, iron & ironing board, free 
 
 Room was great for the two of us, not sure if good/bad that both of us have similar messy habits lol. We only had a neat room on our last night when we were packing hahha.
 
-![checking](https://farm2.staticflickr.com/1454/26343832635_72bdb3078f_k_d.jpg)
-
-![out](https://farm2.staticflickr.com/1484/26277590521_f1c1edc291_k_d.jpg)
-
 The 2 down sides would probably be that the owner didnt provide us with magic clean sheets and our floor was (kinda) dusty towards the last few days - me & my clean floor OCD AND the toilet was tiny (assuming its the same everywhere in Tokyo). It was like a toilet in a cabin, but aiya functional~
 
 Already looking forward to the next getaway with each other ♡
