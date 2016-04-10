@@ -108,12 +108,32 @@ article {
 		}
 	}
 
+	.caption {
+			// display: none;
+			font-size: rem(13);
+			font-style: italic;
+			text-align: left;
+
+			@media (min-width: 1024px){
+			font-size: rem(14);
+				display: block;
+				margin-top: rem(5);
+			}
+		}
+
 	.vert-img {
 		text-align: center;
 
+		.caption,
 		&.txt {
 			text-align: left;
 			// padding-right: rem(10);
+		}
+
+		.caption {
+			display: table;
+			margin: 0 auto;
+			margin-top: rem(5);
 		}
 
 		img {

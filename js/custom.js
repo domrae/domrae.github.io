@@ -46,6 +46,7 @@ function vertImgFix(){
 function imgTitle(){
 	$('article img').each(function(){
 		$(this).attr('title', $(this).attr('alt'));
+		$(this).parent().append('<span class="caption">'+$(this).attr('alt')+'</span>')
 	})
 }
 

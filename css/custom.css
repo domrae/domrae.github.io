@@ -384,10 +384,23 @@ article {
       cursor: pointer; }
     article p img:hover[data-featherlight] {
       opacity: 0.8; }
+  article .caption {
+    font-size: 0.8125rem;
+    font-style: italic;
+    text-align: left; }
+    @media (min-width: 1024px) {
+      article .caption {
+        font-size: 0.875rem;
+        display: block;
+        margin-top: 0.3125rem; } }
   article .vert-img {
     text-align: center; }
-    article .vert-img.txt {
+    article .vert-img .caption, article .vert-img.txt {
       text-align: left; }
+    article .vert-img .caption {
+      display: table;
+      margin: 0 auto;
+      margin-top: 0.3125rem; }
     @media (min-width: 640px) {
       article .vert-img img {
         width: auto;
