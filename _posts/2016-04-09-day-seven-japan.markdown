@@ -7,8 +7,6 @@ cover_image: "https://farm2.staticflickr.com/1674/25738712624_b6c7fd7e70_k_d.jpg
 categories: japan
 ---
 
-
-
 ![rae](http://im.vsco.co/1/5702787f44a4e17354157/570a0b3d848e60543718eec0/vsco_041016.jpg)
 
 ![dom](http://im.vsco.co/1/5702787f44a4e17354157/570a0b20848e60543718eebf/vsco_041016.jpg)
