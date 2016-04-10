@@ -382,8 +382,9 @@ article {
       transform: scale(1); }
     article p img[data-featherlight] {
       cursor: pointer; }
-    article p img:hover[data-featherlight] {
-      opacity: 0.8; }
+    @media (min-width: 1024px) {
+      article p img:hover[data-featherlight] {
+        opacity: 0.8; } }
   article .caption {
     font-size: 0.8125rem;
     font-style: italic;

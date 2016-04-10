@@ -104,7 +104,9 @@ article {
 		}
 
 		&:hover[data-featherlight]{
+			@media (min-width: 1024px){
 			opacity: 0.8;
+			}
 		}
 	}
 
