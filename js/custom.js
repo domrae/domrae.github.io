@@ -126,6 +126,11 @@ $(document).ready(function(){
 				}
 			});
 			
+			$('article p:not(.vert-img)').each(function(){
+				if ($(this).prev().hasClass('vert-img')){
+					$(this).before('<div class="empty-fill"></div>');
+				}
+			});
 		})
 	}
 });

@@ -19,7 +19,7 @@ On our way out we found a street nearby our apartment lined with cherry blossoms
 
 ![Sakura Street](https://farm2.staticflickr.com/1531/26145291191_9b12403fd9_k_d.jpg)
 
-![Rae](https://farm2.staticflickr.com/1506/26145291451_e4611bcc72_k_d.jpg)
+![Rainy day](https://farm2.staticflickr.com/1506/26145291451_e4611bcc72_k_d.jpg)
 
 It looked really nice despite the weather!
 
@@ -47,19 +47,13 @@ Hurried off to Shinjuku Gyoen to catch the cherry blossoms & have our hanami par
 
 
 
-![Looking at you](https://farm2.staticflickr.com/1674/25608941973_7960b80bc1_k_d.jpg)
+![one](https://farm2.staticflickr.com/1674/25608941973_7960b80bc1_k_d.jpg)
 
-![catch](https://farm2.staticflickr.com/1631/25606833494_dd076d1075_k_d.jpg)
-
-
+![two](https://farm2.staticflickr.com/1631/25606833494_dd076d1075_k_d.jpg)
 
 ![Blur](https://farm2.staticflickr.com/1689/25606834794_e1062bb6da_k_d.jpg)
 
-
-
 ![ayy](https://farm2.staticflickr.com/1599/26211604565_fc443e960e_k_d.jpg)
-
-
 
 ![lmao](https://farm2.staticflickr.com/1661/25938724620_a558452550_k_d.jpg)
 
