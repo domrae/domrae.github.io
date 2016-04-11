@@ -364,6 +364,8 @@ article {
   article p,
   article figure {
     margin-bottom: 1.875rem; }
+  article li {
+    margin-bottom: 0.3125rem; }
   article p img {
     width: 100%;
     opacity: 0;
