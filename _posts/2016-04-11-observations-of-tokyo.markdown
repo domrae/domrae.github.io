@@ -52,7 +52,6 @@ Did you know that....
 
 - You should not dip the base of the sushi into Soy sauce directly but instead, use a pickle as a brush for the sauce along the top of the sushi
 - Sushis are usually roughly 6cm long, small enough fit your mouth nicely
-(I think these 2 most interesting, you link more if u wna haha)
 
 [Sushi eating guide found at the legendary Jiro's site] (too exclusive for us plebs).
 
