@@ -20,7 +20,7 @@ Instead of the wondrous tech we expected to see, we encountered:
 
 - aging Suica (equivalent of Ezlink) top up machines and ATMs with mechanical keypads that both looked like they were built in the 1990s lol
 - niche shops that were still selling CDs/DVDs, there was even a huge Tower Records outlet there
-- yoshinoya (and most other eateries) were using a calculator shaped vending machine to press in orders which felt ancient compared to Sg where touch screens are used.  
+- yoshinoya (and most other eateries) were using a calculator shaped pda to press in orders which felt ancient compared to Sg where touch screens are used.  
 (To be fair, we actually like the vending machine ordering system since it's rather efficient..)
 - spotted [Freetel's dual screen flip phone] at Yodabashi Like seriously? android flip phones... lolz.  
 (Dom: android flip-phones, the latest trend yet to hit sg k)
