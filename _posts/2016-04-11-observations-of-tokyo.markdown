@@ -25,8 +25,6 @@ Instead of the wondrous tech we expected to see, we encountered:
 - spotted [Freetel's dual screen flip phone] at Yodabashi. Like seriously? android flip phones... lolz.  
 (Dom: android flip-phones, the latest trend yet to hit sg k)
 
-![]()
-
 #### 2. mega is (not that) mega.  
 Could be due to space constraints in Tokyo, but the Daiso store at Harajuku, touted as 'one of the biggest' in Tokyo was probably smaller than the Daiso at Vivo/City Square. Felt the same for the 'biggest' Don Quijote and Pokemon 'megastore'. Are we expecting too much?
 
@@ -35,7 +33,7 @@ It didn't really hit us till the last few days that there was almost never a plu
 
 Anyway did some research and they said that its because of a mixture of the following reasons:
 
-- they bike A LOT 🚲
+- They bike A LOT 🚲
 - Their food portions are small (personally I dont really think so haha) 🍱
 - Their diet is healthier: vege & seafood over red meat 🍣
 - Peer pressure as plump people are usually (kinda) ostracised 😔
