@@ -115,6 +115,7 @@ $(document).ready(function(){
 		$postGrid.masonry('layout');
 	});
 
+	// var linkRef = 'https://www.instagram.com/explore/tags/' + $('.banner .text h3').text().substring(1);
 	var linkRef = 'https://www.instagram.com/explore/tags/' + $('.banner .text h3').text().substring(1);
 	$('.banner .text h3').wrap('<a></a>').parent().attr({
 		'target':'_blank',
@@ -131,7 +132,7 @@ $(document).ready(function(){
 		generateFoodIcon();
 		articleLinks();
 
-		$('article').imagesLoaded(function(){
+		$('p').imagesLoaded(function(){
 			if ($(window).width() > 768){
 				$('article img').delay('400').addClass('ready');
 			} else {
@@ -141,9 +142,10 @@ $(document).ready(function(){
 			sbsVertImg();
 			imgTitle();
 
+
 			$('article .vert-img.col-2-img').each(function(){
 				if (!$(this).prev().is('p')){
-					console.log('yeah its not p')
+					// console.log('yeah its not p')
 					$(this).before('<div class="empty-fill"></div>');
 				}
 			});

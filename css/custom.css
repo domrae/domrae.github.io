@@ -436,12 +436,18 @@ article {
   font-family: 'Open Sans', Helvetica, sans-serif;
   font-weight: 400;
   letter-spacing: 0.125rem;
+  display: inline-block;
   font-size: 0.9375rem;
   text-transform: uppercase; }
+.pagination .prev {
+  float: left; }
 .pagination .next {
   float: right; }
 
 #backtotop {
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
   color: #fff;
   position: fixed;
   background: rgba(0, 0, 0, 0.8);
@@ -450,12 +456,13 @@ article {
   width: 4.375rem;
   height: 4.375rem;
   z-index: 9999;
-  bottom: 2.5rem;
-  right: 2.5rem;
   opacity: 0;
-  -webkit-transition: opacity 0.4s ease-in-out;
-  -moz-transition: opacity 0.4s ease-in-out;
-  transition: opacity 0.4s ease-in-out; }
+  bottom: 1.25rem;
+  right: 1.25rem; }
+  @media (min-width: 767px) {
+    #backtotop {
+      bottom: 2.5rem;
+      right: 2.5rem; } }
   #backtotop:hover {
     cursor: pointer; }
   #backtotop.show {

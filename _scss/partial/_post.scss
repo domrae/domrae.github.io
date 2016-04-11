@@ -182,14 +182,18 @@ article {
 	.prev,
 	.next {
 		@include opensans400;
+		display: inline-block;
 		font-size: rem(15);
 		text-transform: uppercase;
 	}
+
+	.prev {float: left;}
 
 	.next {float: right;}
 }
 
 #backtotop {
+	@include transition (opacity 0.4s ease-in-out);
 	color: $white;
 	position: fixed;
 	background: rgba($black, 0.8);
@@ -198,10 +202,14 @@ article {
 	width: rem(70);
 	height: rem(70);
 	z-index: 9999;
+	opacity: 0;
+	bottom: rem(20);
+	right: rem(20);
+
+	@media (min-width: 767px){
 	bottom: rem(40);
 	right: rem(40);
-	opacity: 0;
-	@include transition (opacity 0.4s ease-in-out);
+	}
 
 	&:hover {
 		cursor: pointer;
