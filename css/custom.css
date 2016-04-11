@@ -39,6 +39,12 @@ a {
 .wrapper {
   max-width: none; }
 
+nav a {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.125rem;
+  font-size: 1rem; }
+
 footer .footer-heading {
   letter-spacing: 0.3125rem; }
 footer .social-media-list li a {
@@ -88,7 +94,8 @@ footer .final-say {
 
 .post-list {
   margin-left: -1.875rem;
-  margin-right: -1.875rem; }
+  margin-right: -1.875rem;
+  margin-bottom: -1.875rem; }
   @media (max-width: 800px) {
     .post-list {
       margin-left: -0.9375rem;
@@ -423,3 +430,46 @@ article {
           width: 100%; } }
   article .empty-fill {
     clear: both; }
+
+.pagination .prev,
+.pagination .next {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.125rem;
+  font-size: 0.9375rem;
+  text-transform: uppercase; }
+.pagination .next {
+  float: right; }
+
+#backtotop {
+  color: #fff;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  border: solid 1px #000;
+  border-radius: 50%;
+  width: 4.375rem;
+  height: 4.375rem;
+  z-index: 9999;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out; }
+  #backtotop:hover {
+    cursor: pointer; }
+  #backtotop.show {
+    opacity: 1; }
+  #backtotop .wrap {
+    display: table;
+    height: 100%;
+    width: 100%; }
+  #backtotop span {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.125rem;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center; }

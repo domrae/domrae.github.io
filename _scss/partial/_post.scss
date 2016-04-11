@@ -177,3 +177,50 @@ article {
 		clear: both;
 	}
 }
+
+.pagination {
+	.prev,
+	.next {
+		@include opensans400;
+		font-size: rem(15);
+		text-transform: uppercase;
+	}
+
+	.next {float: right;}
+}
+
+#backtotop {
+	color: $white;
+	position: fixed;
+	background: rgba($black, 0.8);
+	border: solid 1px $black;
+	border-radius: 50%;
+	width: rem(70);
+	height: rem(70);
+	z-index: 9999;
+	bottom: rem(40);
+	right: rem(40);
+	opacity: 0;
+	@include transition (opacity 0.4s ease-in-out);
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	&.show { opacity: 1;}
+
+	.wrap {
+		display: table;
+		height: 100%;
+		width: 100%;
+	}
+
+	span {
+		@include opensans400;
+		font-size: rem(14);
+		text-transform: uppercase;
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+	}
+}

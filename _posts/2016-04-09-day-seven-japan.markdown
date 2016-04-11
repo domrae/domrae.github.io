@@ -14,6 +14,7 @@ categories: japan
 Had our last lunch at [Uogashi Nihon-Ichi], a standing sushi bar in Shibuya. We select the sushi and the chef places it on a leaf infront of us. Jap sushi def on a diff lvl from Singapore. Tried some rare-r flavours like crab innards, slightly broiled squid legs with mayo, boiled conger and ship roll with boiled manila clam amongst others. Yumz :> 10 pieces of sushi each, with such quality at only sgd$12, its a steal~
 
 ![Standing Sushi Bar](https://farm2.staticflickr.com/1674/25738712624_bc13a106b6_z_d.jpg)
+<!-- ![Standing Sushi Bar](){: data-src="https://farm2.staticflickr.com/1674/25738712624_bc13a106b6_z_d.jpg"} -->
 
 ![serving the sushi](https://farm2.staticflickr.com/1647/25740814973_3e5f243cf7_k_d.jpg)
 
