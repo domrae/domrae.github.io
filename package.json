@@ -1,0 +1,31 @@
+{
+  "name": "domrae.github.io",
+  "version": "1.0.0",
+  "description": "One couple's brave attempt at a pretentious travelogue.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/domrae/domrae.github.io.git"
+  },
+  "author": "Dominic Gan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/domrae/domrae.github.io/issues"
+  },
+  "homepage": "https://github.com/domrae/domrae.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "child_process": "^1.0.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^2.1.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-util": "^3.0.8"
+  }
+}
