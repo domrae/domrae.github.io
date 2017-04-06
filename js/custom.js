@@ -1,3 +1,6 @@
+/**
+ * masonry grid for home page
+ */
 var $postGrid = $('.post-grid').masonry({
 	itemSelector: '.post-item',
 	columnWidth: '.post-grid-sizer',
@@ -5,9 +8,12 @@ var $postGrid = $('.post-grid').masonry({
 	percentPosition: true
 });
 
+/**
+ * Verify links and convert to open in new tab
+ */
 function kickLinksOut(link){
 	if (!(link.is('a'))){
-		console.log(link + "is not a link.");
+		// console.log(link + "is not a link.");
 		return false;
 	}
 
@@ -18,31 +24,42 @@ function kickLinksOut(link){
 	}
 }
 
+/**
+ * Image modal viewer for articles
+ */
 function initFeatherlight(){
-	var imgArr = $('article img').get();
+	var articleImg = $('article img');
+	var imgArr = articleImg.get();
 	var hrefVal;
-
+	
+	// for each article image found, duplicate the img-src
+	// value into a data-featherlight attr
 	for (i=0; i<imgArr.length; i++){
 		 hrefVal = $(imgArr[i]).attr('src');
 		 $(imgArr[i]).attr('data-featherlight',hrefVal);
 	}
 
-	$('article img').featherlight();
+	articleImg.featherlight();
 
 }
 
+/**
+ * Detect portrait images and add class to fix alignment
+ */
 function vertImgFix(){
 	var imgArr = $('article img').get();
 
 	for (i=0; i<imgArr.length; i++){
-		// console.log($(imgArr[i]).width());
-		// console.log($(imgArr[i]).height());
 		if( $(imgArr[i]).width() < $(imgArr[i]).height() ){
 			$(imgArr[i]).parent().addClass('vert-img');
 		}
 	}
 }
 
+/**
+ * Add markdown image title/alt attr into a caption below 
+ * the image
+ */
 function imgTitle(){
 	$('article img').each(function(){
 		$(this).attr('title', $(this).attr('alt'));
@@ -50,13 +67,16 @@ function imgTitle(){
 	})
 }
 
+/**
+ * Detect side-by-side portrait images and add a class for
+ * alignment
+ */
 function sbsVertImg(){
 	var imgArr = $('article .vert-img').get();
 
 	j = 0;
 
 	if (imgArr.length <= 0) {
-		// console.log('no vertical images found');
 		return false;
 	}
 
@@ -69,12 +89,16 @@ function sbsVertImg(){
 	}
 
 	if (j > 0){
-		// console.log(j + "pairs of veritcal images found");
+		// console.log(j + "pairs of vertical images found");
 	} else {
 		// console.log("no pairs of vertical images found.");
 	}
 }
 
+/**
+ * Random food icon generated at end of each article
+ * - for japan articles only
+ */
 function generateFoodIcon(){
 	var iconArr = ["unagi-nigiri", "udon", "nigiri", "ikura-gunkan-maki", "okonomiyaki"]
 	var i = Math.floor((Math.random() * 5));
@@ -82,27 +106,34 @@ function generateFoodIcon(){
 	$('.post-flourish.top').addClass(iconArr[i]);
 }
 
+/**
+ * open all inline article links in a new tab
+ */
 function articleLinks(){
 	$('article a').each(function(){
 		$(this).attr('target','_blank');
 	});
 }
 
-if ($('#backtotop').length) {
+/**
+ * Back to top hover button in article page
+ */
+var back2Top = $('#backtotop');
+if (back2Top.length) {
     var scrollTrigger = 100, // px
         backToTop = function () {
             var scrollTop = $(window).scrollTop();
             if (scrollTop > scrollTrigger) {
-                $('#backtotop').addClass('show');
+               back2Top.addClass('show');
             } else {
-                $('#backtotop').removeClass('show');
+               back2Top.removeClass('show');
             }
         };
     backToTop();
     $(window).on('scroll', function () {
         backToTop();
     });
-    $('#backtotop').on('click', function (e) {
+    back2Top.on('click', function (e) {
         e.preventDefault();
         $('html,body').animate({
             scrollTop: 0
@@ -110,12 +141,14 @@ if ($('#backtotop').length) {
     });
 }
 
+/** 
+ * init scripts 
+ */
 $(document).ready(function(){
 	$postGrid.imagesLoaded().progress( function() {
 		$postGrid.masonry('layout');
 	});
 
-	// var linkRef = 'https://www.instagram.com/explore/tags/' + $('.banner .text h3').text().substring(1);
 	var linkRef = 'https://www.instagram.com/explore/tags/' + $('.banner .text h3').text().substring(1);
 	$('.banner .text h3').wrap('<a></a>').parent().attr({
 		'target':'_blank',
@@ -133,23 +166,33 @@ $(document).ready(function(){
 		articleLinks();
 
 		$('p').imagesLoaded(function(){
+			/**
+			 * Delay image display until all images in <p> tag
+			 * have been loaded
+			 */
 			if ($(window).width() > 768){
 				$('article img').delay('400').addClass('ready');
 			} else {
 				$('article img').addClass('ready');
 			}
+		
 			vertImgFix();
 			sbsVertImg();
 			imgTitle();
 
-
+			/**
+			 * add clearfix div to before side-by-side images
+			 * for alignment fix
+			 */
 			$('article .vert-img.col-2-img').each(function(){
 				if (!$(this).prev().is('p')){
-					// console.log('yeah its not p')
 					$(this).before('<div class="empty-fill"></div>');
 				}
 			});
 			
+			/**
+			 * add clearfix to before landscape images
+			 */
 			$('article p:not(.vert-img)').each(function(){
 				if ($(this).prev().hasClass('vert-img')){
 					$(this).before('<div class="empty-fill"></div>');
