@@ -1,12 +1,12 @@
-var gulp = require('gulp');
+var gulp 		= require('gulp');
 var browserSync = require('browser-sync');
-var sass = require('gulp-ruby-sass');
-var gutil = require('gulp-util');
-var prefix = require('gulp-autoprefixer');
-var cp = require('child_process');
-var rename = require('gulp-rename');
-var plumber = require('gulp-plumber');
-var cssnano = require('gulp-cssnano');
+var sass 		= require('gulp-ruby-sass');
+var gutil 		= require('gulp-util');
+var prefix 		= require('gulp-autoprefixer');
+var cp 			= require('child_process');
+var rename 		= require('gulp-rename');
+var plumber 	= require('gulp-plumber');
+var cssnano 	= require('gulp-cssnano');
 
 var jekyll = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -49,7 +49,8 @@ gulp.task('browser-sync', function() {
 });
 
 /**
- * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
+ * Compile files from _scss into both _site/css (for live injecting) 
+ * and site (for future jekyll builds)
  */
 gulp.task('sass', function () {
     return sass('_scss/custom.scss')
@@ -77,5 +78,15 @@ gulp.task('sass', function () {
  */
 gulp.task('default', ['browser-sync', 'sass'], function(){
     gulp.watch('_scss/**/*.scss', ['sass']);
-    gulp.watch(['about.md', 'feed.xml', '_config.yml', 'index.html', '_layouts/*.html', '_posts/*', '_includes/*.html', 'js/**/*.js', 'css/custom.css'], ['jekyll-rebuild']);
+    gulp.watch([
+	'about.md', 
+	'feed.xml', 
+	'_config.yml', 
+	'index.html', 
+	'_layouts/*.html', 
+	'_posts/*', 
+	'_includes/*.html', 
+	'js/**/*.js', 
+	'css/custom.css'
+	], ['jekyll-rebuild']);
 });
