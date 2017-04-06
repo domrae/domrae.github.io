@@ -1,6 +1,8 @@
 *.swp
 *.swo
 *~
-*.sass-cache
+*.sublime*
 
-/node_modules
+.sass-cache
+node_modules
+_site
