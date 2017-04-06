@@ -34,7 +34,15 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
  * Wait for jekyll-build, then launch the Server
  */
 gulp.task('browser-sync', function() {
-    browserSync(['_layouts/*.html', '_posts/*', '_includes/*.html', '_site/js/**/*.js', '_site/css/**/*.css'],{
+    browserSync([
+			'./*.md',
+			'./*.html',
+			'_layouts/*.html', 
+			'_posts/*', 
+			'_includes/*.html', 
+			'_site/js/**/*.js', 
+			'_site/css/**/*.css'
+		],{
         server: {
             baseDir: '_site'
         },
@@ -43,6 +51,14 @@ gulp.task('browser-sync', function() {
             port: 30045,
             weinre: {
                 port: 30046
+            }
+        },
+        notify: {
+            styles: {
+                top:            'auto',
+                bottom:         '0',
+                borderRadius:   '5px 5px 0 0',
+                background:     'rgba(27,32,50,0.7)',
             }
         }
     });
@@ -76,17 +92,17 @@ gulp.task('sass', function () {
  * Default task, running just `gulp` will compile the sass,
  * compile the jekyll site, launch BrowserSync & watch files.
  */
-gulp.task('default', ['browser-sync', 'sass'], function(){
+gulp.task('default', ['browser-sync', 'jekyll-build', 'sass'], function(){
     gulp.watch('_scss/**/*.scss', ['sass']);
     gulp.watch([
+	'./*.md',
+	'./*.html',
 	'about.md', 
 	'feed.xml', 
-	'_config.yml', 
-	'index.html', 
 	'_layouts/*.html', 
+	'_pages/*', 
 	'_posts/*', 
-	'_includes/*.html', 
-	'js/**/*.js', 
-	'css/custom.css'
+	'_includes/*.html',
+    'js/*.js'
 	], ['jekyll-rebuild']);
 });
