@@ -1,17 +1,10 @@
 /**
- * masonry grid for home page
- */
-var $postGrid = $('.post-grid').masonry({
-	itemSelector: '.post-item',
-	columnWidth: '.post-grid-sizer',
-	gutter: 0,
-	percentPosition: true
-});
-
-/**
  * Verify links and convert to open in new tab
+ * @return {[type]} [description]
  */
-function kickLinksOut(link){
+function kickLinksOut(){
+	var link = $('.social-media-list li a');
+
 	if (!(link.is('a'))){
 		// console.log(link + "is not a link.");
 		return false;
@@ -45,6 +38,7 @@ function initFeatherlight(){
 
 /**
  * Detect portrait images and add class to fix alignment
+ * @return {[type]} [description]
  */
 function vertImgFix(){
 	var imgArr = $('article img').get();
@@ -59,6 +53,7 @@ function vertImgFix(){
 /**
  * Add markdown image title/alt attr into a caption below 
  * the image
+ * @return {[type]} [description]
  */
 function imgTitle(){
 	$('article img').each(function(){
@@ -70,6 +65,7 @@ function imgTitle(){
 /**
  * Detect side-by-side portrait images and add a class for
  * alignment
+ * @return {[type]} [description]
  */
 function sbsVertImg(){
 	var imgArr = $('article .vert-img').get();
@@ -98,6 +94,7 @@ function sbsVertImg(){
 /**
  * Random food icon generated at end of each article
  * - for japan articles only
+ * @return {[type]} [description]
  */
 function generateFoodIcon(){
 	var iconArr = ["unagi-nigiri", "udon", "nigiri", "ikura-gunkan-maki", "okonomiyaki"]
@@ -108,6 +105,7 @@ function generateFoodIcon(){
 
 /**
  * open all inline article links in a new tab
+ * @return {[type]} [description]
  */
 function articleLinks(){
 	$('article a').each(function(){
@@ -117,58 +115,124 @@ function articleLinks(){
 
 /**
  * Back to top hover button in article page
+ * @return {[type]} [description]
  */
-var back2Top = $('#backtotop');
-if (back2Top.length) {
-    var scrollTrigger = 100, // px
-        backToTop = function () {
-            var scrollTop = $(window).scrollTop();
-            if (scrollTop > scrollTrigger) {
-               back2Top.addClass('show');
-            } else {
-               back2Top.removeClass('show');
-            }
-        };
-    backToTop();
-    $(window).on('scroll', function () {
-        backToTop();
-    });
-    back2Top.on('click', function (e) {
-        e.preventDefault();
-        $('html,body').animate({
-            scrollTop: 0
-        }, 700);
-    });
+function backtoTopButton() {
+	var back2Top = $('#backtotop');
+	if (back2Top.length) {
+	    var scrollTrigger = 100, // px
+	        backToTop = function () {
+	            var scrollTop = $(window).scrollTop();
+	            if (scrollTop > scrollTrigger) {
+	               back2Top.addClass('show');
+	            } else {
+	               back2Top.removeClass('show');
+	            }
+	        };
+	    backToTop();
+	    $(window).on('scroll', function () {
+	        backToTop();
+	    });
+	    back2Top.on('click', function (e) {
+	        e.preventDefault();
+	        $('html,body').animate({
+	            scrollTop: 0
+	        }, 700);
+	    });
+	}
 }
 
+/**
+ * [imgClearfix description]
+ * @return {[type]} [description]
+ */
+function imgClearfix() {
+	/**
+	 * add clearfix div to before side-by-side images
+	 * for alignment fix
+	 */
+	$('article .vert-img.col-2-img').each(function(){
+		if (!$(this).prev().is('p')){
+			$(this).before('<div class="empty-fill"></div>');
+		}
+	});
+
+	/**
+	 * add clearfix to before landscape images
+	 */
+	$('article p:not(.vert-img)').each(function(){
+		if ($(this).prev().hasClass('vert-img')){
+			$(this).before('<div class="empty-fill"></div>');
+		}
+	});
+}
+
+/**
+ * Generate instagram banner hashtag
+ * @return {[type]} [description]
+ */
+function instaBannerHashtagLink() {
+	/**
+	 * link the banner title to instagram to fetch hashtag
+	 */
+	var bannerTitle = $('.banner .text h3');
+
+	// determine if string is hashtag before converting to link
+	if (bannerTitle.length && bannerTitle[0].innerHTML.charAt(0) === '#') {
+		var linkRef = 'https://www.instagram.com/explore/tags/' + bannerTitle.text().substring(1);
+		bannerTitle.wrap('<a></a>').parent().attr({
+			'target':'_blank',
+			'href':linkRef,
+		});
+	}
+}
+
+/**
+ * initialize post grid masonry
+ * @return {[type]} [description]
+ */
+function initPostGridMasonry() {
+	var postGridEl = $('.post-grid');
+
+	if (postGridEl.length) {
+		/**
+		 * masonry grid for home page
+		 * @return {[type]} [description]
+		 */
+		var postGridMsnry = postGridEl.masonry({
+			itemSelector: '.post-item',
+			columnWidth: '.post-grid-sizer',
+			gutter: 0,
+			percentPosition: true
+		});
+
+		postGridMsnry.imagesLoaded().progress( function() {
+			postGridMsnry.masonry('layout');
+		});
+	}
+}
 /** 
  * init scripts 
  */
 $(document).ready(function(){
-	$postGrid.imagesLoaded().progress( function() {
-		$postGrid.masonry('layout');
-	});
 
-	var linkRef = 'https://www.instagram.com/explore/tags/' + $('.banner .text h3').text().substring(1);
-	$('.banner .text h3').wrap('<a></a>').parent().attr({
-		'target':'_blank',
-		'href':linkRef,
-	});
-
-	var $socialLinks = $('.social-media-list li a');
-
-	kickLinksOut($socialLinks);
-
+	initPostGridMasonry();
+	instaBannerHashtagLink();
+	kickLinksOut();
 
 	if ($('article').length > 0) {
 		initFeatherlight();
 		generateFoodIcon();
 		articleLinks();
+		backtoTopButton();
 
 		$('p').imagesLoaded(function(){
 			/**
 			 * Delay image display until all images in <p> tag
 			 * have been loaded
+			 *
+			 * (2017) what a shitty implementation of lazy load, you should 
+			 * be ashamed.
 			 */
 			if ($(window).width() > 768){
 				$('article img').delay('400').addClass('ready');
@@ -176,28 +240,10 @@ $(document).ready(function(){
 				$('article img').addClass('ready');
 			}
 		
-			vertImgFix();
-			sbsVertImg();
-			imgTitle();
-
-			/**
-			 * add clearfix div to before side-by-side images
-			 * for alignment fix
-			 */
-			$('article .vert-img.col-2-img').each(function(){
-				if (!$(this).prev().is('p')){
-					$(this).before('<div class="empty-fill"></div>');
-				}
-			});
-			
-			/**
-			 * add clearfix to before landscape images
-			 */
-			$('article p:not(.vert-img)').each(function(){
-				if ($(this).prev().hasClass('vert-img')){
-					$(this).before('<div class="empty-fill"></div>');
-				}
-			});
+			vertImgFix(); // alignment for vertical images
+			sbsVertImg(); // alignment for side-by-side vertical images
+			imgTitle(); // generate image caption
+			imgClearfix(); // clearfix for article images
 		})
 	}
 });
