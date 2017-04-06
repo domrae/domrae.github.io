@@ -1,4 +1,18 @@
 {% if page.url == "/" or page.url == "/index.html" %}
+	{% assign banner_title 		= site.banner_title %}
+	{% assign banner_subtitle	= site.banner_subtitle %}
+{% elsif page.title and page.type == "page" and page.trip.banner_title %}
+	{% assign banner_title		= page.trip.banner_title %}
+	{% assign banner_subtitle	= page.trip.banner_subtitle %}
+{% elsif page.title and page.type == "page" and page.layout == "mdpage" %}
+	{% assign banner_title		= page.title %}
+	{% assign banner_subtitle	= "" %}
+{% elsif page.title and page.type != "page" and page.layout == "post" %}
+	{% assign banner_title		= page.title %}
+	{% assign banner_subtitle	= "" %}
+{% endif %}
+
+{% if page.url == "/" or page.url == "/index.html" %}
 <div class="banner-wrap index">
 	<div class="banner bg">
 {% else %}
@@ -6,15 +20,11 @@
 	<div class="banner bg">
 {% endif %}
 		<span class="text">
-			<h3>#{{ site.banner_title}}</h3>
-			<h5>{{ site.banner_subtitle}}</h5>
+			<h3>{{ banner_title }}</h3>
+			<h5>{{ banner_subtitle }}</h5>
 		</span>
 	</div>
 </div>
-
-
-
-
 
 <style type="text/css">
 {% if page.url == "/" or page.url == "/index.html" %}

@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: mdpage
 title: About
+type: page
 permalink: /about/
 ---
 

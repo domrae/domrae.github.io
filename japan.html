@@ -1,6 +1,14 @@
 ---
-layout: page
+layout: default
+title: Tokyo '16
 type: page
+trip: 
+ category: japan
+ banner_title: >
+   #udomraemen
+ banner_subtitle: >
+  Tokyo!&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;2016
+ banner_image: "http://im.vsco.co/1/51f48bb095e8247120/56c9e77a40955b61337b8a75/vsco_022216.jpg"
 ---
 
 <div class="home">
@@ -9,14 +17,15 @@ type: page
   <h1 class="page-heading">Travelogue</h1>
 
   <ul class="post-list post-grid">
-      <li class="post-grid-sizer"></li>
-    {% for post in site.posts %}
-	{% if post.categories contains site.current_category %}
+	<li class="post-grid-sizer"></li>
+		{% for post in site.posts %}
+	  	{% if post.categories contains page.trip.category %}
         {% if post.thumbnail %}
-      <li class="post-item" style="background-image: url({{post.thumbnail}});">
-      {% else %}
-      <li class="post-item no-bg">
-        <!-- <div class="img"><img src="{{post.thumbnail}}" alt="{{ post.title }}"></dKiv> -->
+			<li class="post-item" style="background-image: url({{post.thumbnail}});"
+			data-title="{{ post.title }}">
+		{% else %}
+			<li class="post-item no-bg" data-title="{{ post.title }}">
+			<!-- <div class="img"><img src="{{post.thumbnail}}" alt="{{ post.title }}"></dKiv> -->
         {% endif %}
         <div class="post-fill"></div>
         <a class="post-link post-wrap" href="{{ post.url | prepend: site.baseurl }}">
@@ -29,8 +38,8 @@ type: page
             </div>
           <!-- </div> -->
         </a>
-	  </li>
-    {% endif %}
+      </li>
+	  {% endif %}
     {% endfor %}
   </ul>
 
@@ -48,3 +57,4 @@ type: page
 </noscript>
 
 </div>
+
