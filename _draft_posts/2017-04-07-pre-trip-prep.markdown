@@ -1,10 +1,87 @@
 ---
 layout: post
-title:  "Pre-trip Prep"
-date:   2017-04-07 00:12:14 +0800
-thumbnail: "http://im.vsco.co/1/51f48bb095e8247120/58e677ee5d22c05535000001/b74c7d99-7fcc-4c85-b7df-2b490ef6a3f8-759197416.jpg"
-cover_image: "http://im.vsco.co/1/51f48bb095e8247120/58e677ee5d22c05535000001/b74c7d99-7fcc-4c85-b7df-2b490ef6a3f8-759197416.jpg"
+title: Day 1
+date: '2017-04-08 22:00:00 +0800'
+thumbnail: >-
+  http://im.vsco.co/1/51f48bb095e8247120/58e677ee5d22c05535000001/b74c7d99-7fcc-4c85-b7df-2b490ef6a3f8-759197416.jpg
+cover_image: >-
+  http://im.vsco.co/1/51f48bb095e8247120/58e677ee5d22c05535000001/b74c7d99-7fcc-4c85-b7df-2b490ef6a3f8-759197416.jpg
 categories: indonesia
+published: true
 ---
+Embarking on our trip to Indonesia! 
 
-Soon<sup>tm</sup>
+![Cranky baby](https://farm5.staticflickr.com/4183/33370258654_bbbcfe48c6_k_d.jpg)
+![Ryanair approved cabin baggage](https://farm5.staticflickr.com/4192/33370260444_325b4a9b48_k_d.jpg)
+
+We took Airasia for our flight to Yogyakarta. There was an hour delay during departure.. 😒
+
+![wing](https://farm3.staticflickr.com/2892/33370264844_2e79a23085_k_d.jpg)
+
+![😀😀](https://farm3.staticflickr.com/2814/33370269474_40f44a126a_k_d.jpg)
+
+![rae](https://farm3.staticflickr.com/2841/33370272964_bf2c921a20_k_d.jpg)
+![dom](https://farm3.staticflickr.com/2901/34171662496_e3218236c5_o_d.jpg)
+
+We arrived at the hotel ([Hotel NEO Malioboro](https://www.tripadvisor.com.sg/Hotel_Review-g294230-d8092831-Reviews-Hotel_Neo_Malioboro-Yogyakarta_Java.html)) sometime after lunch. It was pretty nice and well equipped for a 3 star hotel.
+
+## Prambanan Temple
+
+Headed out to [Prambanan Temple](http://wikitravel.org/en/Prambanan) later on in the day. It's around 20-30mins by taxi out of Jogja. We took a cab charging by the meter to avoid being ripped off, but alas we were driven around in circles before being brought out to the temple 😑. Unfortunately, it was but a foreshadowing of the rest of our trip dealing with transport.
+
+![Bunch of shrines](https://farm5.staticflickr.com/4160/33401886993_e5ee646146_k_d.jpg)
+
+![Lion thingy](https://farm5.staticflickr.com/4157/33370311074_f96a3682ec_k_d.jpg)
+
+![Dragon thingy](https://farm3.staticflickr.com/2820/33370334444_3fe5b42207_k_d.jpg)
+
+Unfortunately the weather was rather gloomy so it was quite the downer for the trip. The shrines were magnificient though! Entry to the temple was **SGD$22** which was kinda steep, but it was put towards maintenance of the premises.
+
+![hi](https://farm3.staticflickr.com/2892/33370392264_d4de4da80b_k_d.jpg)
+![no hi](https://farm3.staticflickr.com/2808/33401898833_520bdea75e_k_d.jpg)
+
+![exploring](https://farm3.staticflickr.com/2820/33828493100_767294bff7_k_d.jpg)
+
+![test](https://farm3.staticflickr.com/2824/33828492440_e61ce85895_k_d.jpg)
+
+![the first of many self timer tripod self portraits](https://farm3.staticflickr.com/2899/33828490490_6342b38ff5_k_d.jpg)
+
+![nice 树](https://farm3.staticflickr.com/2878/34055116692_91fe869186_k_d.jpg)
+
+![jump](https://farm5.staticflickr.com/4181/34171677486_3dc1b04507_k_d.jpg)
+![dom](https://farm3.staticflickr.com/2906/34055159382_5e883b7d56_k_d.jpg)
+
+![point](https://farm3.staticflickr.com/2919/34171670636_53009f2459_k_d.jpg)
+
+![好多 other tourist](https://farm5.staticflickr.com/4165/33828494630_7fd992eb66_k_d.jpg)
+
+![hiding](https://farm3.staticflickr.com/2945/34212686255_cd24866bd5_k_d.jpg)
+
+![looking to the side](https://farm3.staticflickr.com/2950/34212688675_604be6c421_k_d.jpg)
+
+![shrines from the outside (this place nicer than the inside tbh)](https://farm3.staticflickr.com/2867/33401859623_e303242e46_k_d.jpg)
+
+![ah lian](https://farm3.staticflickr.com/2936/33401853043_7962058ba7_k_d.jpg)
+
+![rae](https://farm3.staticflickr.com/2864/33370397434_a08dea3d41_k_d.jpg)
+
+![dom](https://farm3.staticflickr.com/2835/34171809486_1a797d2357_k_d.jpg)
+
+We took the same taxi back after arranging for a return fee with the driver (who conveniently misunderstood the arranged fee and charged more but oh well). Tired and hungry we decided to eat at a hostel near our hotel. LOL, the food was absolutely terrible but the hostel had good tours (described fully in a booklet with prices listed), which we booked for the rest of the trip. 
+
+[Bedhot Resto Hostel/Restaurant](https://www.tripadvisor.com.sg/Restaurant_Review-g294230-d3148632-Reviews-Bedhot_Resto-Yogyakarta_Java.html)
+
+Trips we took with them:
+
+- Borobudur Sunrise Tour
+- Mt Merapi Jeep Tour
+- Yogyakarta - Mt. Bromo (Cemoro Lawang) transport
+
+Highly recommended, but stay away from the food lmao it was trash
+
+![looks good but taste.....ehh](https://farm3.staticflickr.com/2833/34213718945_7e9a17b3a6_k_d.jpg)
+
+Due to the timezone difference (1 hour behind us), sunrise and sunset timings there were around an hour earlier than we were used to.
+
+Heading out to Borobudur tomorrow morning, so early night for us!
+
