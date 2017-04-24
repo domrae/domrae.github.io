@@ -84,11 +84,11 @@ function sbsVertImg(){
 		}
 	}
 
-	if (j > 0){
-		// console.log(j + "pairs of vertical images found");
-	} else {
-		// console.log("no pairs of vertical images found.");
-	}
+	// if (j > 0){
+	 	// console.log(j + "pairs of vertical images found");
+	// } else {
+	 	// console.log("no pairs of vertical images found.");
+	// }
 }
 
 /**
@@ -139,6 +139,8 @@ function backtoTopButton() {
 	            scrollTop: 0
 	        }, 700);
 	    });
+	} else [
+		return false;
 	}
 }
 
@@ -184,6 +186,8 @@ function instaBannerHashtagLink() {
 			'target':'_blank',
 			'href':linkRef,
 		});
+	} else {
+		return false;
 	}
 }
 
@@ -209,8 +213,11 @@ function initPostGridMasonry() {
 		postGridMsnry.imagesLoaded().progress( function() {
 			postGridMsnry.masonry('layout');
 		});
+	} else {
+		return false;
 	}
 }
+
 /** 
  * init scripts 
  */
@@ -220,30 +227,33 @@ $(document).ready(function(){
 	instaBannerHashtagLink();
 	kickLinksOut();
 
-	if ($('article').length > 0) {
+	if ($('article').length) {
 		initFeatherlight();
 		generateFoodIcon();
 		articleLinks();
 		backtoTopButton();
 
-		$('p').imagesLoaded(function(){
-			/**
-			 * Delay image display until all images in <p> tag
-			 * have been loaded
-			 *
-			 * (2017) what a shitty implementation of lazy load, you should 
-			 * be ashamed.
-			 */
-			if ($(window).width() > 768){
-				$('article img').delay('400').addClass('ready');
-			} else {
-				$('article img').addClass('ready');
-			}
-		
-			vertImgFix(); // alignment for vertical images
-			sbsVertImg(); // alignment for side-by-side vertical images
-			imgTitle(); // generate image caption
-			imgClearfix(); // clearfix for article images
-		})
+		$('article').imagesLoaded()
+			.progress(function(instance, image){
+				/**
+				 * Delay image display until all images in <p> tag
+				 * have been loaded
+				 *
+				 * (2017) what a shitty implementation of lazy load, you should 
+				 * be ashamed.
+				 */
+				if ($(window).width() > 768){
+					$(image).delay('400').addClass('ready');
+				} else {
+					$(image).addClass('ready');
+				}
+			})
+			.done(function(instance){
+				vertImgFix(); // alignment for vertical images
+				sbsVertImg(); // alignment for side-by-side vertical images
+				imgTitle(); // generate image caption
+				imgClearfix(); // clearfix for article images
+
+			});
 	}
 });
