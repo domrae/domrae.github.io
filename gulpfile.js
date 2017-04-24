@@ -1,13 +1,20 @@
 var gulp 		= require('gulp');
 var browserSync = require('browser-sync');
-var sass 		= require('gulp-ruby-sass');
+var sass 		= require('gulp-sass');
 var gutil 		= require('gulp-util');
 var prefix 		= require('gulp-autoprefixer');
 var cp 			= require('child_process');
 var rename 		= require('gulp-rename');
 var plumber 	= require('gulp-plumber');
 var cssnano 	= require('gulp-cssnano');
-
+var sourcemaps  = require('gulp-sourcemaps');
+var clip		= require('gulp-clip-empty-files');
+var clone		= require('gulp-clone');
+var merge		= require('merge-stream');
+var debug		= require('gulp-debug');
+var filesize	= require('gulp-filesize');
+var notify		= require('gulp-notify');
+	
 var jekyll = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
 	jekyllBuild: '<span style="color: grey"> Running: </span>  $ jekyll build'
@@ -65,28 +72,53 @@ gulp.task('browser-sync', function() {
 });
 
 /**
- * Compile files from _scss into both _site/css (for live injecting) 
- * and site (for future jekyll builds)
+ * Compile files from _scss into both _site/css (for live injecting)
  */
-gulp.task('sass', function () {
-    return sass('_scss/custom.scss')
-        .on('error', sass.logError)
-        .pipe(plumber())
-        .pipe(gulp.dest('css'))
-        .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-        // .pipe(browserSync.reload({stream:true}))
-        .pipe(cssnano({
-            convertValues: {
-                length: false
-            },
-            discardComments: {
-                removeAll: true
-            }
-        }))
-        .pipe(rename('custom.min.css'))
-        .pipe(gulp.dest('css'))
-        .on('error', gutil.log)
+var scss_src  = '_scss/custom/scss';
+var scss_dest = 'css';
+
+gulp.task('sass', function(){
+	var source = gulp.src(scss_src)
+	.pipe(plumber())
+	.pipe(notify({
+		title: "Sass",
+		message: "Sass init."}))
+	.pipe(sourcemaps.init()) // Start Sourcemaps
+	.pipe(sass({
+		// set output format for compiled css
+		outputStyle: 'expanded',
+		indentType: 'tab'
+		}).on('error', sass.logError))
+	.on('error', gutil.log);
+
+	var pipeMaps = source.pipe(clone())
+	.pipe(sourcemaps.write('maps'));
+
+	var pipeMinify = source.pipe(clone())
+	.pipe(rename({suffix: '.min'}))
+	.pipe(cssnano({ // minify with cssnano
+		convertValues: {
+			length: false
+		},
+		discardComments: {
+			removeAll: true
+		},
+		discardUnused: {
+			// do not minify font-face rule
+			// (bug: cssnano completely deletes the rule instead of minifying)
+			fontFace: false
+		}
+	}))
+	.pipe(clip());
+
+	return merge(pipeMaps, pipeMinify)
+	.pipe(gulp.dest(scss_dest))
+	.pipe(debug({title: 'sass-merge:'}))
+	.pipe(notify({
+		title: "Sass",
+		message: "Sass complete. File changed: <%= file.relative %>"}));
 });
+
 
 /**
  * Default task, running just `gulp` will compile the sass,
