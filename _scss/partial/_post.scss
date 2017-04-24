@@ -228,3 +228,8 @@ article {
 		text-align: center;
 	}
 }
+
+// featherlight fixes
+.featherlight .featherlight-content {
+	box-sizing: content-box;
+}

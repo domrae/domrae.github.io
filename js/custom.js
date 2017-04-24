@@ -32,7 +32,8 @@ function initFeatherlight(){
 		 $(imgArr[i]).attr('data-featherlight',hrefVal);
 	}
 
-	articleImg.featherlight();
+	// articleImg.featherlight();
+	articleImg.featherlightGallery();
 
 }
 
