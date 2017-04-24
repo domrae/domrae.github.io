@@ -77,9 +77,11 @@ function sbsVertImg(){
 	}
 
 	for (i=0; i<imgArr.length; i++){
-		if ( $(imgArr[i]).next().attr('class') == 'vert-img'){
+		var nextSibling = $(imgArr[i]).next();
+		
+		if (nextSibling.attr('class') == 'vert-img'){
 			$(imgArr[i]).addClass('col-2-img');
-			$(imgArr[i]).next().addClass('col-2-img');
+			nextSibling.addClass('col-2-img');
 			j++;
 		}
 	}
@@ -97,7 +99,13 @@ function sbsVertImg(){
  * @return {[type]} [description]
  */
 function generateFoodIcon(){
-	var iconArr = ["unagi-nigiri", "udon", "nigiri", "ikura-gunkan-maki", "okonomiyaki"]
+	var iconArr = [
+		"unagi-nigiri", 
+		"udon", 
+		"nigiri", 
+		"ikura-gunkan-maki", 
+		"okonomiyaki"
+	];
 	var i = Math.floor((Math.random() * 5));
 
 	$('.post-flourish.top').addClass(iconArr[i]);
@@ -119,27 +127,42 @@ function articleLinks(){
  */
 function backtoTopButton() {
 	var back2Top = $('#backtotop');
+	
 	if (back2Top.length) {
-	    var scrollTrigger = 100, // px
-	        backToTop = function () {
-	            var scrollTop = $(window).scrollTop();
-	            if (scrollTop > scrollTrigger) {
-	               back2Top.addClass('show');
-	            } else {
-	               back2Top.removeClass('show');
-	            }
-	        };
+	    var scrollTrigger = 100; // scroll tolerance in px
+	    var backToTop = function () {
+			var scrollTop = $(window).scrollTop();
+			if (scrollTop > scrollTrigger) {
+			   back2Top.addClass('show');
+			} else {
+			   back2Top.removeClass('show');
+			}
+		};
+
+		/**
+		 * init back2top btn
+		 */
 	    backToTop();
+
+		/**
+		 * window scroll handler
+		 * for back2top btn
+		 */
 	    $(window).on('scroll', function () {
 	        backToTop();
 	    });
+
+		/**
+		 * click hander for back2top btn
+		 */
 	    back2Top.on('click', function (e) {
 	        e.preventDefault();
 	        $('html,body').animate({
 	            scrollTop: 0
 	        }, 700);
 	    });
-	} else [
+
+	} else {
 		return false;
 	}
 }
@@ -235,6 +258,9 @@ $(document).ready(function(){
 
 		$('article').imagesLoaded()
 			.progress(function(instance, image){
+				console.log(image.img);
+
+				var imgEl = $(image.img);
 				/**
 				 * Delay image display until all images in <p> tag
 				 * have been loaded
@@ -243,9 +269,9 @@ $(document).ready(function(){
 				 * be ashamed.
 				 */
 				if ($(window).width() > 768){
-					$(image).delay('400').addClass('ready');
+					imgEl.delay('400').addClass('ready');
 				} else {
-					$(image).addClass('ready');
+					imgEl.addClass('ready');
 				}
 			})
 			.done(function(instance){
