@@ -12,7 +12,7 @@ function kickLinksOut(){
 
 	var linkArr = link.get();
 
-	for (i=0; i<linkArr.length; i++){
+	for (i=0, len=linkArr.length; i<len; i++){
 		$(linkArr[i]).attr("target","_blank");
 	}
 }
@@ -27,7 +27,7 @@ function initFeatherlight(){
 	
 	// for each article image found, duplicate the img-src
 	// value into a data-featherlight attr
-	for (i=0; i<imgArr.length; i++){
+	for (i=0, len=imgArr.length; i<len; i++){
 		 hrefVal = $(imgArr[i]).attr('src');
 		 $(imgArr[i]).attr('data-featherlight',hrefVal);
 	}
@@ -43,7 +43,7 @@ function initFeatherlight(){
 function vertImgFix(){
 	var imgArr = $('article img').get();
 
-	for (i=0; i<imgArr.length; i++){
+	for (i=0, len=imgArr.length; i<len; i++){
 		if( $(imgArr[i]).width() < $(imgArr[i]).height() ){
 			$(imgArr[i]).parent().addClass('vert-img');
 		}
@@ -76,7 +76,7 @@ function sbsVertImg(){
 		return false;
 	}
 
-	for (i=0; i<imgArr.length; i++){
+	for (i=0, len=imgArr.length; i<len; i++){
 		if ( $(imgArr[i]).next().attr('class') == 'vert-img'){
 			$(imgArr[i]).addClass('col-2-img');
 			$(imgArr[i]).next().addClass('col-2-img');
