@@ -32,7 +32,8 @@ function initFeatherlight(){
 		 $(imgArr[i]).attr('data-featherlight',hrefVal);
 	}
 
-	articleImg.featherlight();
+	// articleImg.featherlight();
+	articleImg.featherlightGallery();
 
 }
 
@@ -76,19 +77,21 @@ function sbsVertImg(){
 		return false;
 	}
 
-	for (i=0, len=imgArr.length; i<len; i++){
-		if ( $(imgArr[i]).next().attr('class') == 'vert-img'){
+	for (i=0, len=imgArr.length; i<len;  i++){
+		var nextSibling = $(imgArr[i]).next();
+		
+		if (nextSibling.attr('class') == 'vert-img'){
 			$(imgArr[i]).addClass('col-2-img');
-			$(imgArr[i]).next().addClass('col-2-img');
+			nextSibling.addClass('col-2-img');
 			j++;
 		}
 	}
 
-	if (j > 0){
-		// console.log(j + "pairs of vertical images found");
-	} else {
-		// console.log("no pairs of vertical images found.");
-	}
+	// if (j > 0){
+	 	// console.log(j + "pairs of vertical images found");
+	// } else {
+	 	// console.log("no pairs of vertical images found.");
+	// }
 }
 
 /**
@@ -97,7 +100,13 @@ function sbsVertImg(){
  * @return {[type]} [description]
  */
 function generateFoodIcon(){
-	var iconArr = ["unagi-nigiri", "udon", "nigiri", "ikura-gunkan-maki", "okonomiyaki"]
+	var iconArr = [
+		"unagi-nigiri", 
+		"udon", 
+		"nigiri", 
+		"ikura-gunkan-maki", 
+		"okonomiyaki"
+	];
 	var i = Math.floor((Math.random() * 5));
 
 	$('.post-flourish.top').addClass(iconArr[i]);
@@ -119,26 +128,43 @@ function articleLinks(){
  */
 function backtoTopButton() {
 	var back2Top = $('#backtotop');
+	
 	if (back2Top.length) {
-	    var scrollTrigger = 100, // px
-	        backToTop = function () {
-	            var scrollTop = $(window).scrollTop();
-	            if (scrollTop > scrollTrigger) {
-	               back2Top.addClass('show');
-	            } else {
-	               back2Top.removeClass('show');
-	            }
-	        };
+	    var scrollTrigger = 100; // scroll tolerance in px
+	    var backToTop = function () {
+			var scrollTop = $(window).scrollTop();
+			if (scrollTop > scrollTrigger) {
+			   back2Top.addClass('show');
+			} else {
+			   back2Top.removeClass('show');
+			}
+		};
+
+		/**
+		 * init back2top btn
+		 */
 	    backToTop();
+
+		/**
+		 * window scroll handler
+		 * for back2top btn
+		 */
 	    $(window).on('scroll', function () {
 	        backToTop();
 	    });
+
+		/**
+		 * click hander for back2top btn
+		 */
 	    back2Top.on('click', function (e) {
 	        e.preventDefault();
 	        $('html,body').animate({
 	            scrollTop: 0
 	        }, 700);
 	    });
+
+	} else {
+		return false;
 	}
 }
 
@@ -184,6 +210,8 @@ function instaBannerHashtagLink() {
 			'target':'_blank',
 			'href':linkRef,
 		});
+	} else {
+		return false;
 	}
 }
 
@@ -209,8 +237,11 @@ function initPostGridMasonry() {
 		postGridMsnry.imagesLoaded().progress( function() {
 			postGridMsnry.masonry('layout');
 		});
+	} else {
+		return false;
 	}
 }
+
 /** 
  * init scripts 
  */
@@ -220,30 +251,36 @@ $(document).ready(function(){
 	instaBannerHashtagLink();
 	kickLinksOut();
 
-	if ($('article').length > 0) {
+	if ($('article').length) {
 		initFeatherlight();
 		generateFoodIcon();
 		articleLinks();
 		backtoTopButton();
 
-		$('p').imagesLoaded(function(){
-			/**
-			 * Delay image display until all images in <p> tag
-			 * have been loaded
-			 *
-			 * (2017) what a shitty implementation of lazy load, you should 
-			 * be ashamed.
-			 */
-			if ($(window).width() > 768){
-				$('article img').delay('400').addClass('ready');
-			} else {
-				$('article img').addClass('ready');
-			}
-		
-			vertImgFix(); // alignment for vertical images
-			sbsVertImg(); // alignment for side-by-side vertical images
-			imgTitle(); // generate image caption
-			imgClearfix(); // clearfix for article images
-		})
+		$('article').imagesLoaded()
+			.progress(function(instance, image){
+				console.log(image.img);
+
+				var imgEl = $(image.img);
+				/**
+				 * Delay image display until all images in <p> tag
+				 * have been loaded
+				 *
+				 * (2017) what a shitty implementation of lazy load, you should 
+				 * be ashamed.
+				 */
+				if ($(window).width() > 768){
+					imgEl.delay('400').addClass('ready');
+				} else {
+					imgEl.addClass('ready');
+				}
+			})
+			.done(function(instance){
+				vertImgFix(); // alignment for vertical images
+				sbsVertImg(); // alignment for side-by-side vertical images
+				imgTitle(); // generate image caption
+				imgClearfix(); // clearfix for article images
+
+			});
 	}
 });

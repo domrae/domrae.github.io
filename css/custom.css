@@ -482,3 +482,6 @@ article {
     display: table-cell;
     vertical-align: middle;
     text-align: center; }
+
+.featherlight .featherlight-content {
+  box-sizing: content-box; }
