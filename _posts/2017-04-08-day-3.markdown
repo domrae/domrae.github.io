@@ -1,0 +1,11 @@
+---
+layout: post
+title: Day 3 
+date: '2017-04-10 22:00:00 +0800'
+thumbnail: >-
+  https://farm3.staticflickr.com/2820/33432988863_3fc193549f_z_d.jpg
+cover_image: >-
+  https://farm5.staticflickr.com/4194/34086468902_f4b7836d99_k_d.jpg
+categories: indonesia
+published: false 
+---
