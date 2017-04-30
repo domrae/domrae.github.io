@@ -234,16 +234,13 @@ article {
 	box-sizing: content-box;
 }
 
-@media only screen and (max-width: 1024px) {
-	.featherlight-next,
-	.featherlight-previous {
-		span {
+.featherlight-next,
+.featherlight-previous {
+	span {
+		text-shadow: none;
+		
+		@media only screen and (max-width: 767px) {
 			font-size: rem(12);
 		}
-	}
-
-	.featherlight-next span,
-	.featherlight-previous span {
-		font-size: 12px;
 	}
 }

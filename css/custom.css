@@ -724,14 +724,15 @@ article .empty-fill {
 		box-sizing: content-box;
 }
 
-@media only screen and (max-width: 1024px) {
+.featherlight-next span,
+.featherlight-previous span {
+		text-shadow: none;
+}
+
+@media only screen and (max-width: 767px) {
 		.featherlight-next span,
 		.featherlight-previous span {
 				font-size: 0.75rem;
-		}
-		.featherlight-next span,
-		.featherlight-previous span {
-				font-size: 12px;
 		}
 }
 
