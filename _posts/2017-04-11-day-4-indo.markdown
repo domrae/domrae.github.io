@@ -5,7 +5,7 @@ date: '2017-04-11 22:00:00 +0800'
 thumbnail: 'https://farm3.staticflickr.com/2893/34363791175_447d37d99f_z_d.jpg'
 cover_image: 'https://c1.staticflickr.com/3/2893/34363791175_01f73c4dea_h.jpg'
 categories: indonesia
-published: false
+published: true
 ---
 Spent the ENTIRE DAY (8.30am-9pm) melting our butts on a minibus journey from Yogyakarta to our accommodation for Mt. Bromo in Cemoro Lawang (Cafe Lava Hostel), it was a crazy long ride but was comfy enough cause 3 pax in 12 pax bus. Journey cost us ~$20 for a direct trip right from our lobby so why not?
 
