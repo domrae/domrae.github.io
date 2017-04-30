@@ -45,6 +45,7 @@ function vertImgFix(){
 	var imgArr = $('article img').get();
 
 	for (i=0, len=imgArr.length; i<len; i++){
+		// console.log(imgArr[i]);
 		if( $(imgArr[i]).width() < $(imgArr[i]).height() ){
 			$(imgArr[i]).parent().addClass('vert-img');
 		}
@@ -259,7 +260,7 @@ $(document).ready(function(){
 
 		$('article').imagesLoaded()
 			.progress(function(instance, image){
-				console.log(image.img);
+				// console.log(image.img);
 
 				var imgEl = $(image.img);
 				/**
@@ -276,6 +277,7 @@ $(document).ready(function(){
 				}
 			})
 			.done(function(instance){
+				// console.log('imageload done');
 				vertImgFix(); // alignment for vertical images
 				sbsVertImg(); // alignment for side-by-side vertical images
 				imgTitle(); // generate image caption
