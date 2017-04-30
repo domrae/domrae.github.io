@@ -74,7 +74,7 @@ gulp.task('browser-sync', function() {
 /**
  * Compile files from _scss into both _site/css (for live injecting)
  */
-var scss_src  = '_scss/custom/scss';
+var scss_src  = '_scss/custom.scss';
 var scss_dest = 'css';
 
 gulp.task('sass', function(){
