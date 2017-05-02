@@ -100,17 +100,43 @@ function sbsVertImg(){
  * - for japan articles only
  * @return {[type]} [description]
  */
-function generateFoodIcon(){
-	var iconArr = [
+function generateArticleIcon(){
+	var articleType = document.querySelector('article').dataset.category;
+	var selectedArr;
+
+	var iconArrJapan = [
 		"unagi-nigiri", 
 		"udon", 
 		"nigiri", 
 		"ikura-gunkan-maki", 
 		"okonomiyaki"
 	];
+
+	var iconArrIndo = [
+		"backpack", 
+		"horse", 
+		"palm-trees", 
+		"surf", 
+		"volcano",
+		"beach",
+		"sea",
+		"summer"
+	];
+	
+	switch(articleType) {
+		case 'indonesia':
+		selectedArr = iconArrIndo;
+		break;
+		case 'japan': 
+		selectedArr = iconArrJapan;
+		break;
+		default:
+		break;
+	}
+
 	var i = Math.floor((Math.random() * 5));
 
-	$('.post-flourish.top').addClass(iconArr[i]);
+	$('.post-flourish.top').addClass(selectedArr[i]);
 }
 
 /**
@@ -254,7 +280,7 @@ $(document).ready(function(){
 
 	if ($('article').length) {
 		initFeatherlight();
-		generateFoodIcon();
+		generateArticleIcon();
 		articleLinks();
 		backtoTopButton();
 

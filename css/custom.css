@@ -488,53 +488,78 @@ article .post-flourish.bottom {
 }
 
 article .post-flourish.plane-up {
-		background-image: url("../img/plane-up.svg");
-		background-image: url("../img/plane-up.svg");
+		background-image: url("../img/icons/plane-up.svg");
+		background-image: url("../img/icons/plane-up.svg");
 }
 
 article .post-flourish.japan {
-		background-image: url("../img/map-japan.svg");
-		background-image: url("../img/map-japan.svg");
+		background-image: url("../img/icons/japan/map-japan.svg");
+		background-image: url("../img/icons/japan/map-japan.svg");
 }
 
 article .post-flourish.unagi-nigiri {
-		background-image: url("../img/unagi-nigiri.svg");
-		background-image: url("../img/unagi-nigiri.svg");
+		background-image: url("../img/icons/japan/unagi-nigiri.svg");
+		background-image: url("../img/icons/japan/unagi-nigiri.svg");
 }
 
 article .post-flourish.udon {
-		background-image: url("../img/udon.svg");
-		background-image: url("../img/udon.svg");
+		background-image: url("../img/icons/japan/udon.svg");
+		background-image: url("../img/icons/japan/udon.svg");
 }
 
 article .post-flourish.nigiri {
-		background-image: url("../img/nigiri.svg");
-		background-image: url("../img/nigiri.svg");
+		background-image: url("../img/icons/japan/nigiri.svg");
+		background-image: url("../img/icons/japan/nigiri.svg");
 }
 
 article .post-flourish.ikura-gunkan-maki {
-		background-image: url("../img/ikura-gunkan-maki.svg");
-		background-image: url("../img/ikura-gunkan-maki.svg");
+		background-image: url("../img/icons/japan/ikura-gunkan-maki.svg");
+		background-image: url("../img/icons/japan/ikura-gunkan-maki.svg");
 }
 
 article .post-flourish.okonomiyaki {
-		background-image: url("../img/okonomiyaki.svg");
-		background-image: url("../img/okonomiyaki.svg");
+		background-image: url("../img/icons/japan/okonomiyaki.svg");
+		background-image: url("../img/icons/japan/okonomiyaki.svg");
 }
 
 article .post-flourish.beach {
-		background-image: url("../img/beach.svg");
-		background-image: url("../img/beach.svg");
+		background-image: url("../img/icons/beach.svg");
+		background-image: url("../img/icons/beach.svg");
 }
 
 article .post-flourish.sea {
-		background-image: url("../img/sea.svg");
-		background-image: url("../img/sea.svg");
+		background-image: url("../img/icons/sea.svg");
+		background-image: url("../img/icons/sea.svg");
 }
 
 article .post-flourish.summer {
-		background-image: url("../img/summer.svg");
-		background-image: url("../img/summer.svg");
+		background-image: url("../img/icons/summer.svg");
+		background-image: url("../img/icons/summer.svg");
+}
+
+article .post-flourish.backpack {
+		background-image: url("../img/icons/indo/backpack.svg");
+		background-image: url("../img/icons/indo/backpack.svg");
+}
+
+article .post-flourish.horse {
+		background-image: url("../img/icons/indo/horse.svg");
+		background-image: url("../img/icons/indo/horse.svg");
+}
+
+article .post-flourish.palm-trees {
+		background-image: url("../img/icons/indo/palm-trees.svg");
+		background-image: url("../img/icons/indo/palm-trees.svg");
+}
+
+article .post-flourish.surf {
+		background-image: url("../img/icons/indo/surf.svg");
+		background-image: url("../img/icons/indo/surf.svg");
+}
+
+article .post-flourish.volcano {
+		background-image: url("../img/icons/indo/volcano.svg");
+		background-image: url("../img/icons/indo/volcano.svg");
 }
 
 article h1 {

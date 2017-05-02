@@ -5,32 +5,29 @@ type: page
 
 <div class="home">
 
-<div class="heading-img"><img src="{{ "/img/flight-ticket.svg" }}" alt="icon"></div>
+<div class="heading-img"><img src="{{ "/img/icons/flight-ticket.svg" }}" alt="icon"></div>
   <h1 class="page-heading">Travelogue</h1>
 
   <ul class="post-list post-grid">
-      <li class="post-grid-sizer"></li>
+    <li class="post-grid-sizer"></li>
     {% for post in site.posts %}
-	{% if post.categories contains site.current_category %}
+    	{% if post.categories contains site.current_category %}
         {% if post.thumbnail %}
       <li class="post-item" style="background-image: url({{post.thumbnail}});">
       {% else %}
       <li class="post-item no-bg">
-        <!-- <div class="img"><img src="{{post.thumbnail}}" alt="{{ post.title }}"></dKiv> -->
         {% endif %}
         <div class="post-fill"></div>
         <a class="post-link post-wrap" href="{{ post.url | prepend: site.baseurl }}">
-          <!-- <div class="post-wrap"> -->
             <div class="text-wrap">
               <h4>
                 {{ post.title }}
               </h4>
               <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
             </div>
-          <!-- </div> -->
         </a>
 	  </li>
-    {% endif %}
+      {% endif %}
     {% endfor %}
   </ul>
 
