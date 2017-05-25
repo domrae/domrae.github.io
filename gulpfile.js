@@ -127,14 +127,14 @@ gulp.task('sass', function(){
 gulp.task('default', ['browser-sync', 'jekyll-build', 'sass'], function(){
     gulp.watch('_scss/**/*.scss', ['sass']);
     gulp.watch([
-	'./*.md',
-	'./*.html',
-	'about.md', 
-	'feed.xml', 
-	'_layouts/*.html', 
-	'_pages/*', 
-	'_posts/*', 
-	'_includes/*.html',
-    'js/*.js'
+		'./*.md',
+		'./*.html',
+		'about.md', 
+		'feed.xml', 
+		'_layouts/*.html', 
+		'_pages/*', 
+		'_posts/*', 
+		'_includes/*.html',
+		'js/*.js'
 	], ['jekyll-rebuild']);
 });
