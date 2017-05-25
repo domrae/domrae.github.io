@@ -1,3 +1,0 @@
-- add new page (for japan)
-- add new category page (to select trip)
-- edit homepage to display current trip top (and prev trip below)
