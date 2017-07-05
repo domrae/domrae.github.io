@@ -322,4 +322,4 @@ $(document).ready(function(){
 
 			});
 	}
-})/
+});
