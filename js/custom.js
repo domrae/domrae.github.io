@@ -1,3 +1,4 @@
+'use strict';
 /**
  * Verify links and convert to open in new tab
  * @return {[type]} [description]
@@ -24,7 +25,7 @@ function initFeatherlight(){
 	var articleImg = $('article img');
 	var imgArr = articleImg.get();
 	var hrefVal;
-	
+
 	// for each article image found, duplicate the img-src
 	// value into a data-featherlight attr
 	for (i=0, len=imgArr.length; i<len; i++){
@@ -53,7 +54,7 @@ function vertImgFix(){
 }
 
 /**
- * Add markdown image title/alt attr into a caption below 
+ * Add markdown image title/alt attr into a caption below
  * the image
  * @return {[type]} [description]
  */
@@ -80,7 +81,7 @@ function sbsVertImg(){
 
 	for (i=0, len=imgArr.length; i<len;  i++){
 		var nextSibling = $(imgArr[i]).next();
-		
+
 		if (nextSibling.attr('class') == 'vert-img'){
 			$(imgArr[i]).addClass('col-2-img');
 			nextSibling.addClass('col-2-img');
@@ -105,29 +106,29 @@ function generateArticleIcon(){
 	var selectedArr;
 
 	var iconArrJapan = [
-		"unagi-nigiri", 
-		"udon", 
-		"nigiri", 
-		"ikura-gunkan-maki", 
+		"unagi-nigiri",
+		"udon",
+		"nigiri",
+		"ikura-gunkan-maki",
 		"okonomiyaki"
 	];
 
 	var iconArrIndo = [
-		"backpack", 
-		"horse", 
-		"palm-trees", 
-		"surf", 
+		"backpack",
+		"horse",
+		"palm-trees",
+		"surf",
 		"volcano",
 		"beach",
 		"sea",
 		"summer"
 	];
-	
+
 	switch(articleType) {
 		case 'indonesia':
 		selectedArr = iconArrIndo;
 		break;
-		case 'japan': 
+		case 'japan':
 		selectedArr = iconArrJapan;
 		break;
 		default:
@@ -155,7 +156,7 @@ function articleLinks(){
  */
 function backtoTopButton() {
 	var back2Top = $('#backtotop');
-	
+
 	if (back2Top.length) {
 	    var scrollTrigger = 100; // scroll tolerance in px
 	    var backToTop = function () {
@@ -279,8 +280,8 @@ function articleImgLazy() {
 	});
 }
 
-/** 
- * init scripts 
+/**
+ * init scripts
  */
 $(document).ready(function(){
 
@@ -297,14 +298,14 @@ $(document).ready(function(){
 
 		$('article').imagesLoaded()
 			.progress(function(instance, image){
-				// console.log(image.img);
+				console.log('imgload-progress', image.img);
 
 				var imgEl = $(image.img);
 				/**
 				 * Delay image display until all images in <p> tag
 				 * have been loaded
 				 *
-				 * (2017) what a shitty implementation of lazy load, you should 
+				 * (2017) what a shitty implementation of lazy load, you should
 				 * be ashamed.
 				 */
 				if ($(window).width() > 768){
