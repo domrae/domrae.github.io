@@ -269,6 +269,16 @@ function initPostGridMasonry() {
 	}
 }
 
+/**
+ * lazy load article images
+ */
+function articleImgLazy() {
+	$("img.lazy").lazyload({
+		effect : "fadeIn",
+		threshold: 200
+	});
+}
+
 /** 
  * init scripts 
  */
@@ -283,6 +293,7 @@ $(document).ready(function(){
 		generateArticleIcon();
 		articleLinks();
 		backtoTopButton();
+		articleImgLazy();
 
 		$('article').imagesLoaded()
 			.progress(function(instance, image){
