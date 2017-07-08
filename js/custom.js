@@ -34,7 +34,17 @@ function initFeatherlight(){
 
 	// articleImg.featherlight();
 	articleImg.featherlightGallery();
+}
 
+function initFeatherlightSingle(el){
+	var hrefVal;
+	var $el = $(el);
+
+	hrefVal = $el.attr('data-original');
+	$el.attr('data-featherlight',hrefVal);
+
+	// articleImg.featherlight();
+	$el.featherlightGallery();
 }
 
 /**
@@ -275,7 +285,12 @@ function initPostGridMasonry() {
 function articleImgLazy() {
 	$("img.lazy").lazyload({
 		effect : "fadeIn",
-		threshold: 200
+		threshold: 200,
+		appear: function(){
+			vertImgFix(); // alignment for vertical images
+			sbsVertImg(); // alignment for side-by-side vertical images
+			initFeatherlightSingle(this);
+		}
 	});
 }
 
@@ -297,7 +312,7 @@ $(document).ready(function(){
 
 		$('article').imagesLoaded()
 			.progress(function(instance, image){
-				console.log('imgload-progress', image.img);
+				// console.log('imgload-progress', image.img);
 
 				var imgEl = $(image.img);
 				/**
