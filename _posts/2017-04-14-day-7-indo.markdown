@@ -1,13 +1,11 @@
 ---
 layout: post
-title: Day 7 
+title: Day 7
 date: '2017-04-14 22:00:00 +0800'
-thumbnail: >-
-  https://farm5.staticflickr.com/4203/35171711136_a0c7f36660_z_d.jpg
-cover_image: >-
-  http://c1.staticflickr.com/5/4203/35171711136_f6ed0d5e0e_h.jpg
+thumbnail: 'https://farm5.staticflickr.com/4203/35171711136_a0c7f36660_z_d.jpg'
+cover_image: 'http://c1.staticflickr.com/5/4203/35171711136_f6ed0d5e0e_h.jpg'
 categories: indonesia
-published: true 
+published: true
 ---
 
 Yolo in the morning, Dom just try a bit then off we go no thinking twice, he say similar to electric bike. Zoom everywhere no helmet, 30-35 km/h. 
@@ -37,8 +35,6 @@ Tried the most popular breakfast cafe in Canggu, Crate. Loved the beach vibes, s
 Continued on to sooth our tired bodies with a 2 hour Balinese + Deep Tissue massage & Body Scrub & Mask at Chillax Canggu for ~$32. Super relaxing and clean before heading for lunch at Betelnut Cafe for some fusion food. After ordering our second coconut water in Bali, we realised that Indonesian coconuts are not as sweet as Thai coconuts, tasted very po4.
 
 ![falafel](http://c1.staticflickr.com/5/4278/35171716946_8eceeb45fb_h.jpg)
-
-![cool roof](http://c1.staticflickr.com/5/4278/35171716946_8eceeb45fb_h.jpg)
 
 ![kebab!](http://c1.staticflickr.com/5/4256/35081854961_ec6304b00a_h.jpg)
 
@@ -101,4 +97,3 @@ Decided to go out to seesee the local bar scene at Canggu. Music was good, those
 ![all the drunk scootering tsk tsk](http://c1.staticflickr.com/5/4242/35211820775_449923edcf_h.jpg)
 
 ![rae!](http://c1.staticflickr.com/5/4251/35211820295_3a41de22ac_h.jpg)
-
