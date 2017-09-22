@@ -11,6 +11,6 @@ gulp.task('default', function(){
   runSequence(
   	['sass', 'babel'],
   	'jekyll-build',
-  	'browser-sync',
+  	'watch'
 	);
 });

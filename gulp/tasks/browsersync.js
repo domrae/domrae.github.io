@@ -5,14 +5,7 @@ var browserSync = require('browser-sync');
  * Wait for jekyll-build, then launch the Server
  */
 gulp.task('browser-sync', function() {
-    browserSync([
-			'./*.(md|html|xml)',
-			'_layouts/**/*.(md|html)', 
-			'_posts/**/*.*', 
-			'_includes/**/*.html', 
-			'_site/js/**/*.js', 
-			'_site/css/**/*.css'
-		],{
+    browserSync([],{
         server: {
             baseDir: '_site'
         },
@@ -30,6 +23,7 @@ gulp.task('browser-sync', function() {
                 borderRadius:   '5px 5px 0 0',
                 background:     'rgba(27,32,50,0.7)',
             }
-        }
+        },
+        open: false
     });
 });

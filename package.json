@@ -19,6 +19,7 @@
   "homepage": "https://github.com/domrae/domrae.github.io#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.0",
     "browser-sync": "^2.18.13",
     "chalk": "^2.1.0",
