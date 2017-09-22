@@ -301,12 +301,12 @@ $(document).ready(function () {
 
 			var imgEl = $(image.img);
 			/**
-		     * Delay image display until all images in <p> tag
-		     * have been loaded
-		     *
-		     * (2017) what a shitty implementation of lazy load, you should
-		     * be ashamed.
-		     */
+    * Delay image display until all images in <p> tag
+    * have been loaded
+    *
+    * (2017) what a shitty implementation of lazy load, you should
+    * be ashamed.
+    */
 			if ($(window).width() > 768) {
 				imgEl.delay('400').addClass('ready');
 			} else {
