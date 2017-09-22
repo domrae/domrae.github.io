@@ -82,7 +82,7 @@ function imgTitle(){
 function sbsVertImg(){
 	var imgArr = $('article .vert-img').get();
 
-	j = 0;
+	var j = 0;
 
 	if (imgArr.length <= 0) {
 		return false;
