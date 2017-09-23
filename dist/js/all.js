@@ -125,9 +125,8 @@ function generateArticleIcon() {
 			selectedArr = iconArrIndo;
 			break;
 		case 'japan':
-			selectedArr = iconArrJapan;
-			break;
 		default:
+			selectedArr = iconArrJapan;
 			break;
 	}
 

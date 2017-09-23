@@ -22,6 +22,7 @@ gulp.task('browser-sync', function() {
                 bottom:         '0',
                 borderRadius:   '5px 5px 0 0',
                 background:     'rgba(27,32,50,0.7)',
+                fontSize:       '12px'
             }
         },
         open: false
