@@ -17,6 +17,17 @@
 	margin-bottom: 0;
 }
 
+html.no-js {
+	.post-grid-sizer,
+	.post-item {
+		display: inline-block;
+		float: left;
+	}
+	.post-item .post-fill {
+		display: none;
+	}
+}
+
 .post-grid-sizer,
 .post-item {
 	width: 100%;

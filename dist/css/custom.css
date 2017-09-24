@@ -142,6 +142,16 @@ footer .final-say {
 		margin-bottom: 0;
 }
 
+html.no-js .post-grid-sizer,
+html.no-js .post-item {
+		display: inline-block;
+		float: left;
+}
+
+html.no-js .post-item .post-fill {
+		display: none;
+}
+
 .post-grid-sizer,
 .post-item {
 		width: 100%;
