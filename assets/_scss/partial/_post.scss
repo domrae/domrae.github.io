@@ -192,6 +192,13 @@ article {
 	}
 }
 
+html.no-js {
+	article p img {
+		opacity: 1;
+		@include transform(scale(1));
+	}
+}
+
 .pagination {
 	.prev,
 	.next {
