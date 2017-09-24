@@ -1,14 +1,25 @@
 ---
 layout: default
 ---
-<article class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
+{% include banner.html 
+	banner_type = 'inner'
+	banner_title = page.title 
+	banner_subtitle = ''
+	banner_image = page.cover_image %}
 
-  <div class="post-content">
-    {{ content }}
+<section class="page-content">
+  <div class="wrapper">
+	<article class="post">
+
+	  <header class="post-header">
+	    <h1 class="post-title">{{ page.title }}</h1>
+	  </header>
+
+	  <div class="post-content">
+	    {{ content }}
+	  </div>
+
+	</article>
   </div>
-
-</article>
+</section>

@@ -1,41 +1,55 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting" data-category="{{ page.categories }}">
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-    <div class="post-flourish top"></div>
-  </header>
+{% include banner.html 
+  banner_type = 'inner'
+  banner_title = page.title 
+  banner_subtitle = ''
+  banner_image = page.cover_image %}
 
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
-  </div>
+  <section class="page-content">
+    <div class="wrapper">
 
-  <div class="post-flourish bottom plane-up"></div>
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting" data-category="{{ page.categories }}">
+
+        <header class="post-header">
+          <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+          <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+          <div class="post-flourish top"></div>
+        </header>
+
+        <div class="post-content" itemprop="articleBody">
+          {{ content }}
+        </div>
+
+        <div class="post-flourish bottom plane-up"></div>
 
 
-</article>
+      </article>
 
-<div class="pagination">
-  {% if page.previous.url %}
-    <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
-  {% endif %}
-  {% if page.next.url %}
-    <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
-  {% endif %}
-</div>
+      <div class="pagination">
+        {% if page.previous.url %}
+        <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+        {% endif %}
+        {% if page.next.url %}
+        <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+        {% endif %}
+      </div>
 
-<div id="backtotop"><div class="wrap"><span>go up</span></div></div>
+      <div id="backtotop"><div class="wrap"><span>go up</span></div></div>
 
-<noscript>
-  <style type="text/css">
-    article p img {
-     opacity: 1;
-     -moz-transform: scale(1);
-     -webkit-transform: scale(1);
-     transform: scale(1);
-   }
- </style>
-</noscript>
+      <noscript>
+        <style type="text/css">
+          article p img {
+           opacity: 1;
+           -moz-transform: scale(1);
+           -webkit-transform: scale(1);
+           transform: scale(1);
+         }
+       </style>
+     </noscript>
+
+
+   </div>
+ </section>

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: trips
 title: Tokyo '16
 type: page
 trip: 
@@ -13,35 +13,41 @@ trip:
 
 <div class="home">
 
-<div class="heading-img"><img src="{{ "/img/flight-ticket.svg" }}" alt="icon"></div>
-  <h1 class="page-heading">Travelogue</h1>
+  <header>
+    <div class="heading-img">
+      <img src="/img/icons/flight-ticket.svg" alt="icon">
+    </div>
+    <h1 class="page-heading">Travelogue</h1>
+  </header>
 
-  <ul class="post-list post-grid">
-	<li class="post-grid-sizer"></li>
-		{% for post in site.posts %}
-	  	{% if post.categories contains page.trip.category %}
-        {% if post.thumbnail %}
-			<li class="post-item" style="background-image: url({{post.thumbnail}});"
-			data-title="{{ post.title }}">
-		{% else %}
-			<li class="post-item no-bg" data-title="{{ post.title }}">
-			<!-- <div class="img"><img src="{{post.thumbnail}}" alt="{{ post.title }}"></dKiv> -->
-        {% endif %}
-        <div class="post-fill"></div>
-        <a class="post-link post-wrap" href="{{ post.url | prepend: site.baseurl }}">
-          <!-- <div class="post-wrap"> -->
-            <div class="text-wrap">
-              <h4>
-                {{ post.title }}
-              </h4>
-              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-            </div>
-          <!-- </div> -->
-        </a>
-      </li>
-	  {% endif %}
-    {% endfor %}
-  </ul>
+  <section id="trip-grid">
+    <ul class="post-list post-grid">
+  	<li class="post-grid-sizer"></li>
+  		{% for post in site.posts %}
+  	  	{% if post.categories contains page.trip.category %}
+          {% if post.thumbnail %}
+  			<li class="post-item" style="background-image: url({{post.thumbnail}});"
+  			data-title="{{ post.title }}">
+  		{% else %}
+  			<li class="post-item no-bg" data-title="{{ post.title }}">
+  			<!-- <div class="img"><img src="{{post.thumbnail}}" alt="{{ post.title }}"></dKiv> -->
+          {% endif %}
+          <div class="post-fill"></div>
+          <a class="post-link post-wrap" href="{{ post.url | prepend: site.baseurl }}">
+            <!-- <div class="post-wrap"> -->
+              <div class="text-wrap">
+                <h4>
+                  {{ post.title }}
+                </h4>
+                <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+              </div>
+            <!-- </div> -->
+          </a>
+        </li>
+  	  {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
 
   <noscript>
     <style type="text/css">

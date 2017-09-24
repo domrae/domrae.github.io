@@ -5,34 +5,40 @@ type: page
 
 <div class="home">
 
-<div class="heading-img"><img src="/img/icons/flight-ticket.svg" alt="icon"></div>
-  <h1 class="page-heading">Travelogue</h1>
+  <header>
+    <div class="heading-img">
+      <img src="/img/icons/flight-ticket.svg" alt="icon">
+    </div>
+    <h1 class="page-heading">Travelogue</h1>
+  </header>
 
-  <ul class="post-list post-grid">
-    <li class="post-grid-sizer"></li>
-    {% for post in site.posts %}
-    	{% if post.categories contains site.current_category %}
-        {% if post.thumbnail %}
-      <li class="post-item" style="background-image: url({{post.thumbnail}});">
-      {% else %}
-      <li class="post-item no-bg">
+  <section id="trip-grid">
+    <ul class="post-list post-grid">
+      <li class="post-grid-sizer"></li>
+      {% for post in site.posts %}
+        {% if post.categories contains site.current_category %}
+          {% if post.thumbnail %}
+            <li class="post-item" style="background-image: url({{post.thumbnail}});">
+          {% else %}
+            <li class="post-item no-bg">
+          {% endif %}
+            <div class="post-fill"></div>
+            <a class="post-link post-wrap" href="{{ post.url | prepend: site.baseurl }}">
+              <div class="text-wrap">
+                <h4>
+                  {{ post.title }}
+                </h4>
+                <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+              </div>
+            </a>
+          </li>
         {% endif %}
-        <div class="post-fill"></div>
-        <a class="post-link post-wrap" href="{{ post.url | prepend: site.baseurl }}">
-            <div class="text-wrap">
-              <h4>
-                {{ post.title }}
-              </h4>
-              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-            </div>
-        </a>
-	  </li>
-      {% endif %}
-    {% endfor %}
-  </ul>
+      {% endfor %}
+      </ul>
+    </section>
 
-  <noscript>
-    <style type="text/css">
+    <noscript>
+      <style type="text/css">
         .post-grid-sizer, .post-item {
           /*width: 100%;*/
           display: inline-block;
@@ -41,7 +47,7 @@ type: page
         .post-item .post-fill {
           display: none;
         }
-    </style>
-</noscript>
+      </style>
+    </noscript>
 
-</div>
+  </div>

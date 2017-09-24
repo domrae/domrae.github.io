@@ -4,13 +4,12 @@ layout: default
 
 {% include banner.html 
 	banner_type = 'index'
-	banner_title = site.banner_title 
-	banner_subtitle = site.banner_subtitle
-	banner_image = site.banner_image %}
+	banner_title = page.trip.banner_title 
+	banner_subtitle = page.trip.banner_subtitle
+	banner_image = page.trip.banner_image %}
 
 <section class="page-content">
   <div class="wrapper">
 	{{ content }}
   </div>
 </section>
-
