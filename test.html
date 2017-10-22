@@ -3,12 +3,13 @@ layout: default
 type: page
 ---
 
+
 {% include banner.html 
-  banner_id = 'indonesia'
+  banner_id = 'taiwan'
   banner_type = 'index'
-  banner_title = site.banner_title 
-  banner_subtitle = site.banner_subtitle
-  banner_image = site.banner_image %}
+  banner_title = '#luraefanchoudomfu'
+  banner_subtitle = 'Kaohsiung! Kenting!'
+  banner_image = 'http://im.vsco.co/1/51f48bb095e8247120/56c9e77a40955b61337b8a75/vsco_022216.jpg' %}
 
 <section class="page-content">
   <div class="wrapper">
@@ -20,11 +21,11 @@ type: page
       <h1 class="page-heading">Travelogue</h1>
     </header>
 
-    <section id="trip-grid-indo">
+    <section id="trip-grid-japan">
       <ul class="post-list post-grid">
         <li class="post-grid-sizer"></li>
         {% for post in site.posts %}
-          {% if post.categories contains site.current_category %}
+          {% if post.categories contains 'japan' %}
             {% if post.thumbnail %}
               <li class="post-item" style="background-image: url({{post.thumbnail}});">
             {% else %}
@@ -49,11 +50,11 @@ type: page
 </section>
 
 {% include banner.html 
-  banner_id = 'japan'
+  banner_id = 'indonesia'
   banner_type = 'index'
-  banner_title = '#udomraemen'
-  banner_subtitle = 'Tokyo!&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;2016'
-  banner_image = 'http://im.vsco.co/1/51f48bb095e8247120/56c9e77a40955b61337b8a75/vsco_022216.jpg' %}
+  banner_title = site.banner_title 
+  banner_subtitle = site.banner_subtitle
+  banner_image = site.banner_image %}
 
 <section class="page-content">
   <div class="wrapper">
@@ -65,11 +66,11 @@ type: page
       <h1 class="page-heading">Travelogue</h1>
     </header>
 
-    <section id="trip-grid-japan">
+    <section id="trip-grid-indo">
       <ul class="post-list post-grid">
         <li class="post-grid-sizer"></li>
         {% for post in site.posts %}
-          {% if post.categories contains 'japan' %}
+          {% if post.categories contains site.current_category %}
             {% if post.thumbnail %}
               <li class="post-item" style="background-image: url({{post.thumbnail}});">
             {% else %}
