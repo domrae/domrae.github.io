@@ -9,9 +9,9 @@ categories: japan
 
 Some post trip musings~
 
-![S u i c a !](https://farm2.staticflickr.com/1632/26343599066_939f5886f3_k_d.jpg)
+![S u i c a !](){: class="lazy" data-original="https://farm2.staticflickr.com/1632/26343599066_939f5886f3_k_d.jpg"}
 
-![The Grandfather of modern POS systems](https://farm2.staticflickr.com/1686/26343599806_212fc8f17a_k_d.jpg)
+![The Grandfather of modern POS systems](){: class="lazy" data-original="https://farm2.staticflickr.com/1686/26343599806_212fc8f17a_k_d.jpg"}
 
 #### 1. We're not that far off, technology-wise 
 Not sure about you, but I've always envisioned Japan to be tech-savvy after constantly hearing hype about their futuristic innovations (like robots) and being the motherland of famous electronic brands. 
@@ -38,12 +38,12 @@ Anyway did some research and they said that its because of a mixture of the foll
 - Their diet is healthier: vege & seafood over red meat 🍣
 - Peer pressure as plump people are usually (kinda) ostracised 😔
 
-![suave](https://farm2.staticflickr.com/1642/25766778033_4b9871f838_k_d.jpg)
+![suave](){: class="lazy" data-original="https://farm2.staticflickr.com/1642/25766778033_4b9871f838_k_d.jpg"}
 
 #### 4. Ramen chefs are mostly young mid-career aged men?  
 Could not find much on this but at Fu-Unji and Menya Itto the chefs looked very happy and passionate about their ramen!
 
-![sushi!](https://farm2.staticflickr.com/1458/25764677124_74df4ca25f_k_d.jpg)
+![sushi!](){: class="lazy" data-original="https://farm2.staticflickr.com/1458/25764677124_74df4ca25f_k_d.jpg"}
 
 #### 5. Eating sushi the right way  
 Did you know that....
@@ -53,7 +53,7 @@ Did you know that....
 
 [Sushi eating guide found at the legendary Jiro's site] (too exclusive for us plebs).
 
-![no big deal](https://farm2.staticflickr.com/1600/26343599486_10ff80ea23_k_d.jpg)
+![no big deal](){: class="lazy" data-original="https://farm2.staticflickr.com/1600/26343599486_10ff80ea23_k_d.jpg"}
 
 #### 6. In Japan, everyone's camera is better than yours
 Woah. Like seriously, everyone owns a mid-range/professional dslr/film slr camera! The only people with cheap basic dslrs are tourists.

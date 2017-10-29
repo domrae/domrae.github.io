@@ -8,32 +8,30 @@ categories: japan
 ---
 
 
+![dom](){: class="lazy" data-original="https://farm2.staticflickr.com/1600/26253410755_ffbdffc5d3_k_d.jpg"}
 
-![dom](https://farm2.staticflickr.com/1600/26253410755_ffbdffc5d3_k_d.jpg)
-
-![rae](https://farm2.staticflickr.com/1698/26160970482_6afb83e79d_z_d.jpg)
-
+![rae](){: class="lazy" data-original="https://farm2.staticflickr.com/1698/26160970482_6afb83e79d_z_d.jpg"}
 
 
 Caught an early morning train to Hakone. Slept easily throughout the train. When we reached, it was insanely cold at 9 deg as both of us (mostly me) was dressed for 15 deg. It was a cold drizzly misty morning, with Mt Fuji not even in sight...but we will be back.
 
-![towards train](https://farm2.staticflickr.com/1566/26187139471_6c74341c31_k_d.jpg)
+![towards train](){: class="lazy" data-original="https://farm2.staticflickr.com/1566/26187139471_6c74341c31_k_d.jpg"}
 
 ![On the train](http://im.vsco.co/1/5702787f44a4e17354157/5703c0cf230c5f370e476a1a/vsco_040516.jpg)
 
-![rae fish cake](https://farm2.staticflickr.com/1477/25980563140_708d93ca44_k_d.jpg)
+![rae fish cake](){: class="lazy" data-original="https://farm2.staticflickr.com/1477/25980563140_708d93ca44_k_d.jpg"}
 
 Both of us loved the baked honey cheese tart store! It was like a cheesecake on a tart base. Those sg neighbourhood bakeries wanna copy but not same texture eh, why?
 
-![cheese tarts](https://farm2.staticflickr.com/1680/25650729443_8806c00736_k_d.jpg) 
+![cheese tarts](){: class="lazy" data-original="https://farm2.staticflickr.com/1680/25650729443_8806c00736_k_d.jpg)"}
 
 Had to stop by a fishing shop to get hot packs cause it was too cold.
 
-![so cold!](https://farm2.staticflickr.com/1516/25648628814_521282adfc_k_d.jpg)
+![so cold!](){: class="lazy" data-original="https://farm2.staticflickr.com/1516/25648628814_521282adfc_k_d.jpg"}
 
 Found Hakone's Floating Tori of Peace.
 
-![tori of peace](https://farm2.staticflickr.com/1714/26227803076_71c9db9fe0_k_d.jpg)
+![tori of peace](){: class="lazy" data-original="https://farm2.staticflickr.com/1714/26227803076_71c9db9fe0_k_d.jpg"}
 
 Lunch Katsudon at this small homely restaurant near the train station, which like everything else in Hakone, was massively overpriced. -_-
 
@@ -55,26 +53,26 @@ Didnt do much in Hakone cause of the bad weather but it was a really relaxing da
 
 Tried the famous Hakone black roasted egg. Similar to tea egg but had a lil burnt outer taste.
 
-![onsen eggs](https://farm2.staticflickr.com/1613/25650734023_a0c73e0229_k_d.jpg)
+![onsen eggs](){: class="lazy" data-original="https://farm2.staticflickr.com/1613/25650734023_a0c73e0229_k_d.jpg"}
 
-![onsen egg](https://farm2.staticflickr.com/1557/25980557520_043a235b36_k_d.jpg)
+![onsen egg](){: class="lazy" data-original="https://farm2.staticflickr.com/1557/25980557520_043a235b36_k_d.jpg"}
 
 Settled for yakitori dinner at Toritake (hole in the wall yakitori bar at Shibuya) and tried Shochu, a jap spirit, I think I can live my life without alcohol man - ewwwwwww. Gave all to alcoholic Dom heh.
 
 
-![dom](https://farm2.staticflickr.com/1517/26187142141_8c0859694b_k_d.jpg)
+![dom](){: class="lazy" data-original="https://farm2.staticflickr.com/1517/26187142141_8c0859694b_k_d.jpg"}
 
-![rae](https://farm2.staticflickr.com/1491/26160975222_c8f4086f45_k_d.jpg)
+![rae](){: class="lazy" data-original="https://farm2.staticflickr.com/1491/26160975222_c8f4086f45_k_d.jpg"}
 
 The restaurant was the most 'traditional' one we visited so far, having had our meal sitting cross-legged on tatami mats. It was interesting for the first 10 minutes until our legs cramped up..
 
 Had some trouble ordering but some guy from the group next door helped us with the language barrier which was nice
 
-![eel](https://farm2.staticflickr.com/1562/25980564080_98a0a7dff7_k_d.jpg)
+![eel](){: class="lazy" data-original="https://farm2.staticflickr.com/1562/25980564080_98a0a7dff7_k_d.jpg"}
 
-![eggplant](https://farm2.staticflickr.com/1626/25650737123_1bcdf2e289_k_d.jpg)
+![eggplant](){: class="lazy" data-original="https://farm2.staticflickr.com/1626/25650737123_1bcdf2e289_k_d.jpg"}
 
-![chicken skin](https://farm2.staticflickr.com/1559/25650733263_9e96722d1f_k_d.jpg)
+![chicken skin](){: class="lazy" data-original="https://farm2.staticflickr.com/1559/25650733263_9e96722d1f_k_d.jpg"}
 
 Peace out~
 
