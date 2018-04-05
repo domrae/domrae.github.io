@@ -75,10 +75,17 @@ footer {
 	.social-media-list {
 		li a {
 			padding: rem(20) 0;
-			display: block;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			line-height: 1;
 
 			&:first-child {
 				padding-top: 0;
+			}
+
+			.icon {
+				margin-right: 10px;
 			}
 		}
 	}
