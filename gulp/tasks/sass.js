@@ -1,7 +1,6 @@
 var gulp         = require('gulp');
 var sass         = require('gulp-sass');
 var gutil        = require('gulp-util');
-var prefix       = require('gulp-autoprefixer');
 var rename       = require('gulp-rename');
 var plumber      = require('gulp-plumber');
 var sourcemaps   = require('gulp-sourcemaps');
