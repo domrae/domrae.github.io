@@ -7,10 +7,10 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Gentium+Basic:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="{{ "/dist/css/main.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/dist/css/main.min.css" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.2/featherlight.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/featherlight/1.7.2/featherlight.gallery.min.css">
-  <link rel="stylesheet" href="{{ "/dist/css/custom.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/dist/css/custom.min.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
   <link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}">
