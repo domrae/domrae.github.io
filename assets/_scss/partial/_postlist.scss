@@ -94,35 +94,18 @@ html.no-js {
 		}
 
 		&.post-wrap {
-			display: table;
+			// display: table;
 			width: 100%;
 			height: 100%;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 
 		.text-wrap {
-			display: table-cell;
-			vertical-align: bottom;
+			display: block;
 			text-align: center;
-			// (11 Mar 2016)
-			// @include transition(0.3s all ease-in-out);
-			@include transform(translateY(-33%));
-			// @include transform(translateY(-90px));
-
-			@media (min-width: 480px){
-				@include transform(translateY(-30%));
-				// @include transform(translateY(-120px));
-			}
-
-			@media (min-width: 1366px){
-				@include transform(translateY(-35%));
-				// @include transform(translateY(-120px));
-			}
-
-			@media (min-width: 1600px){
-				@include transform(translateY(-40%));
-			}
-
-
 		}
 
 		h4,
