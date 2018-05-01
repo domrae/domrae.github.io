@@ -22,7 +22,6 @@ export class App {
 					.import('modules:'+val+'.js')
 					.then(function(module) {
 						console.log('%c'+val, 'color: green');
-						SystemJS.set(val, SystemJS.newModule(module));
 						module.init();
 					})
 					.catch(function(error) {
