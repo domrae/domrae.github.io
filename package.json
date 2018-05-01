@@ -47,6 +47,7 @@
     "jshint": "^2.9.5",
     "merge-stream": "^1.0.1",
     "require-dir": "^0.3.2",
-    "run-sequence": "^2.2.0"
+    "run-sequence": "^2.2.0",
+    "systemjs": "^0.21.3"
   }
 }

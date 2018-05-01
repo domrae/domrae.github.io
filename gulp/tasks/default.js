@@ -9,6 +9,7 @@ var runSequence = require('run-sequence');
 gulp.task('default', function(){
   console.log(chalk.magenta.inverse('» Building for development...'))
   runSequence(
+  	'copy',
   	['sass', 'babel'],
   	'jekyll-build',
   	'watch'
