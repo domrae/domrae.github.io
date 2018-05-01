@@ -19,7 +19,24 @@
 /**
  * init scripts
  */
+
+function loadPlugins() {
+	var componentEl = $('[data-component]');
+
+	componentEl.each((i, el) => {
+		var componentStr = el.dataset.component.replace(/'/g, '"');
+		var componentArr = JSON.parse(componentStr);
+
+		componentArr.map((val, key) => {
+			console.log(val);
+		});
+	});
+}
+
 $(document).ready(function(){
+
+	loadPlugins();
+
 
 	initPostGridMasonry();
 	instaBannerHashtagLink();

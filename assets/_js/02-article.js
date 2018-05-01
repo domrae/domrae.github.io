@@ -6,6 +6,7 @@
 
 /**
  * lazy load article images
+ * data-component = 'lazyload-images'
  */
 function articleImgLazy() {
 	$("img.lazy").lazyload({
@@ -21,7 +22,7 @@ function articleImgLazy() {
 
 /**
  * [imgClearfix description]
- * @return {[type]} [description]
+ * data-component = 'clearfix-images'
  */
 function imgClearfix() {
 	/**
@@ -46,6 +47,7 @@ function imgClearfix() {
 
 /**
  * Image modal viewer for articles
+ * data-component = 'featherlight-gallery-images'
  */
 function initFeatherlight(){
 	var articleImg = $('article img');
@@ -63,6 +65,11 @@ function initFeatherlight(){
 	articleImg.featherlightGallery();
 }
 
+/**
+ * [initFeatherlightSingle description]
+ * @param  {[type]} el [description]
+ * data-component = 'featherlight-single-images'
+ */
 function initFeatherlightSingle(el){
 	var hrefVal;
 	var $el = $(el);
@@ -76,7 +83,7 @@ function initFeatherlightSingle(el){
 
 /**
  * Detect portrait images and add class to fix alignment
- * @return {[type]} [description]
+ * data-component = 'vertical-images'
  */
 function vertImgFix(){
 	var imgArr = $('article img').get();
@@ -92,7 +99,7 @@ function vertImgFix(){
 /**
  * Add markdown image title/alt attr into a caption below
  * the image
- * @return {[type]} [description]
+ * data-component = 'image-titles'
  */
 function imgTitle(){
 	$('article img').each(function(){
@@ -104,7 +111,7 @@ function imgTitle(){
 /**
  * Detect side-by-side portrait images and add a class for
  * alignment
- * @return {[type]} [description]
+ * data-component = 'side-vertical-images'
  */
 function sbsVertImg(){
 	var imgArr = $('article .vert-img').get();
@@ -135,7 +142,7 @@ function sbsVertImg(){
 /**
  * Random food icon generated at end of each article
  * - for japan articles only
- * @return {[type]} [description]
+ * data-component = 'article-icon'
  */
 function generateArticleIcon(){
 	var articleType = document.querySelector('article').dataset.category;
@@ -177,10 +184,14 @@ function generateArticleIcon(){
 
 /**
  * open all inline article links in a new tab
+ * data-component = 'article-links'
  * @return {[type]} [description]
  */
 function articleLinks(){
 	$('article a').each(function(){
-		$(this).attr('target','_blank');
+		$(this).attr({
+			'target': '_blank',
+			'rel': 'noopener noreferrer'
+		});
 	});
 }

@@ -6,7 +6,7 @@
 
 /**
  * Back to top hover button in article page
- * @return {[type]} [description]
+ * data-component = 'back-to-top'
  */
 function backtoTopButton() {
 	var back2Top = $('#backtotop');
@@ -52,7 +52,7 @@ function backtoTopButton() {
 
 /**
  * Generate instagram banner hashtag
- * @return {[type]} [description]
+ * data-component = 'banner-hashtag'
  */
 function instaBannerHashtagLink() {
 	/**
@@ -74,6 +74,7 @@ function instaBannerHashtagLink() {
 
 /**
  * initialize post grid masonry
+ * data-component = 'grid-masonry'
  * @return {[type]} [description]
  */
 function initPostGridMasonry() {
