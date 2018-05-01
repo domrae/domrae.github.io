@@ -14,7 +14,11 @@ gulp.task("babel", function () {
 
 	var customJs = gulp.src("./assets/_js/**/*.js")
 	.pipe(sourcemaps.init())
-	.pipe(babel())
+	.pipe(
+		babel({
+		  "presets": ["env"]
+		})
+	)
     .pipe(jshint())
     .pipe(jshint.reporter('default'))
 	.pipe(uglify({
