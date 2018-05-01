@@ -6,7 +6,6 @@
 
 /* globals initPostGridMasonry */
 /* globals instaBannerHashtagLink */
-/* globals kickLinksOut */
 /* globals initFeatherlight */
 /* globals generateArticleIcon */
 /* globals articleLinks */
@@ -24,7 +23,6 @@ $(document).ready(function(){
 
 	initPostGridMasonry();
 	instaBannerHashtagLink();
-	kickLinksOut();
 
 	if ($('article').length) {
 		initFeatherlight();

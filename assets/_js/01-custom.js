@@ -5,25 +5,6 @@
 /* globals window */
 
 /**
- * Verify links and convert to open in new tab
- * @return {[type]} [description]
- */
-function kickLinksOut(){
-	var link = $('.social-media-list li a');
-
-	if (!(link.is('a'))){
-		// console.log(link + "is not a link.");
-		return false;
-	}
-
-	var linkArr = link.get();
-
-	for (var i=0, len=linkArr.length; i<len; i++){
-		$(linkArr[i]).attr("target","_blank");
-	}
-}
-
-/**
  * Back to top hover button in article page
  * @return {[type]} [description]
  */
