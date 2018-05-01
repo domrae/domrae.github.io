@@ -21,7 +21,7 @@ url: "http://domrae.github.io" # the base hostname & protocol for your site
 instagram_username_1: dommmm
 instagram_username_2: dznrachel
 copyright_statement: >
- All Rights Reserved &#169; Copyright 2016, Dominic Gan & Rachel Chen. Icons courtesy of <a href="http://www.freepik.com" title="Freepik" target="_blank">Freepik</a> (<a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>)
+ All Rights Reserved &#169; Copyright 2016, Dominic Gan & Rachel Chen. Icons courtesy of <a href="http://www.freepik.com" title="Freepik" target="_blank" rel="noreferrer noopener">Freepik</a> (<a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank" rel="noopener noreferrer">CC 3.0 BY</a>)
 # github_username:  domrae
 
 # Build settings
