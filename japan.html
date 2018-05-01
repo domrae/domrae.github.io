@@ -21,7 +21,7 @@ trip:
   </header>
 
   <section id="trip-grid">
-    <ul class="post-list post-grid">
+    <ul class="post-list post-grid" data-component="['grid-masonry']">
   	<li class="post-grid-sizer"></li>
   		{% for post in site.posts %}
   	  	{% if post.categories contains page.trip.category %}

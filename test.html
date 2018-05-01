@@ -22,7 +22,7 @@ type: page
     </header>
 
     <section id="trip-grid-japan">
-      <ul class="post-list post-grid">
+      <ul class="post-list post-grid" data-component="['grid-masonry']">
         <li class="post-grid-sizer"></li>
         {% for post in site.posts %}
           {% if post.categories contains 'japan' %}
@@ -67,7 +67,7 @@ type: page
     </header>
 
     <section id="trip-grid-indo">
-      <ul class="post-list post-grid">
+      <ul class="post-list post-grid" data-component="['grid-masonry']">
         <li class="post-grid-sizer"></li>
         {% for post in site.posts %}
           {% if post.categories contains site.current_category %}
