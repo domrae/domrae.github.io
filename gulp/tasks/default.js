@@ -11,6 +11,7 @@ gulp.task('default', function(){
   runSequence(
   	'copy',
   	['sass', 'babel'],
+  	'bundle',
   	'jekyll-build',
   	'watch'
 	);
