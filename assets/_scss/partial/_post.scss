@@ -110,7 +110,11 @@ article {
 
 		&.ready {
 			opacity: 1;
-			@include transform(scale(1));				
+			@include transform(scale(1));
+
+			+ .caption {
+				display: block;
+			}				
 		}
 
 		&[data-featherlight]{
@@ -125,14 +129,14 @@ article {
 	}
 
 	.caption {
-			// display: none;
+			display: none;
+			// display: block;
 			font-size: rem(13);
 			font-style: italic;
 			text-align: left;
 
 			@media (min-width: 1024px){
 			font-size: rem(14);
-				display: block;
 				margin-top: rem(5);
 			}
 		}
