@@ -17,7 +17,7 @@ gulp.task('watch', ['browser-sync'], function() {
 
   gulp.watch(['./assets/_js/**/*.js']).on('change', function(evt) {
     changeEvent(evt);
-    return runSequence('babel');
+    return runSequence('babel', 'bundle');
   });
 
   gulp.watch([
