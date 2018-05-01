@@ -29,7 +29,7 @@ Started the day with lunch at Ichiran ramen, yums. Combed and braved the crowds 
 
 ![Takoyaki which we didnt eat](){: data-original="https://farm2.staticflickr.com/1679/26145290771_3c1886f431_k_d.jpg" class="lazy"}
 
-![Mario Kart IRL](http://im.vsco.co/1/5702787f44a4e17354157/5702791726ac58632485ea78/vsco_040416.jpg)
+![Mario Kart IRL](){: data-original="http://im.vsco.co/1/5702787f44a4e17354157/5702791726ac58632485ea78/vsco_040416.jpg" class="lazy"}
 
 ![hello kitties!](){: data-original="https://farm2.staticflickr.com/1465/26119126932_302aff4d46_k_d.jpg" class="lazy"}
 

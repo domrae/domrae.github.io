@@ -17,13 +17,13 @@ Caught an early morning train to Hakone. Slept easily throughout the train. When
 
 ![towards train](){: class="lazy" data-original="https://farm2.staticflickr.com/1566/26187139471_6c74341c31_k_d.jpg"}
 
-![On the train](http://im.vsco.co/1/5702787f44a4e17354157/5703c0cf230c5f370e476a1a/vsco_040516.jpg)
+![On the train](){: class="lazy" data-original="http://im.vsco.co/1/5702787f44a4e17354157/5703c0cf230c5f370e476a1a/vsco_040516.jpg"}
 
 ![rae fish cake](){: class="lazy" data-original="https://farm2.staticflickr.com/1477/25980563140_708d93ca44_k_d.jpg"}
 
 Both of us loved the baked honey cheese tart store! It was like a cheesecake on a tart base. Those sg neighbourhood bakeries wanna copy but not same texture eh, why?
 
-![cheese tarts](){: class="lazy" data-original="https://farm2.staticflickr.com/1680/25650729443_8806c00736_k_d.jpg)"}
+![cheese tarts](){: class="lazy" data-original="https://farm2.staticflickr.com/1680/25650729443_8806c00736_k_d.jpg"}
 
 Had to stop by a fishing shop to get hot packs cause it was too cold.
 
@@ -37,9 +37,9 @@ Lunch Katsudon at this small homely restaurant near the train station, which lik
 
 At least it was nice~
 
-![katsudon](http://im.vsco.co/1/5702787f44a4e17354157/5703c0bc230c5f370e476a19/vsco_040516.jpg)
+![katsudon](){: class="lazy" data-original="http://im.vsco.co/1/5702787f44a4e17354157/5703c0bc230c5f370e476a19/vsco_040516.jpg"}
 
-![katsudons](http://im.vsco.co/1/5702787f44a4e17354157/5703c0ae230c5f370e476a18/vsco_040516.jpg)
+![katsudons](){: class="lazy" data-original="http://im.vsco.co/1/5702787f44a4e17354157/5703c0ae230c5f370e476a18/vsco_040516.jpg"}
 
 After braving the cold with frozen noses, hands and toes, we went to seek some warmth at a nearby onsen. It wasnt as bad as I thought, maybe cause I'm alone and dont care about what other people think hahahah just walked in freely didnt even feel weird. It wasnt even that awkward facing other people's naked truth lol. Dom said the guys were more conservative.
 
