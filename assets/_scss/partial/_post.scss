@@ -109,8 +109,8 @@ article {
 		}
 
 		&.ready {
-		opacity: 1;
-		@include transform(scale(1));				
+			opacity: 1;
+			@include transform(scale(1));				
 		}
 
 		&[data-featherlight]{
