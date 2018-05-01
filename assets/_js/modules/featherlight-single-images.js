@@ -2,6 +2,13 @@ import $ from 'jquery';
 import 'featherlight';
 import 'featherlight-gallery';
 
+/**
+ * @class FeatherlightSingle
+ * @author Dominic <dominicgangx@gmail.com>
+ * Image modal viewer for articles
+ * loaded by single image via lazyload
+ * data-component = 'featherlight-single-images'
+ */
 export class FeatherlightSingle {
 	constructor (elem) {
 		this.scope = $(elem);

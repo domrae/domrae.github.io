@@ -2,6 +2,7 @@ import $ from 'jquery';
 
 /**
  * @class ImageTitles
+ * @author Dominic <dominicgangx@gmail.com>
  * Add markdown image title/alt attr into a caption below
  * the image
  * data-component = 'image-titles'

@@ -3,6 +3,7 @@ import { ClearfixImage } from './clearfix-images.js';
 
 /**
  * @class VerticalImages
+ * @author Dominic <dominicgangx@gmail.com>
  * Detect portrait images and add class to fix alignment
  * data-component = 'vertical-images'
  */

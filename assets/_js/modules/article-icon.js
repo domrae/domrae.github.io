@@ -2,6 +2,7 @@ import $ from 'jquery';
 
 /**
  * @class ArticleIcons
+ * @author Dominic <dominicgangx@gmail.com>
  * Random food icon generated at end of each article
  * - for japan articles only
  * data-component = 'article-icon'

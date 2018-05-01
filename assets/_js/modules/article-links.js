@@ -2,6 +2,7 @@ import $ from 'jquery';
 
 /**
  * @class ArticleLinks
+ * @author Dominic <dominicgangx@gmail.com>
  * open all inline article links in a new tab
  * data-component = 'article-links'
  * @return {[type]} [description]

@@ -3,7 +3,7 @@ import 'featherlight';
 import 'featherlight-gallery';
 
 /**
- * @class ClearfixImage
+ * @class FeatherlightGallery
  * @author Dominic <dominicgangx@gmail.com>
  * Image modal viewer for articles
  * data-component = 'featherlight-gallery-images'
