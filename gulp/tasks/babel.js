@@ -14,7 +14,7 @@ gulp.task("babel", function () {
 	.pipe(plumber())
 	.pipe(gulp.dest("./dist/js"));
 
-	var rawJs = gulp.src("./assets/_js/**/*.js")
+	var rawJs = gulp.src("./assets/_js/*.js")
 	.pipe(plumber())
 	.pipe(sourcemaps.init())
 	.pipe(
@@ -29,6 +29,17 @@ gulp.task("babel", function () {
 	}))
 	.pipe(sourcemaps.write("."))
 	.pipe(gulp.dest("./dist/js"));
+
+	var moduleJs = gulp.src("./assets/_js/modules/*.js")
+	.pipe(plumber())
+	.pipe(sourcemaps.init())
+	.pipe(
+		babel({
+		  "presets": ["env"]
+		})
+	)
+	.pipe(sourcemaps.write("."))
+	.pipe(gulp.dest("./dist/js/modules"));
 
 	// var customJs = gulp.src("./assets/_js/**/*.js")
 	// .pipe(sourcemaps.init())
@@ -48,6 +59,6 @@ gulp.task("babel", function () {
 	// .pipe(sourcemaps.write("."))
 	// .pipe(gulp.dest("./dist/js"));
 
-	return merge(polyfillSrc, rawJs)
+	return merge(polyfillSrc, rawJs, moduleJs)
 	.pipe(debug({title: 'babel-merge:'}));
 });
