@@ -41,6 +41,13 @@ gulp.task("babel", function () {
 	.pipe(sourcemaps.write("."))
 	.pipe(gulp.dest("./dist/js/modules"));
 
+	var npmJs = gulp.src("./assets/_js/npm/**/*.js")
+	.pipe(plumber())
+	.pipe(uglify({
+		mangle: false
+	}))
+	.pipe(gulp.dest("./dist/js/npm"));
+
 	// var customJs = gulp.src("./assets/_js/**/*.js")
 	// .pipe(sourcemaps.init())
 	// .pipe(
@@ -59,6 +66,6 @@ gulp.task("babel", function () {
 	// .pipe(sourcemaps.write("."))
 	// .pipe(gulp.dest("./dist/js"));
 
-	return merge(polyfillSrc, rawJs, moduleJs)
+	return merge(polyfillSrc, rawJs, moduleJs, npmJs)
 	.pipe(debug({title: 'babel-merge:'}));
 });

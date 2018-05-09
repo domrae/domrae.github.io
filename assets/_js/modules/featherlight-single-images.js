@@ -1,6 +1,8 @@
 import $ from 'jquery';
 import 'featherlight';
 import 'featherlight-gallery';
+import 'featherlight.css';
+import 'featherlight-gallery.css';
 
 /**
  * @class FeatherlightSingle
