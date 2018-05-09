@@ -1,2 +1,69 @@
-"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.BannerHashtag=void 0;var _createClass=function(){function n(e,t){for(var r=0;r<t.length;r++){var n=t[r];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}return function(e,t,r){return t&&n(e.prototype,t),r&&n(e,r),e}}();exports.init=init;var _jquery=require("jquery"),_jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(e){return e&&e.__esModule?e:{default:e}}function _classCallCheck(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var BannerHashtag=exports.BannerHashtag=function(){function e(){_classCallCheck(this,e),this.scope=(0,_jquery2.default)(".banner .text h3")}return _createClass(e,[{key:"init",value:function(){this.scope.length&&this.parseHashtag()}},{key:"parseHashtag",value:function(){var e=this;if("#"===e.scope[0].innerHTML.charAt(0)){var t="https://www.instagram.com/explore/tags/"+e.scope.text().substring(1);e.scope.wrap("<a></a>").parent().attr({target:"_blank",rel:"noopener noreferrer",href:t})}}}]),e}();function init(){(new BannerHashtag).init()}
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+exports.BannerHashtag = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+exports.init = init;
+
+var _jquery = require('jquery');
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+/**
+ * @class BannerHashtag
+ * @author Dominic <dominicgangx@gmail.com>
+ * Generate instagram banner hashtag
+ * data-component = 'banner-hashtag'
+ */
+var BannerHashtag = exports.BannerHashtag = function () {
+	function BannerHashtag() {
+		_classCallCheck(this, BannerHashtag);
+
+		this.scope = (0, _jquery2.default)('.banner .text h3');
+	}
+
+	_createClass(BannerHashtag, [{
+		key: 'init',
+		value: function init() {
+			if (this.scope.length) {
+				this.parseHashtag();
+			}
+		}
+
+		/**
+   * determine if string is hashtag before converting to link
+   */
+
+	}, {
+		key: 'parseHashtag',
+		value: function parseHashtag() {
+			var _self = this;
+
+			if (_self.scope[0].innerHTML.charAt(0) === '#') {
+				var linkRef = 'https://www.instagram.com/explore/tags/' + _self.scope.text().substring(1);
+
+				_self.scope.wrap('<a></a>').parent().attr({
+					'target': '_blank',
+					'rel': 'noopener noreferrer',
+					'href': linkRef
+				});
+			}
+		}
+	}]);
+
+	return BannerHashtag;
+}();
+
+function init() {
+	var module = new BannerHashtag();
+	module.init();
+}
 //# sourceMappingURL=banner-hashtag.js.map

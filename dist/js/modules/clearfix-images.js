@@ -1,2 +1,95 @@
-"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.ClearfixImage=void 0;var _createClass=function(){function a(e,i){for(var r=0;r<i.length;r++){var a=i[r];a.enumerable=a.enumerable||!1,a.configurable=!0,"value"in a&&(a.writable=!0),Object.defineProperty(e,a.key,a)}}return function(e,i,r){return i&&a(e.prototype,i),r&&a(e,r),e}}();exports.init=init;var _jquery=require("jquery"),_jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(e){return e&&e.__esModule?e:{default:e}}function _classCallCheck(e,i){if(!(e instanceof i))throw new TypeError("Cannot call a class as a function")}var ClearfixImage=exports.ClearfixImage=function(){function e(){_classCallCheck(this,e),this.scope=(0,_jquery2.default)("article p")}return _createClass(e,[{key:"init",value:function(){var r=this;this.scope.length&&this.scope.map(function(e,i){(0,_jquery2.default)(i).hasClass("vert-img col-2-img")&&r.clearfixSideBySide(i),(0,_jquery2.default)(i).hasClass("vert-img")||r.clearfixLandscape(i)})}},{key:"clearfixSideBySide",value:function(e){var i=(0,_jquery2.default)(e),r=i.prev(),a=i.next();i.hasClass("vert-img")&&r.hasClass("vert-img")&&(r.prev().is("p")||!r.prev().length)&&r.before('<div class="empty-fill"></div>'),i.hasClass("vert-img")&&a.hasClass("vert-img")&&(i.prev().is("p")||!i.prev().length)&&i.before('<div class="empty-fill"></div>')}},{key:"clearfixLandscape",value:function(e){var i=(0,_jquery2.default)(e);i.find("img").length&&!i.hasClass("vert-img")&&i.before('<div class="empty-fill"></div>')}}]),e}();function init(){(new ClearfixImage).init()}
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+exports.ClearfixImage = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+exports.init = init;
+
+var _jquery = require('jquery');
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+/**
+ * @class ClearfixImage
+ * @author Dominic <dominicgangx@gmail.com>
+ * [imgClearfix description]
+ * data-component = 'clearfix-images'
+ */
+var ClearfixImage = exports.ClearfixImage = function () {
+	function ClearfixImage() {
+		_classCallCheck(this, ClearfixImage);
+
+		this.scope = (0, _jquery2.default)('article p');
+	}
+
+	_createClass(ClearfixImage, [{
+		key: 'init',
+		value: function init() {
+			var _this = this;
+
+			if (this.scope.length) {
+				this.scope.map(function (i, el) {
+					if ((0, _jquery2.default)(el).hasClass('vert-img col-2-img')) {
+						_this.clearfixSideBySide(el);
+					}
+
+					if (!(0, _jquery2.default)(el).hasClass('vert-img')) {
+						_this.clearfixLandscape(el);
+					}
+				});
+			}
+		}
+
+		/**
+   * add clearfix div to before side-by-side images
+   * for alignment fix
+   */
+
+	}, {
+		key: 'clearfixSideBySide',
+		value: function clearfixSideBySide(elem) {
+			var $elem = (0, _jquery2.default)(elem);
+			var $prevElem = $elem.prev();
+			var $nextElem = $elem.next();
+
+			if ($elem.hasClass('vert-img') && $prevElem.hasClass('vert-img') && ($prevElem.prev().is('p') || !$prevElem.prev().length)) {
+				$prevElem.before('<div class="empty-fill"></div>');
+			}
+
+			if ($elem.hasClass('vert-img') && $nextElem.hasClass('vert-img') && ($elem.prev().is('p') || !$elem.prev().length)) {
+				$elem.before('<div class="empty-fill"></div>');
+			}
+		}
+
+		/**
+   * add clearfix to before landscape images
+   */
+
+	}, {
+		key: 'clearfixLandscape',
+		value: function clearfixLandscape(elem) {
+			var $elem = (0, _jquery2.default)(elem);
+
+			if ($elem.find('img').length && !$elem.hasClass('vert-img')) {
+				// if (!$(elem).prev().is('p')){
+				$elem.before('<div class="empty-fill"></div>');
+			}
+		}
+	}]);
+
+	return ClearfixImage;
+}();
+
+function init() {
+	var module = new ClearfixImage();
+	module.init();
+}
 //# sourceMappingURL=clearfix-images.js.map

@@ -1,2 +1,70 @@
-"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.GridMasonry=void 0;var _createClass=function(){function i(e,r){for(var t=0;t<r.length;t++){var i=r[t];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,r,t){return r&&i(e.prototype,r),t&&i(e,t),e}}();exports.init=init;var _jquery=require("jquery"),_jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(e){return e&&e.__esModule?e:{default:e}}function _classCallCheck(e,r){if(!(e instanceof r))throw new TypeError("Cannot call a class as a function")}require("imagesloaded"),require("masonry");var GridMasonry=exports.GridMasonry=function(){function e(){_classCallCheck(this,e),this.scope=(0,_jquery2.default)(".post-grid"),this.options={itemSelector:".post-item",columnWidth:".post-grid-sizer",gutter:0,percentPosition:!0}}return _createClass(e,[{key:"init",value:function(){this.scope.length&&this.initMasonry()}},{key:"initMasonry",value:function(){var e=this.scope.masonry(this.options);e.imagesLoaded().progress(function(){e.masonry("layout")})}}]),e}();function init(){(new GridMasonry).init()}
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+exports.GridMasonry = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+exports.init = init;
+
+var _jquery = require('jquery');
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+require('imagesloaded');
+
+require('masonry');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+/**
+ * @class GridMasonry
+ * @author Dominic <dominicgangx@gmail.com>
+ * [Description here]
+ * data-component = 'grid-masonry'
+ */
+var GridMasonry = exports.GridMasonry = function () {
+	function GridMasonry() {
+		_classCallCheck(this, GridMasonry);
+
+		this.scope = (0, _jquery2.default)('.post-grid');
+		this.options = {
+			itemSelector: '.post-item',
+			columnWidth: '.post-grid-sizer',
+			gutter: 0,
+			percentPosition: true
+		};
+	}
+
+	_createClass(GridMasonry, [{
+		key: 'init',
+		value: function init() {
+			if (this.scope.length) {
+				this.initMasonry();
+			}
+		}
+	}, {
+		key: 'initMasonry',
+		value: function initMasonry() {
+			var _self = this;
+
+			var postGridMsnry = _self.scope.masonry(_self.options);
+
+			postGridMsnry.imagesLoaded().progress(function () {
+				postGridMsnry.masonry('layout');
+			});
+		}
+	}]);
+
+	return GridMasonry;
+}();
+
+function init() {
+	var module = new GridMasonry();
+	module.init();
+}
 //# sourceMappingURL=grid-masonry.js.map

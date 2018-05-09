@@ -1,2 +1,77 @@
-"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.FeatherlightSingle=void 0;var _createClass=function(){function r(e,t){for(var i=0;i<t.length;i++){var r=t[i];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}return function(e,t,i){return t&&r(e.prototype,t),i&&r(e,i),e}}();exports.init=init;var _jquery=require("jquery"),_jquery2=_interopRequireDefault(_jquery);function _interopRequireDefault(e){return e&&e.__esModule?e:{default:e}}function _classCallCheck(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}require("featherlight"),require("featherlight-gallery");var FeatherlightSingle=exports.FeatherlightSingle=function(){function t(e){_classCallCheck(this,t),this.scope=(0,_jquery2.default)(e),this.selector=e}return _createClass(t,[{key:"set",value:function(e){this.scope=(0,_jquery2.default)(e),this.selector=e}},{key:"init",value:function(){this.scope.length&&this.initFeatherlightSingle()}},{key:"initFeatherlightSingle",value:function(){var e,t=this;e=t.scope.attr("data-original"),t.scope.attr("data-featherlight",e),t.scope.featherlightGallery()}}]),t}();function init(e){new FeatherlightSingle(e).init()}
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+exports.FeatherlightSingle = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+exports.init = init;
+
+var _jquery = require('jquery');
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+require('featherlight');
+
+require('featherlight-gallery');
+
+require('featherlight.css');
+
+require('featherlight-gallery.css');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+/**
+ * @class FeatherlightSingle
+ * @author Dominic <dominicgangx@gmail.com>
+ * Image modal viewer for articles
+ * loaded by single image via lazyload
+ * data-component = 'featherlight-single-images'
+ */
+var FeatherlightSingle = exports.FeatherlightSingle = function () {
+	function FeatherlightSingle(elem) {
+		_classCallCheck(this, FeatherlightSingle);
+
+		this.scope = (0, _jquery2.default)(elem);
+		this.selector = elem;
+	}
+
+	_createClass(FeatherlightSingle, [{
+		key: 'set',
+		value: function set(elem) {
+			this.scope = (0, _jquery2.default)(elem);
+			this.selector = elem;
+		}
+	}, {
+		key: 'init',
+		value: function init() {
+			if (this.scope.length) {
+				this.initFeatherlightSingle();
+			}
+		}
+	}, {
+		key: 'initFeatherlightSingle',
+		value: function initFeatherlightSingle() {
+			var _self = this;
+			var href = void 0;
+
+			href = _self.scope.attr('data-original');
+			_self.scope.attr('data-featherlight', href);
+
+			// articleImg.featherlight();
+			_self.scope.featherlightGallery();
+		}
+	}]);
+
+	return FeatherlightSingle;
+}();
+
+function init(elem) {
+	var module = new FeatherlightSingle(elem);
+	module.init();
+}
 //# sourceMappingURL=featherlight-single-images.js.map
