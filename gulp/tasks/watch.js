@@ -25,6 +25,9 @@ gulp.task('watch', ['browser-sync'], function() {
 	'_layouts/**/*.html', 
 	'_posts/**/*.+(html|md|markdown)', 
 	'_includes/**/*.html',
+	'./data.json',
+	'./posts.json',
+	'./index.json',
 	'dist/**/*.*'
 	]).on('change', function(evt) {
     changeEvent(evt);
