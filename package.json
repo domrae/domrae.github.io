@@ -46,7 +46,7 @@
     "gulp-util": "^3.0.8",
     "jshint": "^2.13.1",
     "merge-stream": "^1.0.1",
-    "require-dir": "^0.3.2",
+    "require-dir": "^1.2.0",
     "run-sequence": "^2.2.0",
     "systemjs": "^0.21.3",
     "systemjs-builder": "^0.16.15",
