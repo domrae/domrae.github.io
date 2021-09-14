@@ -32,7 +32,7 @@
     "gulp-clip-empty-files": "^0.1.2",
     "gulp-clone": "^2.0.1",
     "gulp-concat": "^2.6.1",
-    "gulp-debug": "^3.1.0",
+    "gulp-debug": "^4.0.0",
     "gulp-filesize": "0.0.6",
     "gulp-if": "^3.0.0",
     "gulp-jshint": "^2.1.0",
