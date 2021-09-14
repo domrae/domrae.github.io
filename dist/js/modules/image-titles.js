@@ -1,3 +1,4 @@
+
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -46,7 +47,8 @@ var ImageTitles = exports.ImageTitles = function () {
 			_self.scope.map(function (i, el) {
 				var $img = (0, _jquery2.default)(el);
 				$img.attr('title', $img.attr('alt'));
-				$img.parent().append('<span class="caption">' + $img.attr('alt') + '</span>');
+				$img.parent().append('<span class="caption"></span>');
+				$img.parent().find('span.caption').text($img.attr('alt'));
 			});
 		}
 	}]);

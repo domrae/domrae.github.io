@@ -24,7 +24,8 @@ export class ImageTitles {
 		_self.scope.map((i, el) => {
 			let $img = $(el);
 			$img.attr('title', $img.attr('alt'));
-			$img.parent().append('<span class="caption">'+$img.attr('alt')+'</span>');
+			$img.parent().append('<span class="caption"></span>');
+			$img.parent().find('span.caption').text($img.attr('alt'));
 		});
 	}
 }
