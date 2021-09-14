@@ -21,7 +21,7 @@
     "autoprefixer": "^9.8.6",
     "babel-cli": "^6.26.0",
     "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-es2016": "^6.24.1",
     "browser-sync": "^2.18.13",
     "chalk": "^2.1.0",
