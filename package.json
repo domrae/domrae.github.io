@@ -28,7 +28,7 @@
     "child_process": "^1.0.2",
     "cssnano": "^4.1.11",
     "gulp": "^4.0.2",
-    "gulp-babel": "^7.0.0",
+    "gulp-babel": "^8.0.0",
     "gulp-clip-empty-files": "^0.1.2",
     "gulp-clone": "^2.0.1",
     "gulp-concat": "^2.6.1",
